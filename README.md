@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Calcio Monte Sacro" src="/github/icon-192x192.png" width="60" />
+    <img alt="Calcio Monte Sacro" src="/github/icon-192x192.png" width="192" />
 </p>
 <h1 align="center">
   Calcio Monte Sacro Website
