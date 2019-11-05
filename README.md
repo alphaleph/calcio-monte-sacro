@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
     <img alt="Calcio Monte Sacro" src="/github/icon-72x72.png" width="60" />
 </p>
@@ -11,6 +10,5 @@
 
 -  Navigate to: <a href="https://chaua0927.github.io/calcio-monte-sacro">Temporary Link</a>
 
-``` 
-Built With Gatsby
-```
+
+_Built With Gatsby_
