@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-    <img alt="Calcio Monte Sacro" src="/public/icons/icon-72x72.png" width="60" />
+    <img alt="Calcio Monte Sacro" src="/github/icon-72x72.png" width="60" />
 </p>
 <h1 align="center">
   Calcio Monte Sacro Website
