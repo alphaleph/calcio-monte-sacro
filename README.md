@@ -6,7 +6,7 @@
 </h1>
 <h2 align="center">:soccer::soccer::soccer:</h2>
 
-## :checkered_flag: To see the work in progress. / Per vedere i lavori in corso.
+## To see the work in progress. / Per vedere i lavori in corso. :checkered_flag:
 
 -  Navigate to / Vai a: <a href="https://chaua0927.github.io/calcio-monte-sacro">Temporary Link / Temporaneo Link</a>
 
