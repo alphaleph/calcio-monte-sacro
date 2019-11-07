@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header has not changed 1`] = `
+<DocumentFragment>
+  <header
+    class="container"
+  >
+    <div
+      class="content"
+    >
+      <h1
+        class="mainHeader"
+      >
+        <a
+          class="link"
+          href="/"
+        >
+          Calcio Monte Sacro
+        </a>
+      </h1>
+    </div>
+  </header>
+</DocumentFragment>
+`;
