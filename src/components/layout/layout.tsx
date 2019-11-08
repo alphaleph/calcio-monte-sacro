@@ -10,9 +10,9 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Header } from '../header/header';
 import styles from './layout.module.scss';
 
-type LayoutProps = {
+interface LayoutProps {
     children: React.ReactNode;
-};
+}
 
 export const Layout = (props: LayoutProps) => {
     const data = useStaticQuery(graphql`

@@ -9,12 +9,12 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-type SEOProps = {
+interface SEOProps {
     lang?: string;
     meta?: any[]; //TODO: Type definition
     description?: string;
     title: string;
-};
+}
 
 export const SEO = ({
     description = '',

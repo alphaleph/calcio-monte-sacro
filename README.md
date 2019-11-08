@@ -14,17 +14,25 @@
 
 ## Roadmap / Il Programma :tent:
 
-- [ ] Set up development environment / Impostare l'ambiente di sviluppo
+- [x] Set up development environment / Impostare l'ambiente di sviluppo
 - [x] Icon design / Disegno dell'icona
-- [ ] Base UI Design / Progettazione dell'interfaccia utente fondamentale
-- [ ] Animations and Transitions / Animazioni e Transizioni
+- [ ] Base UI design / Progettazione dell'interfaccia utente fondamentale
+- [ ] Base UI implementation / Implementazione dell'interfaccia utente fondamentale
+- [ ] Animations and transitions / Animazioni e transizioni
 
 ### Developed With / Programmato Con :hammer:
-- Gatsby
-- Inkscape
-- Figma
-
+- [Gatsby](GatsbyUrl)
+- [Inkscape](InkscapeUrl)
+- [Figma](FigmaUrl)
+- [Storybook](StorybookUrl)
+- [Jest](JestUrl)
+- [Testing-Library](Testing-LibraryUrl)
+- [TypeScript](TypeScriptUrl)
 
 [GatsbyUrl]: https://www.gatsbyjs.org/
-[InkScapeUrl]: https://inkscape.org/
+[InkscapeUrl]: https://inkscape.org/
 [FigmaUrl]: https://www.figma.com/
+[StorybookUrl]: https://storybook.js.org/
+[JestUrl]: https://jestjs.io/
+[Testing-LibraryUrl]: https://testing-library.com/
+[TypeScriptUrl]: https://www.typescriptlang.org/
