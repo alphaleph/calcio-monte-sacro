@@ -3,7 +3,7 @@ module.exports = {
     siteMetadata: {
         title: `Calcio Monte Sacro`,
         description: `Sito Ufficiale Calcio Monte Sacro`,
-        author: `Alpha Chau`,
+        author: `@chaua0927`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
