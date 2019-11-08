@@ -10,7 +10,10 @@ module.exports = {
     },
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     testPathIgnorePatterns: [`node_modules`, `.cache`, `public`],
-    transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
+    transformIgnorePatterns: [
+        `node_modules/(?!(gatsby)/)`,
+        `^.+\\.stories.tsx?$`,
+    ],
     globals: {
         __PATH_PREFIX__: ``,
     },
