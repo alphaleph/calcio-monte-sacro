@@ -21,13 +21,13 @@
 - [ ] Animations and transitions / Animazioni e transizioni
 
 ### Developed With / Programmato Con :hammer:
-- [Gatsby](GatsbyUrl)
-- [Inkscape](InkscapeUrl)
-- [Figma](FigmaUrl)
-- [Storybook](StorybookUrl)
-- [Jest](JestUrl)
-- [Testing-Library](Testing-LibraryUrl)
-- [TypeScript](TypeScriptUrl)
+- [Gatsby][GatsbyUrl]
+- [Inkscape][InkscapeUrl]
+- [Figma][FigmaUrl]
+- [Storybook][StorybookUrl]
+- [Jest][JestUrl]
+- [Testing-Library][Testing-LibraryUrl]
+- [TypeScript][TypeScriptUrl]
 
 [GatsbyUrl]: https://www.gatsbyjs.org/
 [InkscapeUrl]: https://inkscape.org/
