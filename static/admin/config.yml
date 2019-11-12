@@ -1,17 +1,78 @@
 backend:
   name: git-gateway
-  branch: netlify
+  branch: master
+
 media_folder: static/assets
 public_folder: assets
+
+site_url: https://www.calciomontesacro.com
+
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "blog_en"
+    label: "Blog in English"
+    description: "Blog post content and information - English"
     folder: "content/blog"
+    filter: { field: "language", value: "en" }
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - { name: description, label: Description }
+      - { name: "layout", label: "Layout", widget: "hidden", default: "blog" }
+      - { name: "language", label: "Language", widget: "select", options: ["en", "it"] }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "content", label: "Content", widget: "markdown" }
+  - name: "blog_it"
+    label: "Il Blog in Italiano"
+    description: "Contenuto e informazione dei post del blog - Italiano"
+    folder: "content/blog"
+    filter: { field: "language", value: "it" }
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", label: "Layout", widget: "hidden", default: "blog" }
+      - { name: "language", label: "Lingua", widget: "select", options: ["en", "it"] }
+      - { name: "date", label: "Data", widget: "datetime" }
+      - { name: "title", label: "Titolo", widget: "string" }
+      - { name: "content", label: "Contenuto", widget: "markdown" }
+  - name: "news_en"
+    label: "News in English"
+    description: "News post content and information - English"
+    folder: "content/news"
+    filter: { field: "language", value: "en" }
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", label: "Layout", widget: "hidden", default: "news" }
+      - { name: "language", label: "Language", widget: "select", options: ["en", "it"] }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "content", label: "Content", widget: "markdown" }
+  - name: "news_it"
+    label: "Le Notizie in Italiano"
+    description: "Contenuto e informazione dei posti delle notizie - Italiano"
+    folder: "content/news"
+    filter: { field: "language", value: "it" }
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", label: "Layout", widget: "hidden", default: "news" }
+      - { name: "language", label: "Lingua", widget: "select", options: ["en", "it"] }
+      - { name: "date", label: "Data", widget: "datetime" }
+      - { name: "title", label: "Titolo", widget: "string" }
+      - { name: "content", label: "Contenuto", widget: "markdown" }
+  - name: "schedule"
+    label: "Schedule / Calendario"
+    description: "Schedule and Results / Calendario e Risultato"
+    folder: "content/schedule"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", label: "Layout", widget: "hidden", default: "schedule" }
+      - { name: "date", label: "Data / Date", widget: "datetime" }
+      - { name: "title", label: "Titolo / Title", widget: "string" }
+      - { name: "home", label: "Di Casa / Home", widget: "boolean" }
+      - { name: "opposing_team", label: "Squadra Avversaria / Opposing Team", widget: "string" }
+      - { name: "venue", label: "Sede / Venue", widget: "map" }
+      - { name: "score_ms", label: "Punteggio (MS) / Score (MS)", widget: number, valueType: "int" }
+      - { name: "score_other", label: "Punteggio (Altre) / Score (Other)", widget: number, valueType: "int" }
+      - { name: "notes", label: "Appunti / Notes", widget: "string" }
