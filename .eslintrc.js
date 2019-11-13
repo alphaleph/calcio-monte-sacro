@@ -20,8 +20,15 @@ module.exports = {
             files: ["*.js"],
             rules: {
                 "@typescript-eslint/no-var-requires": "off"
+            },
+            
+        },
+        {
+            files: ['*.ts', '*.tsx'],
+            rules: {
+                '@typescript-eslint/no-unused-vars': [2, { args: 'none' }]
             }
-        }
+        },
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
