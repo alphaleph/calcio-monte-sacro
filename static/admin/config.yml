@@ -73,6 +73,6 @@ collections:
       - { name: "home", label: "Di Casa / Home", widget: "boolean" }
       - { name: "opposing_team", label: "Squadra Avversaria / Opposing Team", widget: "string" }
       - { name: "venue", label: "Sede / Venue", widget: "map" }
-      - { name: "score_ms", label: "Punteggio (MS) / Score (MS)", required: "false", widget: number, valueType: "int" }
-      - { name: "score_other", label: "Punteggio (Altre) / Score (Other)", required: "false", widget: number, valueType: "int" }
-      - { name: "notes", label: "Appunti / Notes", required: "false", widget: "string" }
+      - { name: "score_ms", label: "Punteggio (MS) / Score (MS)", required: false, widget: "number", valueType: "int" }
+      - { name: "score_other", label: "Punteggio (Altre) / Score (Other)", required: false, widget: "number", valueType: "int" }
+      - { name: "notes", label: "Appunti / Notes", required: false, widget: "string" }
