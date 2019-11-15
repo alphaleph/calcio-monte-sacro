@@ -21,6 +21,15 @@ export const Header = ({ isDarkMode = false, ...props }: HeaderProps) => {
                     <button type="button" className="button is-primary">
                         This is a test button.
                     </button>
+                    <button type="button" className="button has-background-roma-red">
+                        This is a test button.
+                    </button>
+                    <button type="button" className="button is-info">
+                        This is a test button.
+                    </button>
+                    <button type="button" className="button has-background-team-granite has-text-roma-tyrian">
+                        This is a test button.
+                    </button>
                 </h1>
             </div>
         </header>

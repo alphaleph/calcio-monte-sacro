@@ -1,4 +1,55 @@
-@charset "utf-8";
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../../node_modules/bulma/sass/utilities/functions.sass";
 
-$title-color: #ff0000;
+// Initial Variables
+$family-sans-serif:"Oswald", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-serif: "Cinzel", "Times", "Times New Roman", serif;
+$granite-grey-team: #454544;
+$granite-grey-team-invert: findColorInvert($granite-grey-team);
+$holy-yellow-team: #FCE95F;
+$holy-yellow-team-invert: findColorInvert($holy-yellow-team);
+$roma-gold: #FBB900;
+$roma-gold-invert: findColorInvert($roma-gold);
+$roma-red: #980A2B;
+$roma-red-invert: findColorInvert($roma-red);
+$roma-tyrian: #66023C;
+$roma-tyrian-invert: findColorInvert($roma-tyrian);
+$white-main: #FCFCF9;
+$white-main-invert: findColorInvert($white-main);
+$beige-main: #FFF6E7;
+$beige-main-invert: findColorInvert($beige-main);
+$black-main: #272725;
+$black-main-invert: findColorInvert($black-main);
+
+// Derived Variables
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+$text: $black-main;
+$text-invert: findColorInvert($text);
+
+$primary: $roma-gold;
+$primary-invert: $roma-gold-invert;
+$info: $roma-tyrian;
+$info-invert: $roma-tyrian-invert;
+
+$link: $text-invert;
+$link-focus: $holy-yellow-team;
+$link-active: $holy-yellow-team;
+$link-hover: $holy-yellow-team;
+$link-visited: $holy-yellow-team-invert;
+
+
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
+$addColors: (
+    "team-granite":($granite-grey-team, $granite-grey-team-invert),
+    "team-holy":($holy-yellow-team, $holy-yellow-team-invert),
+    "roma-gold":($roma-gold, $roma-gold-invert),
+    "roma-red":($roma-red, $roma-red-invert),
+    "roma-tyrian":($roma-tyrian, $roma-tyrian-invert),
+    "white-main":($white-main, $white-main-invert),
+    "black-main":($black-main, $black-main-invert),
+    "beige-main":($beige-main, $beige-main-invert)
+);
+$colors: map-merge($colors, $addColors);
+
 @import "~bulma/bulma.sass";
