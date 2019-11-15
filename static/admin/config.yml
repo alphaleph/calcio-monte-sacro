@@ -16,8 +16,8 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: "layout", label: "Layout", widget: "hidden", default: "blog" }
-      - { name: "language", label: "Language", widget: "select", options: ["en", "it"] }
+      - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "language", label: "Language", widget: "hidden", default: "en" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "title", label: "Title", widget: "string" }
       - { name: "content", label: "Content", widget: "markdown" }
@@ -29,8 +29,8 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: "layout", label: "Layout", widget: "hidden", default: "blog" }
-      - { name: "language", label: "Lingua", widget: "select", options: ["en", "it"] }
+      - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
       - { name: "date", label: "Data", widget: "datetime" }
       - { name: "title", label: "Titolo", widget: "string" }
       - { name: "content", label: "Contenuto", widget: "markdown" }
@@ -42,8 +42,8 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: "layout", label: "Layout", widget: "hidden", default: "news" }
-      - { name: "language", label: "Language", widget: "select", options: ["en", "it"] }
+      - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "language", label: "Language", widget: "hidden", default: "en" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "title", label: "Title", widget: "string" }
       - { name: "content", label: "Content", widget: "markdown" }
@@ -55,24 +55,43 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: "layout", label: "Layout", widget: "hidden", default: "news" }
-      - { name: "language", label: "Lingua", widget: "select", options: ["en", "it"] }
+      - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
       - { name: "date", label: "Data", widget: "datetime" }
       - { name: "title", label: "Titolo", widget: "string" }
       - { name: "content", label: "Contenuto", widget: "markdown" }
-  - name: "schedule"
-    label: "Schedule / Calendario"
-    description: "Schedule and Results / Calendario e Risultato"
+  - name: "schedule_en"
+    label: "Schedule in English"
+    description: "Schedule and results - English"
     folder: "content/schedule"
+    filter: { field: "language", value: "en" }
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "schedule" }
-      - { name: "date", label: "Data / Date", widget: "datetime" }
-      - { name: "title", label: "Titolo / Title", widget: "string" }
-      - { name: "home", label: "Di Casa / Home", widget: "boolean" }
-      - { name: "opposing_team", label: "Squadra Avversaria / Opposing Team", widget: "string" }
-      - { name: "venue", label: "Sede / Venue", widget: "map", default: '{ "type": "Point", "coordinates": [12.5201161,41.9410675] }' }
-      - { name: "score_ms", label: "Punteggio (MS) / Score (MS)", required: false, widget: "number", valueType: "int" }
-      - { name: "score_other", label: "Punteggio (Altre) / Score (Other)", required: false, widget: "number", valueType: "int" }
-      - { name: "notes", label: "Appunti / Notes", required: false, widget: "string" }
+      - { name: "language", label: "Language", widget: "hidden", default: "en" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "type", label: "Type", widget: "select", options: ["Practice", "Match"]}
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "venue", label: "Venue", widget: "string", default: "Parco Sannazzaro" }
+      - { name: "opposing_team", label: "Opposing Team", widget: "string", required: false }
+      - { name: "home", label: "Home", widget: "boolean", required: false }
+      - { name: "score_ms", label: "Score (MS)", required: false, widget: "number", valueType: "int" }
+      - { name: "score_other", label: "Score (Other)", required: false, widget: "number", valueType: "int" }
+  - name: "schedule_it"
+    label: "Calendario in Italiano"
+    description: "Calendario e risultato - Italiano"
+    folder: "content/schedule"
+    filter: { field: "language", value: "it" }
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", label: "Layout", widget: "hidden", default: "schedule" }
+      - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
+      - { name: "date", label: "Data", widget: "datetime" }
+      - { name: "title", label: "Titolo", widget: "string" }
+      - { name: "venue", label: "Sede", widget: "string", default: "Parco Sannazzaro" }
+      - { name: "opposing_team", label: "Squadra Avversaria", widget: "string", required: false }
+      - { name: "home", label: "Di Casa", widget: "boolean", required: false }
+      - { name: "score_ms", label: "Punteggio (MS)", widget: "number", valueType: "int", required: false }
+      - { name: "score_other", label: "Punteggio (Altre)", widget: "number", valueType: "int", required: false }
