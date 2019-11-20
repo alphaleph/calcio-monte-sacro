@@ -4,10 +4,12 @@ language: en
 date: 2019-11-20T17:39:53.881Z
 title: Initial News Post
 ---
+![A net](/assets/net.jpg "A net")
+
 ## Testing
 
-__Testing__\
-____Testing____
+**Testing**\
+_**_Testing__**
 
 `testing`
 
