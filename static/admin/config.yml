@@ -89,6 +89,7 @@ collections:
       - { name: "layout", label: "Layout", widget: "hidden", default: "schedule" }
       - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
       - { name: "date", label: "Data", widget: "datetime" }
+      - { name: "type", label: "Tipo", widget: "select", options: ["Allenamento", "Partita"]}
       - { name: "title", label: "Titolo", widget: "string" }
       - { name: "venue", label: "Sede", widget: "string", default: "Parco Sannazzaro" }
       - { name: "opposing_team", label: "Squadra Avversaria", widget: "string", required: false }
