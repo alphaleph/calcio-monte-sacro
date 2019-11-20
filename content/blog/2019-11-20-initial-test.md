@@ -4,7 +4,7 @@ language: en
 date: 2019-11-20T17:39:20.690Z
 title: Initial Test
 ---
-![A soccer ball](/assets/ball.jpg "A soccer ball")
+![A soccer ball](../../static/assets/ball.jpg "A soccer ball")
 
 ## Testing
 
