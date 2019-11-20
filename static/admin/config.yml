@@ -20,7 +20,7 @@ collections:
       - { name: "language", label: "Language", widget: "hidden", default: "en" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "content", label: "Content", widget: "markdown" }
+      - { name: "body", label: "Content", widget: "markdown" }
   - name: "blog_it"
     label: "Il Blog in Italiano"
     description: "Contenuto e informazione dei post del blog - Italiano"
@@ -33,7 +33,7 @@ collections:
       - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
       - { name: "date", label: "Data", widget: "datetime" }
       - { name: "title", label: "Titolo", widget: "string" }
-      - { name: "content", label: "Contenuto", widget: "markdown" }
+      - { name: "body", label: "Contenuto", widget: "markdown" }
   - name: "news_en"
     label: "News in English"
     description: "News post content and information - English"
@@ -46,7 +46,7 @@ collections:
       - { name: "language", label: "Language", widget: "hidden", default: "en" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "content", label: "Content", widget: "markdown" }
+      - { name: "body", label: "Content", widget: "markdown" }
   - name: "news_it"
     label: "Le Notizie in Italiano"
     description: "Contenuto e informazione dei posti delle notizie - Italiano"
@@ -59,7 +59,7 @@ collections:
       - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
       - { name: "date", label: "Data", widget: "datetime" }
       - { name: "title", label: "Titolo", widget: "string" }
-      - { name: "content", label: "Contenuto", widget: "markdown" }
+      - { name: "body", label: "Contenuto", widget: "markdown" }
   - name: "schedule_en"
     label: "Schedule in English"
     description: "Schedule and results - English"
