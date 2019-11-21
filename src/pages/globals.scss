@@ -1,0 +1,38 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// Initial Variables
+$family-sans-serif:"Oswald", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-serif: "Cinzel", "Times", "Times New Roman", serif;
+$granite-grey-team: #454544;
+$granite-grey-team-invert: #BABABB;
+$holy-yellow-team: #FCE95F;
+$holy-yellow-team-invert: #0316A0;
+$roma-gold: #FBB900;
+$roma-gold-invert: #0446FF;
+$roma-red: #980A2B;
+$roma-red-invert: #67F5D4;
+$roma-tyrian: #66023C;
+$roma-tyrian-invert: #99FDC3;
+$white-main: #FCFCF9;
+$white-main-invert: #030306;
+$beige-main: #FFF6E7;
+$beige-main-invert: #000918;
+$black-main: #272725;
+$black-main-invert: #D8D8DA;
+
+// Derived Variables
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+$text: $black-main;
+$text-invert: $black-main-invert;
+
+$primary: $roma-gold;
+$primary-invert: $roma-gold-invert;
+$info: $roma-tyrian;
+$info-invert: $roma-tyrian-invert;
+
+$link: $text-invert;
+$link-focus: $holy-yellow-team;
+$link-active: $holy-yellow-team;
+$link-hover: $holy-yellow-team;
+$link-visited: $holy-yellow-team-invert;
