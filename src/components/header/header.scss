@@ -1,0 +1,57 @@
+@import '../../pages/globals.scss';
+
+
+.nav-container {
+    background-color: $holy-yellow-team;
+    padding-bottom: .3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-outline {
+    background-color: $black-main;
+    padding: .1rem;
+}
+
+.navbar {
+    border-top-color: $black-main;
+    border-top-width: thick;
+}
+
+.navbar-logo-container {
+    position: absolute;
+    left: 8vw;
+    top: -1vh;
+}
+
+.navbar-logo {
+    margin-top: -.5rem;
+}
+
+.navbar-end .navbar-item {
+    margin-right: 2.5rem;
+    font-size: 1.25rem;
+    color: $white-main;
+}
+.navbar-end .navbar-item:visited,
+.navbar-end .navbar-item:hover, 
+.navbar-end .navbar-item:focus {
+    background: $black-main;
+    color: $holy-yellow-team;
+}
+
+.navbar-end .navbar-item .link-text {
+    white-space: pre;
+}
+
+a.navbar-burger {
+    color: $holy-yellow-team;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-logo {
+        margin-top: .5rem;
+    }
+    .navbar-menu {
+        padding-top: 3.6rem !important;
+    }
+}

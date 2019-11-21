@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, object } from '@storybook/addon-knobs';
-import { Header } from './header';
+import { withKnobs } from '@storybook/addon-knobs';
+import { PureHeader } from './header';
+import { mockFixedImageData } from '../__tests__/test-util';
+import '../../pages/index.scss';
 
 export const siteTitle = 'Calcio Monte Sacro Test';
 export const isDarkMode = false;
@@ -13,12 +15,11 @@ export const actions = {
 storiesOf('Header', module)
     .addDecorator(withKnobs)
     .add('default', () => (
-        <Header
-            siteTitle={object('siteTitle', siteTitle)}
-            isDarkMode={object('isDarkMode', isDarkMode)}
-            {...actions}
+        <PureHeader
+            data={mockFixedImageData}
+            // {...actions}
         />
-    ))
-    .add('dark-mode', () => (
-        <Header siteTitle={siteTitle} isDarkMode={true} {...actions} />
     ));
+    // .add('dark-mode', () => (
+    //     <Header siteTitle={siteTitle} isDarkMode={true} {...actions} />
+    // ));

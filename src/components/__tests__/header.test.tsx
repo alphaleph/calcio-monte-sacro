@@ -1,49 +1,51 @@
 import React from 'react';
-import { Header } from '../header/header';
+import { PureHeader } from '../header/header';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
 import { PageTitleToURLMap } from '../../types/index';
-import { resizeToMobile } from './test-util';
+import { resizeToMobile, mockFixedImageData } from './test-util';
 
-const SITE_TITLE = 'test';
 const SITE_URL = 'https://www.calciomontesacro.com';
 const LOGO_ALT_TEXT = 'Calcio Monte Sacro Homepage';
 const HAMBURGER_LABEL = 'Header Menu';
 const LINK_TEXTS: PageTitleToURLMap = {
-    Schedule: `/schedule`,
-    News: `/news`,
-    Blog: `/blog`,
-    Drills: `/drills`,
-    About: `/about`,
+    Schedule: `${SITE_URL}/schedule`,
+    News: `${SITE_URL}/news`,
+    Blog: `${SITE_URL}/blog`,
+    Drills: `${SITE_URL}/drills`,
+    About: `${SITE_URL}/about`,
 };
+const data = mockFixedImageData;
+
+// TODO: Use programmatic media query to set navbar-end as hidden under 1024px
+// TODO: Update header tests to involve more BDD
 
 describe('Header', () => {
     it('renders without crashing', () => {
-        const { getByAltText } = render(<Header siteTitle={SITE_TITLE} />);
+        const { getByAltText } = render(<PureHeader data={data} />);
 
         expect(getByAltText(LOGO_ALT_TEXT)).toBeInTheDocument();
     });
 
     it('renders correctly on larger than mobile', () => {
-        const { getByAltText, getByText } = render(
-            <Header siteTitle={SITE_TITLE} />
-        );
+        const { getByAltText, getByText } = render(<PureHeader data={data} />);
 
-        expect(getByAltText(LOGO_ALT_TEXT)).toHaveAttribute('href', SITE_URL);
+        expect(getByAltText(LOGO_ALT_TEXT)).toBeVisible();
         for (let pageTitle of Object.keys(LINK_TEXTS)) {
             expect(getByText(pageTitle)).toBeVisible();
-            expect(getByText(pageTitle)).toHaveAttribute(
-                'href',
-                LINK_TEXTS[pageTitle]
-            );
+            // // BDD Test: Click
+            // expect(getByText(pageTitle)).toHaveAttribute(
+            //     'href',
+            //     LINK_TEXTS[pageTitle]
+            // );
         }
     });
 
     it('has a collapsed hamburger menu on mobile', () => {
         resizeToMobile();
         const { getByLabelText, getByText } = render(
-            <Header siteTitle={SITE_TITLE} />
+            <PureHeader data={data} />
         );
 
         expect(getByLabelText(HAMBURGER_LABEL)).toBeVisible();
@@ -59,7 +61,7 @@ describe('Header', () => {
     it('expands the hamburger menu on click', () => {
         resizeToMobile();
         const { getByLabelText, getByText } = render(
-            <Header siteTitle={SITE_TITLE} />
+            <PureHeader data={data} />
         );
 
         userEvent.click(getByLabelText(HAMBURGER_LABEL));
@@ -76,7 +78,7 @@ describe('Header', () => {
     it('collapses the hamburger menu on click after opening', () => {
         resizeToMobile();
         const { getByLabelText, getByText } = render(
-            <Header siteTitle={SITE_TITLE} />
+            <PureHeader data={data} />
         );
 
         userEvent.dblClick(getByLabelText(HAMBURGER_LABEL));
@@ -91,7 +93,7 @@ describe('Header', () => {
     });
 
     it('has not changed', () => {
-        const { asFragment } = render(<Header siteTitle={SITE_TITLE} />);
+        const { asFragment } = render(<PureHeader data={data} />);
         expect(asFragment()).toMatchSnapshot();
     });
 });
