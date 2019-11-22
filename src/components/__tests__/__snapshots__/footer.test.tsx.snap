@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer has not changed 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer-container columns is-centered has-background-team-granite"
+  >
+    <div
+      class="column is-two-thirds"
+    >
+      <section
+        class="footer-main-links container"
+      >
+        <a
+          class="footer-main-link"
+          href="https://www.calciomontesacro.com/schedule"
+        >
+          Schedule
+        </a>
+        <a
+          class="footer-main-link"
+          href="https://www.calciomontesacro.com/news"
+        >
+          News
+        </a>
+        <a
+          class="footer-main-link"
+          href="https://www.calciomontesacro.com/blog"
+        >
+          Blog
+        </a>
+        <a
+          class="footer-main-link"
+          href="https://www.calciomontesacro.com/drills"
+        >
+          Drills
+        </a>
+        <a
+          class="footer-main-link"
+          href="https://www.calciomontesacro.com/about"
+        >
+          About
+        </a>
+      </section>
+      <div
+        class="footer-divider"
+      />
+      <section
+        class="footer-legal-buttons container"
+      >
+        <button
+          class="footer-legal-button"
+          type="button"
+        >
+          Terms and Conditions
+        </button>
+        <button
+          class="footer-legal-button"
+          type="button"
+        >
+          Privacy
+        </button>
+        <button
+          class="footer-legal-button"
+          type="button"
+        >
+          Cookies
+        </button>
+      </section>
+      <section
+        class="copyright container"
+      >
+        <p>
+          © 2019 Calcio Monte Sacro. All Rights Reserved. Website questions, comments or suggestions?
+          <a
+            class="email-link"
+            href="mailto:&#099;&#097;&#108;&#099;&#105;&#111;&#109;&#111;&#110;&#116;&#101;&#115;&#097;&#099;&#114;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109"
+          >
+            Email Us
+          </a>
+        </p>
+      </section>
+    </div>
+  </footer>
+</DocumentFragment>
+`;

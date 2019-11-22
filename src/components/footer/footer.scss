@@ -1,2 +1,77 @@
 @import '../../pages/globals.scss';
 
+.footer-container {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.footer-divider {
+    width: 70%;
+    height: 1px;
+    background: $holy-yellow-team;
+    position: relative;
+    left: 15%;
+}
+
+.footer-main-links {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-main-link {
+    margin: 0rem 1rem;
+    color: $white-main;
+}
+
+.footer-main-link:visited,
+.footer-main-link:hover,
+.footer-main-link:focus {
+    text-decoration: underline;
+    color: $holy-yellow-team;
+}
+
+.footer-legal-buttons {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-legal-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: $white-main;
+    font-size: 1.25rem;
+    margin: 0rem 1rem;
+}
+
+.footer-legal-button:visited,
+.footer-legal-button:hover,
+.footer-legal-button:focus {
+    text-decoration: underline;
+    color: $holy-yellow-team;
+}
+
+.copyright {
+    color: $granite-grey-team-invert;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.copyright .email-link {
+    margin-left:.5rem;
+    color: $granite-grey-team-invert;
+}
+
+.copyright .email-link:visited,
+.copyright .email-link:focus,
+.copyright .email-link:hover {
+    text-decoration: underline;
+    color: $roma-tyrian-invert;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer-divider {
+        width: 60%;
+        left: 20%;
+    }
+}

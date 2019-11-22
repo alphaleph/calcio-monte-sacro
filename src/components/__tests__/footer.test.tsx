@@ -11,6 +11,7 @@ import {
     COOKIES,
 } from '../../constants';
 
+const emailLinkText = 'Email Us';
 const openModal = jest.fn();
 
 describe('Footer', () => {
@@ -20,7 +21,7 @@ describe('Footer', () => {
 
     it('renders without crashing', () => {
         const { getByText } = render(<Footer openModal={openModal} />);
-        expect(getByText(EMAIL_ADDR)).toBeInTheDocument();
+        expect(getByText(emailLinkText)).toBeInTheDocument();
     });
 
     it('renders correctly', () => {
@@ -35,7 +36,11 @@ describe('Footer', () => {
         for (let buttonText of legalButtonTexts) {
             expect(getByText(buttonText)).toBeVisible();
         }
-        expect(getByText(EMAIL_ADDR)).toBeVisible();
+        expect(getByText(emailLinkText)).toBeVisible();
+        expect(getByText(emailLinkText)).toHaveAttribute(
+            'href',
+            `mailto:${EMAIL_ADDR}`
+        );
     });
 
     it('renders correctly on mobile', () => {
@@ -52,7 +57,7 @@ describe('Footer', () => {
         for (let buttonText of legalButtonTexts) {
             expect(getByText(buttonText)).toBeVisible();
         }
-        expect(getByText(EMAIL_ADDR)).toBeVisible();
+        expect(getByText(emailLinkText)).toBeVisible();
     });
 
     it('opens Terms and Conditions modal on correct button click', () => {
