@@ -3,19 +3,15 @@ import { PureHeader } from '../header/header';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
-import { PageTitleToURLMap } from '../../types/index';
-import { resizeToMobile, mockFixedImageData } from './test-util';
+import {
+    resizeToMobile,
+    mockFixedImageData,
+    mainLinkTexts as LINK_TEXTS,
+} from './test-util';
 
-const SITE_URL = 'https://www.calciomontesacro.com';
 const LOGO_ALT_TEXT = 'Calcio Monte Sacro Homepage';
 const HAMBURGER_LABEL = 'Header Menu';
-const LINK_TEXTS: PageTitleToURLMap = {
-    Schedule: `${SITE_URL}/schedule`,
-    News: `${SITE_URL}/news`,
-    Blog: `${SITE_URL}/blog`,
-    Drills: `${SITE_URL}/drills`,
-    About: `${SITE_URL}/about`,
-};
+
 const data = mockFixedImageData;
 
 // TODO: Use programmatic media query to set navbar-end as hidden under 1024px

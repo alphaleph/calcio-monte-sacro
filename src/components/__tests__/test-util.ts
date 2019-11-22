@@ -1,5 +1,16 @@
+import { PageTitleToURLMap } from '../../types/index';
+
 export const MOBILE_VIEWPORT_WIDTH = 700;
 export const MOBILE_VIEWPORT_HEIGHT = 700;
+
+export const siteURL = 'https://www.calciomontesacro.com';
+export const mainLinkTexts: PageTitleToURLMap = {
+    Schedule: `${siteURL}/schedule`,
+    News: `${siteURL}/news`,
+    Blog: `${siteURL}/blog`,
+    Drills: `${siteURL}/drills`,
+    About: `${siteURL}/about`,
+};
 
 export const resizeWindow = (x: number, y: number) => {
     (window as any).innerWidth = x;
