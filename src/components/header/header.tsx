@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import React, { useState } from 'react';
+import { SITE_URL } from '../../constants';
 import './header.scss';
 
 interface HeaderOwnProps {}
@@ -28,7 +29,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                     <div className="navbar-brand">
                         <Link
                             className="navbar-logo-container navbar-item has-link-team-holy"
-                            to="https://www.calciomontesacro.com"
+                            to={SITE_URL}
                         >
                             <Img
                                 className="navbar-logo"
@@ -83,7 +84,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                         <div className="navbar-end">
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to="https://www.calciomontesacro.com/schedule"
+                                to={`${SITE_URL}/schedule`}
                             >
                                 <span className="link-text">Schedule </span>
                                 <span role="img" aria-label="Calendar">
@@ -92,7 +93,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                             </Link>
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to="https://www.calciomontesacro.com/news"
+                                to={`${SITE_URL}/news`}
                             >
                                 <span className="link-text">News </span>
                                 <span role="img" aria-label="Megaphone">
@@ -101,7 +102,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                             </Link>
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to="https://www.calciomontesacro.com/blog"
+                                to={`${SITE_URL}/blog`}
                             >
                                 <span className="link-text">Blog </span>
                                 <span role="img" aria-label="Writing hand">
@@ -110,7 +111,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                             </Link>
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to="https://www.calciomontesacro.com/drills"
+                                to={`${SITE_URL}/drills`}
                             >
                                 <span className="link-text">Drills </span>
                                 <span role="img" aria-label="100 points">
@@ -120,7 +121,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
 
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to="https://www.calciomontesacro.com/about"
+                                to={`${SITE_URL}/about`}
                             >
                                 <span className="link-text">About </span>
                                 <span role="img" aria-label="Soccer ball">
