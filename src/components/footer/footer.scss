@@ -3,6 +3,7 @@
 .footer-container {
     font-size: 1.25rem;
     text-align: center;
+    margin-top: 0rem !important;
 }
 
 .footer-divider {
@@ -23,7 +24,6 @@
     color: $white-main;
 }
 
-.footer-main-link:visited,
 .footer-main-link:hover,
 .footer-main-link:focus {
     text-decoration: underline;
