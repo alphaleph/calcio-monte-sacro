@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`We Are Banner has not changed 1`] = `
+<DocumentFragment>
+  <section
+    class="hero has-background-night-sky is-bold"
+  >
+    <div
+      class="hero-body"
+    >
+      <div
+        class="we-are-container container has-text-centered"
+      >
+        <h1
+          class="title"
+        >
+          <span
+            class="we-are-text"
+          >
+            We are...
+          </span>
+          <br />
+          <br />
+          <span
+            class="we-are-name is-family-secondary"
+          >
+            Calcio Monte Sacro
+          </span>
+        </h1>
+      </div>
+    </div>
+    <p
+      class="has-text-centered placeholder-pic"
+    >
+      🗻
+    </p>
+  </section>
+</DocumentFragment>
+`;

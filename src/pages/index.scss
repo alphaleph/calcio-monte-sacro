@@ -9,7 +9,8 @@ $addColors: (
     "roma-tyrian":($roma-tyrian, $roma-tyrian-invert),
     "white-main":($white-main, $white-main-invert),
     "black-main":($black-main, $black-main-invert),
-    "beige-main":($beige-main, $beige-main-invert)
+    "beige-main":($beige-main, $beige-main-invert),
+    "night-sky":($night-sky, $starlight),
 );
 $colors: map-merge($colors, $addColors);
 

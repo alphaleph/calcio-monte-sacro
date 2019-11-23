@@ -3,13 +3,14 @@ import { Link } from 'gatsby';
 import { Layout } from '../components/layout/layout';
 import { Image } from '../components/image/image';
 import { SEO } from '../components/seo/seo';
+import { BannerWeAre } from '../components/banner-we-are/banner-we-are';
 import './index.scss';
 
 const IndexPage = () => {
     return (
         <Layout>
             <SEO title="Home" />
-            <h1>Calcio Monte Sacro</h1>
+            <BannerWeAre />
             <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
                 <Image />
             </div>
