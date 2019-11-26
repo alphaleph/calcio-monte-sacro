@@ -14,6 +14,7 @@ const HAMBURGER_LABEL = 'Header Menu';
 
 const data = mockFixedImageData;
 
+// TODO: Toggle languages functionality
 // TODO: Use programmatic media query to set navbar-end as hidden under 1024px
 // TODO: Update header tests to involve more BDD
 

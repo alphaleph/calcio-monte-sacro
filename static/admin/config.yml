@@ -17,6 +17,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "post_type", label: "Post Type", widget: "hidden", default: "blog" }
       - { name: "language", label: "Language", widget: "hidden", default: "en" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "title", label: "Title", widget: "string" }
@@ -30,6 +31,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "post_type", label: "Tipo di Post", widget: "hidden", default: "blog" }
       - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
       - { name: "date", label: "Data", widget: "datetime" }
       - { name: "title", label: "Titolo", widget: "string" }
@@ -43,6 +45,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "post_type", label: "Post Type", widget: "hidden", default: "news" }
       - { name: "language", label: "Language", widget: "hidden", default: "en" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "title", label: "Title", widget: "string" }
@@ -56,6 +59,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "post_type", label: "Tipo di Post", widget: "hidden", default: "news" }
       - { name: "language", label: "Lingua", widget: "hidden", default: "it" }
       - { name: "date", label: "Data", widget: "datetime" }
       - { name: "title", label: "Titolo", widget: "string" }
