@@ -23,12 +23,12 @@ export interface MarkdownDataNode {
             layout: string;
             language: string;
             date: string;
-            type?: string;
-            venue?: string;
-            home?: boolean;
-            opposing_team?: string;
-            score_ms?: number;
-            score_other?: number;
+            type: string | null;
+            venue: string | null;
+            home: boolean | null;
+            opposing_team: string | null;
+            score_ms: number | null;
+            score_other: number | null;
         };
         fields: {
             slug: string;

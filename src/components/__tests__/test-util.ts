@@ -1,4 +1,8 @@
-import { PageTitleToURLMap } from '../../types/index';
+import {
+    PageTitleToURLMap,
+    MarkdownDataNode,
+    MarkdownData,
+} from '../../types/index';
 import { SITE_URL } from '../../constants';
 
 export const MOBILE_VIEWPORT_WIDTH = 700;
@@ -41,6 +45,165 @@ export const mockFixedImageData = {
                 srcSet:
                     '/static/be02315164569b61ba353b4219d3bb3e/47c2b/cms-icon.png 1x,\n/static/be02315164569b61ba353b4219d3bb3e/4148e/cms-icon.png 1.5x,\n/static/be02315164569b61ba353b4219d3bb3e/eb72e/cms-icon.png 2x',
             },
+        },
+    },
+};
+
+export const mockScheduleDataNodes: MarkdownDataNode[] = [
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro 1 vs Monte Sacro 2',
+                language: 'en',
+                type: 'Match',
+                venue: 'Parco Sannazzaro',
+                home: true,
+                opposing_team: 'Monte Sacro 2',
+                score_ms: 1,
+                score_other: 2,
+                date: '2019-11-20T02:15:50.939Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2/',
+            },
+            html: '',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro 1 vs Monte Sacro 2',
+                language: 'it',
+                type: 'Partita',
+                venue: 'Parco Sannazzaro',
+                home: true,
+                opposing_team: 'Monte Sacro 2',
+                score_ms: 2,
+                score_other: 1,
+                date: '2019-11-20T02:15:58.097Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2-1/',
+            },
+            html: '',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro Practice 1',
+                language: 'en',
+                type: 'Practice',
+                venue: 'Parco Sannazzaro',
+                home: null,
+                opposing_team: null,
+                score_ms: null,
+                score_other: null,
+                date: '2019-11-20T17:40:15.578Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-practice-1/',
+            },
+            html: '',
+        },
+    },
+];
+
+// //Update with new mocks
+// export const mockPostDataNodes: MarkdownDataNode[] = [
+//     {
+//         node: {
+//             frontmatter: {
+//                 title: 'Initial Test',
+//                 language: 'en',
+//                 type: null,
+//                 venue: null,
+//                 home: null,
+//                 opposing_team: null,
+//                 score_ms: null,
+//                 score_other: null,
+//                 date: '2019-11-20T17:39:20.690Z',
+//                 layout: 'post',
+//             },
+//             fields: {
+//                 slug: '/2019-11-20-initial-test/',
+//             },
+//             html:
+//                 '<p><img src="../../src/images/ball.jpg" alt="A soccer ball" title="A soccer ball"></p>\n<h2>Testing</h2>\n<p><strong>Testing</strong><br>\n<em>**</em>Testing__**</p>\n<p><code>testing</code></p>\n<blockquote>\n<p>t\ne\ns\nt</p>\n</blockquote>\n<p style="color: red">printing</p>',
+//         },
+//     },
+//     {
+//         node: {
+//             frontmatter: {
+//                 title: 'Initial News Post',
+//                 language: 'en',
+//                 type: null,
+//                 venue: null,
+//                 home: null,
+//                 opposing_team: null,
+//                 score_ms: null,
+//                 score_other: null,
+//                 date: '2019-11-20T17:39:53.881Z',
+//                 layout: 'post',
+//             },
+//             fields: {
+//                 slug: '/2019-11-20-initial-news-post/',
+//             },
+//             html:
+//                 '<p><img src="../../src/images/net.jpg" alt="A net" title="A net"></p>\n<h2>Testing</h2>\n<p><strong>Testing</strong><br>\n<em>**</em>Testing__**</p>\n<p><code>testing</code></p>\n<blockquote>\n<p>t\ne\ns\nt</p>\n</blockquote>\n<p style="color: red">printing</p>',
+//         },
+//     },
+//     {
+//         node: {
+//             frontmatter: {
+//                 title: 'Blog 1',
+//                 language: 'it',
+//                 type: null,
+//                 venue: null,
+//                 home: null,
+//                 opposing_team: null,
+//                 score_ms: null,
+//                 score_other: null,
+//                 date: '2019-11-20T18:22:58.392Z',
+//                 layout: 'post',
+//             },
+//             fields: {
+//                 slug: '/2019-11-20-blog-1/',
+//             },
+//             html:
+//                 '<p><img src="../../src/images/ball.jpg" alt="Una palla" title="Una palla"></p>\n<h2>Prova</h2>\n<p><em>prova</em></p>\n<p><strong>prova</strong></p>\n<p><strong><em>prova</em></strong></p>\n<p><code>code</code></p>\n<blockquote>\n<p>p\nr\no\nv\na</p>\n</blockquote>\n<p style="color:green">Prova</p>',
+//         },
+//     },
+//     {
+//         node: {
+//             frontmatter: {
+//                 title: 'Notizie 1',
+//                 language: 'it',
+//                 type: null,
+//                 venue: null,
+//                 home: null,
+//                 opposing_team: null,
+//                 score_ms: null,
+//                 score_other: null,
+//                 date: '2019-11-20T18:31:37.324Z',
+//                 layout: 'post',
+//             },
+//             fields: {
+//                 slug: '/2019-11-20-notizie-1/',
+//             },
+//             html:
+//                 '<p><img src="../../src/images/net.jpg" alt="Una rete" title="Una rete"></p>\n<h2>Prova</h2>\n<p><em>prova</em></p>\n<p><strong>prova</strong></p>\n<p><em><strong>prova</strong></em></p>\n<p><code>code</code></p>\n<blockquote>\n<p>p\nr\no\nv\na</p>\n</blockquote>\n<p style="color:green">Prova</p>',
+//         },
+//     },
+// ];
+
+export const mockMarkdownData: MarkdownData = {
+    data: {
+        allMarkdownRemark: {
+            edges: mockScheduleDataNodes,
         },
     },
 };
