@@ -3,7 +3,7 @@ layout: post
 post_type: blog
 language: it
 date: 2019-12-02T19:17:31.679Z
-title: Blog Test Prova Markdown
+title: Blog Post Prova Markdown
 banner-image: /cms-icon.png
 ---
 `Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis consequat nunc sed dignissim. Ut feugiat quam in fringilla suscipit. Quisque sed sodales odio. In id purus enim. Pellentesque blandit, nisi ac condimentum placerat, dui magna molestie est, in sodales arcu velit non nibh. Nam tempus felis quis diam accumsan, non accumsan velit tempor. Aenean lacus magna, iaculis quis massa at, pellentesque tristique purus. Sed eu neque at nisi ultrices mollis. Sed nulla massa, dapibus at convallis non, finibus et lacus. Nunc facilisis nibh eu dolor dignissim, congue sodales dui commodo. Mauris dolor nibh, consequat quis nisl ut, facilisis imperdiet tellus. Fusce tincidunt dictum nisi, ut fermentum leo eleifend ut.
