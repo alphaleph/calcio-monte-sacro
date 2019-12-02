@@ -4,6 +4,7 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { mockScheduleDataNodes } from './test-util';
 
+//TODO: Fix order of headers in mobile
 //TODO: Fix tablet-sized overlap
 
 describe('Schedule Preview', () => {
