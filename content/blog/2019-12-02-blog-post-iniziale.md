@@ -1,10 +1,10 @@
 ---
 layout: post
 language: it
-date: 2019-11-20T18:22:58.392Z
-title: Blog 1
+date: 2019-12-02T15:13:12.561Z
+title: Blog Post Iniziale
 ---
-![Una palla](../../src/images/ball.jpg "Una palla")
+![Una Palla](/assets/ball.jpg)
 
 ## Prova
 
@@ -12,7 +12,7 @@ _prova_
 
 **prova**
 
-**_prova_**
+_**prova**_
 
 `code`
 

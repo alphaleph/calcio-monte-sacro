@@ -1,10 +1,10 @@
 ---
 layout: post
 language: en
-date: 2019-11-20T17:39:20.690Z
-title: Initial Test
+date: 2019-12-02T15:05:33.818Z
+title: Initial Blog Post
 ---
-![A soccer ball](../../src/images/ball.jpg "A soccer ball")
+![Soccer Ball on Field](/assets/ball.jpg)
 
 ## Testing
 
