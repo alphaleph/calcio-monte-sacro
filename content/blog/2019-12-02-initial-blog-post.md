@@ -4,7 +4,7 @@ language: en
 date: 2019-12-02T15:05:33.818Z
 title: Initial Blog Post
 ---
-
+![Soccer Ball on Field](/assets/ball.jpg)
 
 ## Testing
 
