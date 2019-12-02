@@ -23,7 +23,7 @@ const DATE_FUTURE = `${rawDateFuture.getDate()} ${getMonthAbrvEN(
     rawDateFuture.getMonth()
 )} ${rawDateFuture.getFullYear()}`;
 const TIME = `${rawDateFuture.getHours()}:${rawDateFuture.getMinutes()}`;
-const EMPTY_TEST_ID = 'empty';
+const EMPTY_TEST_ID = 'event-card-empty';
 
 //TODO: Error checks for incorrectly formatted input
 //TODO: Test cases for non-home venues

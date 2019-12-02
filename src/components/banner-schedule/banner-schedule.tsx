@@ -22,7 +22,7 @@ export const BannerSchedule = () => {
                     <div className="column is-half is-offset-one-quarter">
                         <Link to={`${SITE_URL}/schedule`}>
                             <button
-                                className="button is-fullwidth has-background-roma-gold has-text-black-main is-size-5 is"
+                                className="button is-fullwidth has-background-roma-gold has-text-black-main is-size-5"
                                 type="button"
                             >
                                 <strong>SEE FULL SCHEDULE</strong>
