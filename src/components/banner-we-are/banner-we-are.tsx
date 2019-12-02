@@ -16,17 +16,6 @@ export const BannerWeAre = () => {
                         <span
                             className={
                                 isLoaded
-                                    ? 'we-are-text'
-                                    : 'we-are-text is-transparent'
-                            }
-                        >
-                            We are...
-                        </span>
-                        <br />
-                        <br />
-                        <span
-                            className={
-                                isLoaded
                                     ? 'we-are-name is-family-secondary'
                                     : 'we-are-name is-transparent is-family-secondary'
                             }
