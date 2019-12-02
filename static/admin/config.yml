@@ -78,8 +78,7 @@ collections:
       - { name: "type", label: "Type", widget: "select", options: ["Practice", "Match"]}
       - { name: "title", label: "Title", widget: "string" }
       - { name: "venue", label: "Venue", widget: "string", default: "Parco Sannazzaro" }
-      - { name: "opposing_team", label: "Opposing Team", widget: "string", required: false }
-      - { name: "home", label: "Home", widget: "boolean", required: false }
+      - { name: "opposing_team", label: "Opposing Team", widget: "string", required: false, hint: "CMS2" }
       - { name: "score_ms", label: "Score (MS)", required: false, widget: "number", valueType: "int" }
       - { name: "score_other", label: "Score (Other)", required: false, widget: "number", valueType: "int" }
   - name: "schedule_it"
@@ -97,6 +96,5 @@ collections:
       - { name: "title", label: "Titolo", widget: "string" }
       - { name: "venue", label: "Sede", widget: "string", default: "Parco Sannazzaro" }
       - { name: "opposing_team", label: "Squadra Avversaria", widget: "string", required: false }
-      - { name: "home", label: "Di Casa", widget: "boolean", required: false }
       - { name: "score_ms", label: "Punteggio (MS)", widget: "number", valueType: "int", required: false }
       - { name: "score_other", label: "Punteggio (Altre)", widget: "number", valueType: "int", required: false }
