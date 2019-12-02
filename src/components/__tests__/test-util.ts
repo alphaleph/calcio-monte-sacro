@@ -58,7 +58,7 @@ export const mockScheduleDataNodes: MarkdownDataNode[] = [
                 type: 'Match',
                 venue: 'Parco Sannazzaro',
                 home: true,
-                opposing_team: 'Monte Sacro 2',
+                opposing_team: 'CMS2',
                 score_ms: 1,
                 score_other: 2,
                 date: '2019-11-20T02:15:50.939Z',
@@ -78,7 +78,7 @@ export const mockScheduleDataNodes: MarkdownDataNode[] = [
                 type: 'Partita',
                 venue: 'Parco Sannazzaro',
                 home: true,
-                opposing_team: 'Monte Sacro 2',
+                opposing_team: 'CMS2',
                 score_ms: 2,
                 score_other: 1,
                 date: '2019-11-20T02:15:58.097Z',
@@ -111,6 +111,258 @@ export const mockScheduleDataNodes: MarkdownDataNode[] = [
         },
     },
 ];
+
+export const mockOneFutureScheduleDataNodes: MarkdownDataNode[] = [
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro 1 vs Monte Sacro 2',
+                language: 'en',
+                type: 'Match',
+                venue: 'Parco Sannazzaro',
+                home: true,
+                opposing_team: 'CMS2',
+                score_ms: 1,
+                score_other: 2,
+                date: '2019-11-20T02:15:50.939Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2/',
+            },
+            html: '',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro 1 vs Monte Sacro 2',
+                language: 'it',
+                type: 'Partita',
+                venue: 'Parco Sannazzaro',
+                home: true,
+                opposing_team: 'CMS2',
+                score_ms: 2,
+                score_other: 1,
+                date: '2019-11-20T02:15:58.097Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2-1/',
+            },
+            html: '',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro Practice 1',
+                language: 'en',
+                type: 'Practice',
+                venue: 'Parco Sannazzaro',
+                home: null,
+                opposing_team: null,
+                score_ms: null,
+                score_other: null,
+                date: '2219-11-20T17:40:15.578Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2219-11-20-monte-sacro-practice-1/',
+            },
+            html: '',
+        },
+    },
+];
+
+export const mockTwoFutureScheduleDataNodes: MarkdownDataNode[] = [
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro 1 vs Monte Sacro 2',
+                language: 'en',
+                type: 'Match',
+                venue: 'Parco Sannazzaro',
+                home: true,
+                opposing_team: 'CMS2',
+                score_ms: 1,
+                score_other: 2,
+                date: '2019-11-20T02:15:50.939Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2/',
+            },
+            html: '',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro 1 vs Monte Sacro 2',
+                language: 'it',
+                type: 'Partita',
+                venue: 'Parco Sannazzaro',
+                home: true,
+                opposing_team: 'CMS2',
+                score_ms: 2,
+                score_other: 1,
+                date: '2219-11-20T02:15:58.097Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2-1/',
+            },
+            html: '',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Monte Sacro Practice 1',
+                language: 'en',
+                type: 'Practice',
+                venue: 'Parco Sannazzaro',
+                home: null,
+                opposing_team: null,
+                score_ms: null,
+                score_other: null,
+                date: '2219-11-20T17:40:15.578Z',
+                layout: 'schedule',
+            },
+            fields: {
+                slug: '/2019-11-20-monte-sacro-practice-1/',
+            },
+            html: '',
+        },
+    },
+];
+
+export const mockEventPracticeEN = {
+    node: {
+        frontmatter: {
+            title: 'Monte Sacro Practice 1',
+            language: 'en',
+            type: 'Practice',
+            venue: 'Parco Sannazzaro',
+            home: null,
+            opposing_team: null,
+            score_ms: null,
+            score_other: null,
+            date: '2019-11-20T17:40:15.578Z',
+            layout: 'schedule',
+        },
+        fields: {
+            slug: '/2019-11-20-monte-sacro-practice-1/',
+        },
+        html: '',
+    },
+};
+
+export const mockEventFinishedMatchEN = {
+    node: {
+        frontmatter: {
+            title: 'Monte Sacro 1 vs Monte Sacro 2',
+            language: 'en',
+            type: 'Match',
+            venue: 'Parco Sannazzaro',
+            home: true,
+            opposing_team: 'CMS2',
+            score_ms: 1,
+            score_other: 2,
+            date: '2019-11-20T17:40:15.578Z',
+            layout: 'schedule',
+        },
+        fields: {
+            slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2/',
+        },
+        html: '',
+    },
+};
+
+export const mockEventFutureMatchEN = {
+    node: {
+        frontmatter: {
+            title: 'Monte Sacro 1 vs Monte Sacro 2',
+            language: 'en',
+            type: 'Match',
+            venue: 'Parco Sannazzaro',
+            home: true,
+            opposing_team: 'CMS2',
+            score_ms: 1,
+            score_other: 2,
+            date: '2200-11-20T17:40:15.578Z',
+            layout: 'schedule',
+        },
+        fields: {
+            slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2/',
+        },
+        html: '',
+    },
+};
+
+export const mockEventPracticeIT = {
+    node: {
+        frontmatter: {
+            title: 'Monte Sacro 1 vs Monte Sacro 2',
+            language: 'it',
+            type: 'Allenamento',
+            venue: 'Parco Sannazzaro',
+            home: null,
+            opposing_team: null,
+            score_ms: null,
+            score_other: null,
+            date: '2019-11-20T17:40:15.578Z',
+            layout: 'schedule',
+        },
+        fields: {
+            slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2-1/',
+        },
+        html: '',
+    },
+};
+
+export const mockEventFinishedMatchIT = {
+    node: {
+        frontmatter: {
+            title: 'Monte Sacro 1 vs Monte Sacro 2',
+            language: 'it',
+            type: 'Partita',
+            venue: 'Parco Sannazzaro',
+            home: true,
+            opposing_team: 'CMS2',
+            score_ms: 1,
+            score_other: 2,
+            date: '2019-11-20T17:40:15.578Z',
+            layout: 'schedule',
+        },
+        fields: {
+            slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2-1/',
+        },
+        html: '',
+    },
+};
+
+export const mockEventFutureMatchIT = {
+    node: {
+        frontmatter: {
+            title: 'Monte Sacro 1 vs Monte Sacro 2',
+            language: 'it',
+            type: 'Partita',
+            venue: 'Parco Sannazzaro',
+            home: true,
+            opposing_team: 'CMS2',
+            score_ms: 1,
+            score_other: 2,
+            date: '2200-11-20T17:40:15.578Z',
+            layout: 'schedule',
+        },
+        fields: {
+            slug: '/2019-11-20-monte-sacro-1-vs-monte-sacro-2-1/',
+        },
+        html: '',
+    },
+};
 
 // //Update with new mocks
 // export const mockPostDataNodes: MarkdownDataNode[] = [

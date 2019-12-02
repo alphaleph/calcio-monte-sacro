@@ -3,17 +3,19 @@ import { MarkdownDataNode } from './types/index';
 /**@func findMostRecentlyPastIndex
  * Finds index of most recently past Markdown post. Implemented via a modified binary search.
  * @param {MarkdownDataNode[]} edges Array of Markdown nodes. Assumes dates are sorted in ASC order!
+ * @param {number} date Optional. Date from which to search.
  * @return {number} The index of the most recently past Markdown post. Returns -1 if current date is the earliest date.
  * @throws Error if edges size is 0.
  */
 export const findMostRecentlyPastIndex = (
-    edges: MarkdownDataNode[]
+    edges: MarkdownDataNode[],
+    date: number = Date.now()
 ): number => {
     if (edges.length === 0) {
         throw Error('Error: There are no Markdown nodes for searching!');
     }
 
-    const currDate = Date.now();
+    const currDate = date;
 
     // Case: Returns latest post if today is latest date
     // Case: Returns -1 if today is earliest date
@@ -93,4 +95,35 @@ export const lowestNeighborIndexBinarySearch = (
         }
     }
     return currIndex;
+};
+
+export const getMonthAbrvEN = (month: number): string => {
+    switch (month) {
+        case 0:
+            return 'JAN';
+        case 1:
+            return 'FEB';
+        case 2:
+            return 'MAR';
+        case 3:
+            return 'APR';
+        case 4:
+            return 'MAY';
+        case 5:
+            return 'JUN';
+        case 6:
+            return 'JUL';
+        case 7:
+            return 'AUG';
+        case 8:
+            return 'SEP';
+        case 9:
+            return 'OCT';
+        case 10:
+            return 'NOV';
+        case 11:
+            return 'DEC';
+        default:
+            return 'JAN';
+    }
 };
