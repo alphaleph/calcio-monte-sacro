@@ -41,7 +41,7 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
-                    // 'gatsby-remark-relative-images', //TODO: Reconfigure to allow for inline MD images?
+                    'gatsby-remark-relative-images', //TODO: Reconfigure to allow for inline MD images?
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
