@@ -47,9 +47,9 @@ export const PureSchedulePreview = ({
 };
 
 export const SchedulePreview = (props: SchedulePreviewOwnProps) => {
-    const { data }: MarkdownData = useStaticQuery(
+    const data: MarkdownData = useStaticQuery(
         graphql`
-            query query {
+            query {
                 allMarkdownRemark(
                     sort: { order: ASC, fields: frontmatter___date }
                     filter: { frontmatter: { layout: { eq: "schedule" } } }
