@@ -9,10 +9,8 @@ export interface TypeToElementMap {
 }
 
 export interface MarkdownData {
-    data: {
-        allMarkdownRemark: {
-            edges: MarkdownDataNode[];
-        };
+    allMarkdownRemark: {
+        edges: MarkdownDataNode[];
     };
 }
 
@@ -23,12 +21,12 @@ export interface MarkdownDataNode {
             layout: string;
             language: string;
             date: string;
-            type: string | null;
-            venue: string | null;
-            home: boolean | null;
-            opposing_team: string | null;
-            score_ms: number | null;
-            score_other: number | null;
+            banner_image?: string | null;
+            type?: string | null;
+            venue?: string | null;
+            opposing_team?: string | null;
+            score_ms?: number | null;
+            score_other?: number | null;
         };
         fields: {
             slug: string;

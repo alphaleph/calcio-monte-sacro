@@ -61,7 +61,6 @@ export const SchedulePreview = (props: SchedulePreviewOwnProps) => {
                                 language
                                 type
                                 venue
-                                home
                                 opposing_team
                                 score_ms
                                 score_other
