@@ -1,1 +1,10 @@
 @import '../../pages/globals.scss';
+
+.banner-schedule {
+    border-top: 1px solid $holy-yellow-team;
+    border-bottom: 1px solid $holy-yellow-team;
+}
+
+.banner-schedule-preview {
+    margin: 2rem 0rem;
+}
