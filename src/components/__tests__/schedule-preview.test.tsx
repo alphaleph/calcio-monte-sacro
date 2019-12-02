@@ -4,21 +4,23 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { mockScheduleDataNodes } from './test-util';
 
+//TODO: Fix tablet-sized overlap
+
 describe('Schedule Preview', () => {
     it('renders without crashing', () => {
         const { getByText } = render(
             <PureSchedulePreview events={mockScheduleDataNodes} />
         );
-        expect(getByText('Previous Event')).toBeInTheDocument();
-        expect(getByText('Upcoming Events')).toBeInTheDocument();
+        expect(getByText('PREVIOUS EVENT')).toBeInTheDocument();
+        expect(getByText('UPCOMING EVENTS')).toBeInTheDocument();
     });
 
     it('renders correctly', () => {
         const { getByText } = render(
             <PureSchedulePreview events={mockScheduleDataNodes} />
         );
-        expect(getByText('Previous Event')).toBeVisible();
-        expect(getByText('Upcoming Events')).toBeVisible();
+        expect(getByText('PREVIOUS EVENT')).toBeVisible();
+        expect(getByText('UPCOMING EVENTS')).toBeVisible();
     });
 
     it('has not changed', () => {

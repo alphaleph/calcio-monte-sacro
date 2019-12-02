@@ -1,27 +1,31 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-// import { EventCard } from '../event-card/event-card';
+import { EventCard } from '../event-card/event-card';
 import { MarkdownData, MarkdownDataNode } from '../../types/index';
 import { findMostRecentlyPastIndex } from '../../util';
 
-interface SchedulePreviewOwnProps {}
+interface SchedulePreviewOwnProps {
+    date?: number;
+}
 
-interface SchedulePreviewProps {
+interface SchedulePreviewProps extends SchedulePreviewOwnProps {
     events: MarkdownDataNode[];
 }
 
-export const PureSchedulePreview = (props: SchedulePreviewProps) => {
-    const mostRecentlyPastIndex = findMostRecentlyPastIndex(props.events);
+export const PureSchedulePreview = ({
+    events,
+    date = Date.now(),
+}: SchedulePreviewProps) => {
+    const mostRecentlyPastIndex = findMostRecentlyPastIndex(events, date);
     const previewScheduleData = [
-        props.events[mostRecentlyPastIndex],
-        props.events[mostRecentlyPastIndex + 1],
-        props.events[mostRecentlyPastIndex + 2],
+        events[mostRecentlyPastIndex],
+        events[mostRecentlyPastIndex + 1],
+        events[mostRecentlyPastIndex + 2],
     ];
-    console.log(previewScheduleData);
+
     const cardList = previewScheduleData.map((event, index) => (
         <div className="column is-one-third" key={index}>
-            <p>{event ? `rock` : `null`}</p>
-            {/* <EventCard event={event ? event : null} />; */}
+            <EventCard event={event ? event : null} />
         </div>
     ));
 
@@ -29,12 +33,12 @@ export const PureSchedulePreview = (props: SchedulePreviewProps) => {
         <section className="columns is-multiline">
             <div className="column is-one-third">
                 <h3 className="has-text-black-main is-size-5">
-                    <strong>Previous Event</strong>
+                    <strong>PREVIOUS EVENT</strong>
                 </h3>
             </div>
             <div className="column is-two-thirds">
                 <h3 className="has-text-black-main is-size-5">
-                    <strong>Upcoming Events</strong>
+                    <strong>UPCOMING EVENTS</strong>
                 </h3>
             </div>
             {cardList}
