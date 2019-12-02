@@ -3,7 +3,7 @@ backend:
   branch: master
 
 media_folder: src/images
-public_folder: /src/images
+public_folder: images
 
 site_url: https://www.calciomontesacro.com
 
