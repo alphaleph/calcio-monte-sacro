@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Schedule Preview has not changed 1`] = `
+<DocumentFragment>
+  <section
+    class="columns is-multiline"
+  >
+    <div
+      class="column is-one-third"
+    >
+      <h3
+        class="has-text-black-main is-size-5"
+      >
+        <strong>
+          PREVIOUS EVENT
+        </strong>
+      </h3>
+    </div>
+    <div
+      class="column is-two-thirds"
+    >
+      <h3
+        class="has-text-black-main is-size-5"
+      >
+        <strong>
+          UPCOMING EVENTS
+        </strong>
+      </h3>
+    </div>
+    <div
+      class="column is-one-third"
+    >
+      <article
+        class="event-card-container container"
+      >
+        <header
+          class="event-card-header"
+        >
+          <p>
+            20 NOV 2019
+          </p>
+          <p
+            class="has-text-weight-light"
+          >
+            Parco Sannazzaro
+          </p>
+        </header>
+        <section
+          class="event-card-info has-text-centered columns is-mobile is-vcentered"
+        >
+          <div
+            class="column practice-info"
+          >
+            <p>
+              PRACTICE
+            </p>
+            <p
+              class="has-text-team-holy"
+            >
+              12:40
+            </p>
+          </div>
+        </section>
+      </article>
+    </div>
+    <div
+      class="column is-one-third"
+    >
+      <article
+        class="event-card-container container"
+        data-testid="empty"
+      />
+    </div>
+    <div
+      class="column is-one-third"
+    >
+      <article
+        class="event-card-container container"
+        data-testid="empty"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;
