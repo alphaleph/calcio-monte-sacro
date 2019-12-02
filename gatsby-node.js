@@ -21,34 +21,34 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     }
 };
 
-exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions;
-    const result = await graphql(`
-        query {
-            allMarkdownRemark {
-                edges {
-                    node {
-                        frontmatter {
-                            layout
-                        }
-                        fields {
-                            slug
-                        }
-                    }
-                }
-            }
-        }
-    `);
+// exports.createPages = async ({ graphql, actions }) => {
+//     const { createPage } = actions;
+//     const result = await graphql(`
+//         query {
+//             allMarkdownRemark {
+//                 edges {
+//                     node {
+//                         frontmatter {
+//                             layout
+//                         }
+//                         fields {
+//                             slug
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     `);
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.layout === 'post') {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve(`./src/pages/post.tsx`),
-                context: {
-                    slug: node.fields.slug,
-                },
-            });
-        }
-    });
-};
+//     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+//         if (node.layout === 'post') {
+//             createPage({
+//                 path: node.fields.slug,
+//                 component: path.resolve(`./src/pages/post.tsx`),
+//                 context: {
+//                     slug: node.fields.slug,
+//                 },
+//             });
+//         }
+//     });
+// };
