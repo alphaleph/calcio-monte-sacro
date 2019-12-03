@@ -4,7 +4,7 @@ post_type: blog
 language: en
 date: 2019-12-02T19:28:45.087Z
 title: Test Blog Plain
-banner-image: cms-icon.png
+banner-image: /cms-icon.png
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris pharetra purus non nulla pharetra, sit amet faucibus quam pellentesque. Vivamus auctor, tellus in finibus placerat, elit eros gravida nisl, sit amet laoreet nulla magna non augue. Morbi volutpat, nibh ac pellentesque congue, felis velit commodo quam, at scelerisque justo arcu et ex. Morbi eget sem placerat, luctus est quis, vulputate tortor. Curabitur ut iaculis lacus, eu pellentesque lacus. Fusce bibendum est id lorem finibus, quis aliquam lacus ultrices. Praesent condimentum pharetra purus et sagittis. Vivamus fermentum molestie congue. Cras dictum in orci eu auctor. Mauris tristique quam quis sem dictum, in rhoncus metus venenatis. Phasellus maximus ex vitae elit sodales tempus. Sed suscipit ex non ex viverra eleifend.
 
