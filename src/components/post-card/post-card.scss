@@ -1,0 +1,52 @@
+@import '../../pages/globals.scss';
+
+.post-card-container {
+    position: relative;
+    min-width: 280px;
+    min-height: 280px;
+    background-color: $black-main;
+    color: $white-main;
+    border-radius: 1px;
+}
+
+.post-card-header {
+    height: 65%;
+    padding: 0rem;
+}
+
+.post-card-info {
+    height: 30%;
+    padding: .75rem;
+}
+
+.post-card-footer {
+    padding: .75rem;
+}
+
+.post-card-title {
+    font-size: 1.5rem;
+    color: $white-main;
+    font-weight: bold;
+}
+
+.post-card-excerpt {
+    font-size: 1rem;
+    color: $granite-grey-team-invert;
+}
+
+.post-card-date {
+    font-size: .9rem;
+    color: $granite-grey-team-invert;
+}
+
+// @media screen and (min-width: 1023px) {
+//     .team-info {
+//         font-size: 2rem;
+//     }
+//     .match-info {
+//         font-size: 2.5rem;
+//     }
+//     .practice-info {
+//         font-size: 2.5rem;
+//     }
+// }

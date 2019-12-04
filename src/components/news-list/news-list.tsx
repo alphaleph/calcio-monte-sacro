@@ -33,6 +33,21 @@ export const NewsList = ({ size = 3 }: NewsListProps) => {
                                 slug
                             }
                             html
+                            excerpt(format: PLAIN)
+                        }
+                    }
+                }
+                allImageSharp {
+                    edges {
+                        node {
+                            fluid(maxWidth: 1024) {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                sizes
+                                originalName
+                            }
                         }
                     }
                 }
@@ -40,5 +55,11 @@ export const NewsList = ({ size = 3 }: NewsListProps) => {
         `
     );
 
-    return <PostsList posts={data.allMarkdownRemark.edges} size={size} />;
+    return (
+        <PostsList
+            posts={data.allMarkdownRemark.edges}
+            size={size}
+            images={data.allImageSharp.edges}
+        />
+    );
 };
