@@ -12,6 +12,9 @@ export interface MarkdownData {
     allMarkdownRemark: {
         edges: MarkdownDataNode[];
     };
+    allImageSharp?: {
+        edges: FluidImageDataNode[];
+    };
 }
 
 export interface MarkdownDataNode {
@@ -32,5 +35,19 @@ export interface MarkdownDataNode {
             slug: string;
         };
         html: string;
+        excerpt?: string | null;
+    };
+}
+
+export interface FluidImageDataNode {
+    node: {
+        fluid: {
+            base64: string;
+            aspectRatio: number;
+            src: string;
+            srcSet: string;
+            sizes: string;
+            originalName: string;
+        };
     };
 }
