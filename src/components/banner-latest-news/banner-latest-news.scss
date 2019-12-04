@@ -5,6 +5,12 @@
     border-bottom: 1px solid $holy-yellow-team;
 }
 
-.banner-news-list {
+.banner-latest-news-list {
     margin: 2rem 0rem;
+}
+
+.banner-latest-news-button:hover,
+.banner-latest-news-button:focus {
+    color: $holy-yellow-team;
+    text-decoration: underline 2px;
 }

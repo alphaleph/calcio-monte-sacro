@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Layout } from '../components/layout/layout';
-import { Image } from '../components/image/image';
 import { SEO } from '../components/seo/seo';
 import { BannerWeAre } from '../components/banner-we-are/banner-we-are';
 import { BannerSchedule } from '../components/banner-schedule/banner-schedule';
+import { BannerLatestNews } from '../components/banner-latest-news/banner-latest-news';
 import './index.scss';
 
 const IndexPage = () => {
@@ -13,9 +13,7 @@ const IndexPage = () => {
             <SEO title="Home" />
             <BannerWeAre />
             <BannerSchedule />
-            <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                <Image />
-            </div>
+            <BannerLatestNews />
             <Link to="/page-2/">Go to page 2</Link>
         </Layout>
     );

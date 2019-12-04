@@ -8,3 +8,9 @@
 .banner-schedule-preview {
     margin: 2rem 0rem;
 }
+
+.banner-schedule-button:hover,
+.banner-schedule-button:focus {
+    color: $holy-yellow-team;
+    text-decoration: underline 2px;
+}

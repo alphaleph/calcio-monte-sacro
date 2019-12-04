@@ -9,6 +9,11 @@
     border-radius: 1px;
 }
 
+.post-card-container:hover .post-card-info,
+.post-card-container:focus .post-card-info {
+    text-decoration: underline $holy-yellow-team;
+}
+
 .post-card-header {
     height: 65%;
     padding: 0rem;
