@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Latest News has not changed 1`] = `
+<DocumentFragment>
+  <section
+    class="banner-latest-news section has-background-beige-main is-bold"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="title is-family-secondary has-text-black-main is-2"
+      >
+        LATEST NEWS
+      </h2>
+      <div
+        class="banner-latest-news-list"
+      >
+        <section
+          class="columns is-multiline"
+          data-testid="posts-list"
+        >
+          <div
+            class="column is-one-third"
+          >
+            <a
+              data-testid="post-card-link"
+              href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-banner/"
+            >
+              <article
+                class="post-card-container container"
+              >
+                <header
+                  class="post-card-header"
+                >
+                  <div
+                    class=" gatsby-image-wrapper"
+                    style="position: relative; overflow: hidden;"
+                  >
+                    <div
+                      style="width: 100%; padding-bottom: 100%;"
+                    />
+                    <img
+                      alt=""
+                      src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABnzaYEjRf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAIBAxESE//aAAgBAQABBQKq5kN8i3vEZ1OanJT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BrT//xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIS/9oACAECAQE/AXUm5P/EABoQAAICAwAAAAAAAAAAAAAAAAEQACEREjH/2gAIAQEABj8CriwJqBT/AP/EABwQAQACAQUAAAAAAAAAAAAAAAEAETEhQVGRof/aAAgBAQABPyEBMkWrZbzQhagFmWbey7nuf//aAAwDAQACAAMAAAAQnP8A/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/ELCf/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAExYf/aAAgBAgEBPxCyjR//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUGB/9oACAEBAAE/ELMkKcyMyefYaScCCbHgvdIjFZZ5HXnyP//Z"
+                      style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; transition-delay: 500ms;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 1024px) 100vw, 1024px"
+                        srcset="/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,
+/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,
+/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,
+/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,
+/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,
+/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w"
+                      />
+                      <img
+                        alt=""
+                        loading="lazy"
+                        sizes="(max-width: 1024px) 100vw, 1024px"
+                        src="/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg"
+                        srcset="/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,
+/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,
+/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,
+/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,
+/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,
+/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w"
+                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+                      />
+                    </picture>
+                    <noscript>
+                      &lt;picture&gt;&lt;source srcset="/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,
+/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,
+/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,
+/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,
+/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,
+/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w" sizes="(max-width: 1024px) 100vw, 1024px" /&gt;&lt;img loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" srcset="/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,
+/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,
+/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,
+/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,
+/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,
+/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w" src="/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                    </noscript>
+                  </div>
+                </header>
+                <section
+                  class="post-card-info"
+                >
+                  <p
+                    class="post-card-title"
+                  >
+                    Notizie Prova Banner
+                  </p>
+                  <p
+                    class="post-card-excerpt"
+                  >
+                    Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum…
+                  </p>
+                </section>
+                <footer
+                  class="post-card-footer"
+                >
+                  <p
+                    class="post-card-date"
+                  >
+                    2 DEC 2019
+                  </p>
+                </footer>
+              </article>
+            </a>
+          </div>
+          <div
+            class="column is-one-third"
+          >
+            <a
+              data-testid="post-card-link"
+              href="https://www.calciomontesacro.com/news/2019-12-02-test-news-image/"
+            >
+              <article
+                class="post-card-container container"
+              >
+                <header
+                  class="post-card-header"
+                >
+                  <div
+                    class=" gatsby-image-wrapper"
+                    style="position: relative; overflow: hidden;"
+                  >
+                    <div
+                      style="width: 100%; padding-bottom: 100%;"
+                    />
+                    <img
+                      alt=""
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC"
+                      style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; transition-delay: 500ms;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                      />
+                      <img
+                        alt=""
+                        loading="lazy"
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+                      />
+                    </picture>
+                    <noscript>
+                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                    </noscript>
+                  </div>
+                </header>
+                <section
+                  class="post-card-info"
+                >
+                  <p
+                    class="post-card-title"
+                  >
+                    Test News Image
+                  </p>
+                  <p
+                    class="post-card-excerpt"
+                  >
+                    Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus…
+                  </p>
+                </section>
+                <footer
+                  class="post-card-footer"
+                >
+                  <p
+                    class="post-card-date"
+                  >
+                    2 DEC 2019
+                  </p>
+                </footer>
+              </article>
+            </a>
+          </div>
+          <div
+            class="column is-one-third"
+          >
+            <a
+              data-testid="post-card-link"
+              href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-immagine/"
+            >
+              <article
+                class="post-card-container container"
+              >
+                <header
+                  class="post-card-header"
+                >
+                  <div
+                    class=" gatsby-image-wrapper"
+                    style="position: relative; overflow: hidden;"
+                  >
+                    <div
+                      style="width: 100%; padding-bottom: 100%;"
+                    />
+                    <img
+                      alt=""
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC"
+                      style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; transition-delay: 500ms;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                      />
+                      <img
+                        alt=""
+                        loading="lazy"
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+                      />
+                    </picture>
+                    <noscript>
+                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                    </noscript>
+                  </div>
+                </header>
+                <section
+                  class="post-card-info"
+                >
+                  <p
+                    class="post-card-title"
+                  >
+                    Notizie Prova Immagine
+                  </p>
+                  <p
+                    class="post-card-excerpt"
+                  >
+                    Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus…
+                  </p>
+                </section>
+                <footer
+                  class="post-card-footer"
+                >
+                  <p
+                    class="post-card-date"
+                  >
+                    2 DEC 2019
+                  </p>
+                </footer>
+              </article>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div
+        class="columns"
+      >
+        <div
+          class="column is-half is-offset-one-quarter"
+        >
+          <a
+            class="banner-latest-news-button"
+            href="https://www.calciomontesacro.com/news"
+          >
+            <button
+              class="button is-fullwidth has-background-roma-red has-text-white-main is-size-5"
+              type="button"
+            >
+              <strong>
+                SEE MORE NEWS
+              </strong>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
