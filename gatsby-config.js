@@ -37,6 +37,8 @@ module.exports = {
                 path: `${__dirname}/content/schedule`,
             },
         },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -51,8 +53,6 @@ module.exports = {
                 ],
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         `gatsby-plugin-netlify-cms`,
         {
             resolve: `gatsby-plugin-manifest`,

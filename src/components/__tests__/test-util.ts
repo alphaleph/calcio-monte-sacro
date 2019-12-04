@@ -49,6 +49,277 @@ export const mockFixedImageData = {
     },
 };
 
+export const mockFluidImageDataNodes = [
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC',
+                aspectRatio: 1,
+                src:
+                    '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
+                srcSet:
+                    '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                sizes: '(max-width: 512px) 100vw, 512px',
+                originalName: 'cms-icon.png',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAACYklEQVQ4y42Uy28SQRjA+dM8efDmwYN6qF6qiSY+Y/WgQRMibY00TaWNBSRSCraYQtHl/bR0KyxQWCgWWAqU8izl/Sq7rLNsRHlVJpvJtzPfb77nDIOcZHSoqZSrp4+KtXIziubaLRysMCZiCYqOoVnhjNEi8RcztdxxeTzc6VBfT+5O2Vhpb+vw4wMdZ0ppWvP9xzLeJoDNThf2W+Nz1+XzNxQubSToSKKW+BDc+WOnkshhSVgeCiGpViZMEg1oxc26Knt+ae3bEtJTZwzE1kXLccG0+sOOlrcvZXvsczPkITfsa20vwIKnhsh+BnjUarT74Gb13CY7KBVJMv3z4N1NszQYsMWM62HNrCis/GxXn0iYls23uz5LPBcv0bH8hUH2XRoM85ySXv7JBtO87jMIvWq+H5GoYIHCLA1ZxD6Qap3Ak8IKfW7TJ50lK6uP9E6RgndHaODtCJ6Z5RyHfnE7j6gRbcKlCYNSt+rtETHTpUGgEP8FYmdNqd/Mo7aiVWTfuH2L9xASvfxxlqr01EYkrJszvNkgW9bH0OuFr+99m+y9IOeyU6zIp/Hubp/yMEztlzFPwOhdvq+nIoS1JNn4t2sugCmVsDvPe2KKolnZLCxhOcAKQRDDXTQaVi46lqYhIBwHTrl3oWqhMRDtaJge37lOBMKo4tfbqhVX0J7snTsWps8uZWuoOQY6CcjpSIF55UvmqNgr5wUwtV1IVdnXtnSfPEB2qjDNqnvczRl0m+j6Jn5lXb6nAQJqinmN0ZEBj03YLzghY8PnTRz80o/GRJZpOLCb0PM9BN7pvUEjx28V00WUg9jIVwAAAABJRU5ErkJggg==',
+                aspectRatio: 1,
+                src:
+                    '/static/6d91c86c0fde632ba4cd01062fd9ccfa/af144/gatsby-astronaut.png',
+                srcSet:
+                    '/static/6d91c86c0fde632ba4cd01062fd9ccfa/0cc6a/gatsby-astronaut.png 256w,\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/774d6/gatsby-astronaut.png 512w,\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/af144/gatsby-astronaut.png 800w',
+                sizes: '(max-width: 800px) 100vw, 800px',
+                originalName: 'gatsby-astronaut.png',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAHCguANmL//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRFBITIf/aAAgBAQABBQKvJXbGgR3FcZH/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAXEQADAQAAAAAAAAAAAAAAAAAAARMC/9oACAECAQE/AaMpo//EABoQAAICAwAAAAAAAAAAAAAAAAABESAxQZH/2gAIAQEABj8Cls1wzT//xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMVGB8P/aAAgBAQABPyGOo3bobsKGs692MDeCZ//aAAwDAQACAAMAAAAQaB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8QuK//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCIf//EABsQAQEBAAMBAQAAAAAAAAAAAAERACExQWGR/9oACAEBAAE/EGq1wmPPxzQE05Ff25iqIzkcMSHWALHZ7qKz193/2Q==',
+                aspectRatio: 1.5,
+                src: '/static/5de83d4780d151558333d53839ea81ea/426ce/net.jpg',
+                srcSet:
+                    '/static/5de83d4780d151558333d53839ea81ea/e5b28/net.jpg 256w,\n/static/5de83d4780d151558333d53839ea81ea/160a1/net.jpg 512w,\n/static/5de83d4780d151558333d53839ea81ea/426ce/net.jpg 1024w,\n/static/5de83d4780d151558333d53839ea81ea/5bc26/net.jpg 1536w,\n/static/5de83d4780d151558333d53839ea81ea/3d25e/net.jpg 2048w,\n/static/5de83d4780d151558333d53839ea81ea/d1eb0/net.jpg 2976w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'net.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHKaoJFD//EABcQAAMBAAAAAAAAAAAAAAAAAAABIDH/2gAIAQEAAQUCNcf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhIDFx/9oACAEBAAE/IQrQv2FN1u5kQ4f/2gAMAwEAAgADAAAAEAMP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBAAAgICAwAAAAAAAAAAAAAAAREAMUGBUWGR/9oACAEBAAE/EAowCNF5mUEATVHUZ46cBOZqOf/Z',
+                aspectRatio: 1.5045135406218655,
+                src:
+                    '/static/39a19f9057bc6d1c5c2a1cd1ee03ecc2/426ce/balance.jpg',
+                srcSet:
+                    '/static/39a19f9057bc6d1c5c2a1cd1ee03ecc2/e5b28/balance.jpg 256w,\n/static/39a19f9057bc6d1c5c2a1cd1ee03ecc2/160a1/balance.jpg 512w,\n/static/39a19f9057bc6d1c5c2a1cd1ee03ecc2/426ce/balance.jpg 1024w,\n/static/39a19f9057bc6d1c5c2a1cd1ee03ecc2/5bc26/balance.jpg 1536w,\n/static/39a19f9057bc6d1c5c2a1cd1ee03ecc2/3d25e/balance.jpg 2048w,\n/static/39a19f9057bc6d1c5c2a1cd1ee03ecc2/7146c/balance.jpg 3000w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'balance.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABnzaYEjRf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAIBAxESE//aAAgBAQABBQKq5kN8i3vEZ1OanJT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BrT//xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIS/9oACAECAQE/AXUm5P/EABoQAAICAwAAAAAAAAAAAAAAAAEQACEREjH/2gAIAQEABj8CriwJqBT/AP/EABwQAQACAQUAAAAAAAAAAAAAAAEAETEhQVGRof/aAAgBAQABPyEBMkWrZbzQhagFmWbey7nuf//aAAwDAQACAAMAAAAQnP8A/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/ELCf/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAExYf/aAAgBAgEBPxCyjR//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUGB/9oACAEBAAE/ELMkKcyMyefYaScCCbHgvdIjFZZ5HXnyP//Z',
+                aspectRatio: 1.5,
+                src: '/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg',
+                srcSet:
+                    '/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,\n/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,\n/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,\n/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,\n/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,\n/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'ball.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGAv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABZalN5tITYf/EABoQAAIDAQEAAAAAAAAAAAAAAAADAhITFCL/2gAIAQEAAQUCVHzUoazN2nQ4/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Bqv/EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8BqWv/xAAdEAABAgcAAAAAAAAAAAAAAAAAATMCEBEhMTKB/9oACAEBAAY/Ar05LBso5EOKf//EAB0QAAICAQUAAAAAAAAAAAAAAAABESEQMUGRwdH/2gAIAQEAAT8hQknIOW0jt5EnTmK+zE//2gAMAwEAAgADAAAAEIf/AP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EIQ//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QEP/EABsQAQACAgMAAAAAAAAAAAAAAAEAESExQWGR/9oACAEBAAE/EHxpNBxCNgoaSBaj4iSjXCkVAwGoUrj7n//Z',
+                aspectRatio: 1.5,
+                src:
+                    '/static/48261f5f71b97aba3e7fe412fd40b637/426ce/early-morning-practice.jpg',
+                srcSet:
+                    '/static/48261f5f71b97aba3e7fe412fd40b637/e5b28/early-morning-practice.jpg 256w,\n/static/48261f5f71b97aba3e7fe412fd40b637/160a1/early-morning-practice.jpg 512w,\n/static/48261f5f71b97aba3e7fe412fd40b637/426ce/early-morning-practice.jpg 1024w,\n/static/48261f5f71b97aba3e7fe412fd40b637/5bc26/early-morning-practice.jpg 1536w,\n/static/48261f5f71b97aba3e7fe412fd40b637/3d25e/early-morning-practice.jpg 2048w,\n/static/48261f5f71b97aba3e7fe412fd40b637/2728f/early-morning-practice.jpg 5184w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'early-morning-practice.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAScc8Hgm/8QAGRAAAgMBAAAAAAAAAAAAAAAAAQIAAxES/9oACAEBAAEFAqwoDNobOjUBC86n/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQMBAT8Bqv/EABYRAAMAAAAAAAAAAAAAAAAAABARIf/aAAgBAgEBPwGMf//EABoQAAICAwAAAAAAAAAAAAAAAAABQZEQIjH/2gAIAQEABj8CiyLHqjrz/8QAGxABAAEFAQAAAAAAAAAAAAAAAQARITFRcUH/2gAIAQEAAT8hVUXTc2Rt5jy2+oOJkiPk5J//2gAMAwEAAgADAAAAEN8//8QAFhEBAQEAAAAAAAAAAAAAAAAAABEx/9oACAEDAQE/EMVT/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERQf/aAAgBAgEBPxDBUP/EABwQAQADAQADAQAAAAAAAAAAAAEAESExQYGRof/aAAgBAQABPxDHuqhvfUt2aACrnnkHdr7r4ypAQI1v5HkpVyz1p//Z',
+                aspectRatio: 1.5222685036847163,
+                src:
+                    '/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg',
+                srcSet:
+                    '/static/bb6bf146d74b5445837161faebc4db04/e5b28/foosball.jpg 256w,\n/static/bb6bf146d74b5445837161faebc4db04/160a1/foosball.jpg 512w,\n/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg 1024w,\n/static/bb6bf146d74b5445837161faebc4db04/5bc26/foosball.jpg 1536w,\n/static/bb6bf146d74b5445837161faebc4db04/3d25e/foosball.jpg 2048w,\n/static/bb6bf146d74b5445837161faebc4db04/0f7e5/foosball.jpg 4751w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'foosball.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/2gAMAwEAAhADEAAAAaPex2liodSrnn5HOomF3FgYDP/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDEwQQEiL/2gAIAQEAAQUCAueDCKiImpVE5FbVB8LMwp9nyMlF3Jbv/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwFf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxAR/9oACAECAQE/AXLyEtRYb//EABoQAAICAwAAAAAAAAAAAAAAAAABEDERIEH/2gAIAQEABj8CKhPrhinBev8A/8QAGxAAAwADAQEAAAAAAAAAAAAAAAERITFBYRD/2gAIAQEAAT8hboV6GNGoypaC/VGwFcIcb4LcdMf4hI0pKIfRKXV4LP3/2gAMAwEAAgADAAAAEJfawPwf/8QAFxEBAAMAAAAAAAAAAAAAAAAAARAgIf/aAAgBAwEBPxBYTaf/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAQ/9oACAECAQE/ECSTKlyTMEC9/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFBEGGh4fH/2gAIAQEAAT8QuqXUHUMxC4ORhmAsJfEq9rqW4Q6X6gnQE1sIObd7Gtc3fEvNatfqB06K38lWsoGephsfH//Z',
+                aspectRatio: 0.5624368048533872,
+                src:
+                    '/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg',
+                srcSet:
+                    '/static/2e7396dc6a2652a0267c8daa3a97b55e/e5b28/aerial-view.jpg 256w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/160a1/aerial-view.jpg 512w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg 1024w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/5bc26/aerial-view.jpg 1536w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/3d25e/aerial-view.jpg 2048w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/7f7b1/aerial-view.jpg 2225w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'aerial-view.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHKuJY0ScD/AP/EABoQAQEAAwEBAAAAAAAAAAAAAAEAAgMRBCL/2gAIAQEAAQUCCwx+eMehjYkbOX//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/Aahj/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQIBAT8Bqv/EABkQAQADAQEAAAAAAAAAAAAAAAABETFBcf/aAAgBAQAGPwJrkqpPjH//xAAdEAEAAgAHAAAAAAAAAAAAAAABABEhMUFRYXHR/9oACAEBAAE/ITgJRjrjBMnmuUbDuVPekUep/9oADAMBAAIAAwAAABCzD//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EDH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPxCtf//EABoQAQEBAQEBAQAAAAAAAAAAAAERACExYXH/2gAIAQEAAT8Q4tF2vFA/RwKljIjQ0KRDH9xYqhcsnc4Ja30b/9k=',
+                aspectRatio: 1.5001532332209624,
+                src:
+                    '/static/a37676f93156f8bd9077ea4462c9628b/426ce/evening-practice.jpg',
+                srcSet:
+                    '/static/a37676f93156f8bd9077ea4462c9628b/e5b28/evening-practice.jpg 256w,\n/static/a37676f93156f8bd9077ea4462c9628b/160a1/evening-practice.jpg 512w,\n/static/a37676f93156f8bd9077ea4462c9628b/426ce/evening-practice.jpg 1024w,\n/static/a37676f93156f8bd9077ea4462c9628b/5bc26/evening-practice.jpg 1536w,\n/static/a37676f93156f8bd9077ea4462c9628b/3d25e/evening-practice.jpg 2048w,\n/static/a37676f93156f8bd9077ea4462c9628b/66ac6/evening-practice.jpg 4895w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'evening-practice.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHGvNmIDif/xAAZEAADAAMAAAAAAAAAAAAAAAAAAQIQERL/2gAIAQEAAQUCRczoTOsf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAwADAAAAAAAAAAAAAAAAAAEQEjEy/9oACAEBAAY/AhYzSOVP/8QAGxAAAwACAwAAAAAAAAAAAAAAAAERECFBUXH/2gAIAQEAAT8hSsVpdm7hC5vSGNXSP//aAAwDAQACAAMAAAAQG9//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EFbb/8QAHRABAQACAQUAAAAAAAAAAAAAAREAURAhYXGR0f/aAAgBAQABPxAzFhvHyBFrXfbjr/sMQSXgfuNMv//Z',
+                aspectRatio: 1.5,
+                src:
+                    '/static/18da384b3c581c145d6901e0c5044d84/426ce/night-rain-soccer.jpg',
+                srcSet:
+                    '/static/18da384b3c581c145d6901e0c5044d84/e5b28/night-rain-soccer.jpg 256w,\n/static/18da384b3c581c145d6901e0c5044d84/160a1/night-rain-soccer.jpg 512w,\n/static/18da384b3c581c145d6901e0c5044d84/426ce/night-rain-soccer.jpg 1024w,\n/static/18da384b3c581c145d6901e0c5044d84/5bc26/night-rain-soccer.jpg 1536w,\n/static/18da384b3c581c145d6901e0c5044d84/3d25e/night-rain-soccer.jpg 2048w,\n/static/18da384b3c581c145d6901e0c5044d84/2728f/night-rain-soccer.jpg 5184w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'night-rain-soccer.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAID/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAGWOuYQn//EABwQAAEDBQAAAAAAAAAAAAAAABEAAQIDEiEiMf/aAAgBAQABBQJYNqJqR2eXf//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AUf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQIBAT8BjL//xAAaEAACAgMAAAAAAAAAAAAAAAAAAQIQEUGB/9oACAEBAAY/AjG6URy5X//EABsQAAMAAgMAAAAAAAAAAAAAAAABESExQWFx/9oACAEBAAE/IcKXwaGg6jKImu5A05n/2gAMAwEAAgADAAAAEGgv/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAgBAwEBPxCKCWaf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxAv/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFRwXGR4f/aAAgBAQABPxBRS2ntEtIgtDZG77LMWPKclvUvMDsYM2sJBt4Q6n//2Q==',
+                aspectRatio: 1.5,
+                src:
+                    '/static/bbee0bd318376d2e807883f6b7034576/426ce/sportsmanship.jpg',
+                srcSet:
+                    '/static/bbee0bd318376d2e807883f6b7034576/e5b28/sportsmanship.jpg 256w,\n/static/bbee0bd318376d2e807883f6b7034576/160a1/sportsmanship.jpg 512w,\n/static/bbee0bd318376d2e807883f6b7034576/426ce/sportsmanship.jpg 1024w,\n/static/bbee0bd318376d2e807883f6b7034576/5bc26/sportsmanship.jpg 1536w,\n/static/bbee0bd318376d2e807883f6b7034576/3d25e/sportsmanship.jpg 2048w,\n/static/bbee0bd318376d2e807883f6b7034576/0b354/sportsmanship.jpg 6000w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'sportsmanship.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAZABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgT/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/aAAwDAQACEAMQAAABZTFeZlAKLoktMjNX/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECEBESIf/aAAgBAQABBQIXqqNcijiwlf8A/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BiT//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwEp/8QAGBAAAgMAAAAAAAAAAAAAAAAAABEBEDD/2gAIAQEABj8CHFrD/8QAGxAAAwACAwAAAAAAAAAAAAAAAAEREDEgQXH/2gAIAQEAAT8hg6VoZCEyNLuEwShLSPXB/9oADAMBAAIAAwAAABAbJX3/xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EKUhjGP/xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8Q2CZ//8QAHBABAAICAwEAAAAAAAAAAAAAAQARMVEQIZFx/9oACAEBAAE/EJSCysYSSRXXD0CW439ITcydMTMAoNEpp5MfYYeP/9k=',
+                aspectRatio: 0.8,
+                src:
+                    '/static/c3fa6ec414f7e7ca3b5026c0c17c8749/426ce/shoes-in-air.jpg',
+                srcSet:
+                    '/static/c3fa6ec414f7e7ca3b5026c0c17c8749/e5b28/shoes-in-air.jpg 256w,\n/static/c3fa6ec414f7e7ca3b5026c0c17c8749/160a1/shoes-in-air.jpg 512w,\n/static/c3fa6ec414f7e7ca3b5026c0c17c8749/426ce/shoes-in-air.jpg 1024w,\n/static/c3fa6ec414f7e7ca3b5026c0c17c8749/5bc26/shoes-in-air.jpg 1536w,\n/static/c3fa6ec414f7e7ca3b5026c0c17c8749/3d25e/shoes-in-air.jpg 2048w,\n/static/c3fa6ec414f7e7ca3b5026c0c17c8749/a687a/shoes-in-air.jpg 4860w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'shoes-in-air.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABzCdooNkn/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAERIjL/2gAIAQEAAQUCaJELm5rP/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BV//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAQADAAAAAAAAAAAAAAAAAAABIDH/2gAIAQEABj8CpDX/xAAcEAACAgIDAAAAAAAAAAAAAAAAAREhQVFhcYH/2gAIAQEAAT8hZ2WJsh6EnwxUEoq+SPM//9oADAMBAAIAAwAAABDjP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/EKP/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxBJ/8QAGxABAAMBAAMAAAAAAAAAAAAAAQARQSExkcH/2gAIAQEAAT8QMFcIImXEoQvAH2JtX9TZRwcgmUEMNYBK4XP/2Q==',
+                aspectRatio: 1.5,
+                src:
+                    '/static/8f926be163a432c548c20aa3a476a540/426ce/over-here.jpg',
+                srcSet:
+                    '/static/8f926be163a432c548c20aa3a476a540/e5b28/over-here.jpg 256w,\n/static/8f926be163a432c548c20aa3a476a540/160a1/over-here.jpg 512w,\n/static/8f926be163a432c548c20aa3a476a540/426ce/over-here.jpg 1024w,\n/static/8f926be163a432c548c20aa3a476a540/5bc26/over-here.jpg 1536w,\n/static/8f926be163a432c548c20aa3a476a540/3d25e/over-here.jpg 2048w,\n/static/8f926be163a432c548c20aa3a476a540/2728f/over-here.jpg 5184w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'over-here.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAQBAgMFBv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAegFqo2IlaqueOZQk0//xAAcEAADAAEFAAAAAAAAAAAAAAAAAQITAwQQESH/2gAIAQEAAQUC5yozyPcE6dl9wZhX46Gkf//EABYRAAMAAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwEr/8QAFxEBAQEBAAAAAAAAAAAAAAAAABEBEv/aAAgBAgEBPwFHWq//xAAaEAACAgMAAAAAAAAAAAAAAAAAMQIhEBEg/9oACAEBAAY/AuaiMvYso//EAB0QAAICAgMBAAAAAAAAAAAAAAABETFhoRAhcZH/2gAIAQEAAT8h5yr6dsSQOxejdQ0JVZ6EhchInkbdT//aAAwDAQACAAMAAAAQPBE9/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAQ/9oACAEDAQE/EGG//8QAFxEBAQEBAAAAAAAAAAAAAAAAABEBIf/aAAgBAgEBPxCaplupf//EAB4QAQACAQQDAAAAAAAAAAAAAAEAESExQVGREGGB/9oACAEBAAE/EPOJXG1FViv0Q6U5IcKgmxh3GMC05fYAq3czC4uovdrE69yT/9k=',
+                aspectRatio: 0.6666666666666666,
+                src:
+                    '/static/b9cdb59b57466cf222f00abac08eaba4/426ce/mountain-soccer.jpg',
+                srcSet:
+                    '/static/b9cdb59b57466cf222f00abac08eaba4/e5b28/mountain-soccer.jpg 256w,\n/static/b9cdb59b57466cf222f00abac08eaba4/160a1/mountain-soccer.jpg 512w,\n/static/b9cdb59b57466cf222f00abac08eaba4/426ce/mountain-soccer.jpg 1024w,\n/static/b9cdb59b57466cf222f00abac08eaba4/5bc26/mountain-soccer.jpg 1536w,\n/static/b9cdb59b57466cf222f00abac08eaba4/3d25e/mountain-soccer.jpg 2048w,\n/static/b9cdb59b57466cf222f00abac08eaba4/3c063/mountain-soccer.jpg 3456w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'mountain-soccer.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDAv/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABkhRnkiJ//8QAFxAAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAQABBQKIiIsef//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAAMBAAAAAAAAAAAAAAAAAAARIEH/2gAIAQEABj8Cwc//xAAbEAADAQEAAwAAAAAAAAAAAAAAAREhMUFhkf/aAAgBAQABPyH1hVUr4Qb1O7pko7a7wrfk/9oADAMBAAIAAwAAABDDz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABcRAAMBAAAAAAAAAAAAAAAAAAABEVH/2gAIAQIBAT8QhHp//8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFBUaH/2gAIAQEAAT8QFpbvaCMVhGh3Jk6FA4tvsvvGjE2n4n//2Q==',
+                aspectRatio: 1.5,
+                src:
+                    '/static/059605178fb1fbe6a732b80e22d78c98/426ce/little-soccer.jpg',
+                srcSet:
+                    '/static/059605178fb1fbe6a732b80e22d78c98/e5b28/little-soccer.jpg 256w,\n/static/059605178fb1fbe6a732b80e22d78c98/160a1/little-soccer.jpg 512w,\n/static/059605178fb1fbe6a732b80e22d78c98/426ce/little-soccer.jpg 1024w,\n/static/059605178fb1fbe6a732b80e22d78c98/5bc26/little-soccer.jpg 1536w,\n/static/059605178fb1fbe6a732b80e22d78c98/3d25e/little-soccer.jpg 2048w,\n/static/059605178fb1fbe6a732b80e22d78c98/0b354/little-soccer.jpg 6000w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'little-soccer.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABlLQe8JRuD//EABkQAAIDAQAAAAAAAAAAAAAAAAECABESEP/aAAgBAQABBQILYyeKojKLws//xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BrT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGq/8QAFhABAQEAAAAAAAAAAAAAAAAAADEg/9oACAEBAAY/AsRH/8QAGxABAQEAAgMAAAAAAAAAAAAAAQARITFBYeH/2gAIAQEAAT8h2XPl6J4Y/R5jnMSiz//aAAwDAQACAAMAAAAQHD//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEVH/2gAIAQMBAT8Q2h//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPxCEP//EABwQAQACAwADAAAAAAAAAAAAAAEAESExQVFh8P/aAAgBAQABPxArYuhOvc+yQKCUjTEQpC+2HgA8Y7FJyV6z/9k=',
+                aspectRatio: 1.7886301784094345,
+                src:
+                    '/static/87272bd4682c18e790f351afebbf26b2/426ce/time-lapse-kick.jpg',
+                srcSet:
+                    '/static/87272bd4682c18e790f351afebbf26b2/e5b28/time-lapse-kick.jpg 256w,\n/static/87272bd4682c18e790f351afebbf26b2/160a1/time-lapse-kick.jpg 512w,\n/static/87272bd4682c18e790f351afebbf26b2/426ce/time-lapse-kick.jpg 1024w,\n/static/87272bd4682c18e790f351afebbf26b2/5bc26/time-lapse-kick.jpg 1536w,\n/static/87272bd4682c18e790f351afebbf26b2/3d25e/time-lapse-kick.jpg 2048w,\n/static/87272bd4682c18e790f351afebbf26b2/cacca/time-lapse-kick.jpg 5915w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'time-lapse-kick.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEEAwX/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAAFrCjPXklww/8QAGhAAAwEAAwAAAAAAAAAAAAAAAAECEQMxM//aAAgBAQABBQJcpdOoxi9MOj//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFX/8QAGRAAAgMBAAAAAAAAAAAAAAAAARAAESFh/9oACAEBAAY/AmeKsM//xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhQTH/2gAIAQEAAT8hlwZz5kjVM2wte8Bc+bLj0Icqb//aAAwDAQACAAMAAAAQ+y//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EK0//8QAHBAAAgICAwAAAAAAAAAAAAAAAREAITFBUWFx/9oACAEBAAE/EKhmQWLgfqE4YZy4Lhkdsx1TsDGoKNR7U+z/2Q==',
+                aspectRatio: 1.5,
+                src:
+                    '/static/07b4b62fb00f0428b57a017e749284d2/426ce/tired-goalie.jpg',
+                srcSet:
+                    '/static/07b4b62fb00f0428b57a017e749284d2/e5b28/tired-goalie.jpg 256w,\n/static/07b4b62fb00f0428b57a017e749284d2/160a1/tired-goalie.jpg 512w,\n/static/07b4b62fb00f0428b57a017e749284d2/426ce/tired-goalie.jpg 1024w,\n/static/07b4b62fb00f0428b57a017e749284d2/5bc26/tired-goalie.jpg 1536w,\n/static/07b4b62fb00f0428b57a017e749284d2/3d25e/tired-goalie.jpg 2048w,\n/static/07b4b62fb00f0428b57a017e749284d2/2728f/tired-goalie.jpg 5184w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'tired-goalie.jpg',
+            },
+        },
+    },
+    {
+        node: {
+            fluid: {
+                base64:
+                    'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAUzVrpzhdK//xAAaEAACAgMAAAAAAAAAAAAAAAACAwERBBIh/9oACAEBAAEFAsQKKHFTGnJqsmkfDZO3/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8BJ//EAB0QAAICAQUAAAAAAAAAAAAAAAABERICECFiceH/2gAIAQEABj8CeXETcLaCbR0W08P/xAAdEAACAgIDAQAAAAAAAAAAAAAAARExUZEhQWFx/9oACAEBAAE/IVOI+skOqCFY9SeOCLEllQOVFpDHTQ//2gAMAwEAAgADAAAAEM8f/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/EGqQ/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oACAECAQE/EMK//8QAHhABAAICAgMBAAAAAAAAAAAAAQARITFRgUGh4fD/2gAIAQEAAT8QXll0EO3ECkAgfZsxxMjh5KOiMyIoht7xEjoL/BHiBs18Z//Z',
+                aspectRatio: 1.49800796812749,
+                src:
+                    '/static/44d2679c378c63c7b030fdc1ca3d69a5/426ce/experience.jpg',
+                srcSet:
+                    '/static/44d2679c378c63c7b030fdc1ca3d69a5/e5b28/experience.jpg 256w,\n/static/44d2679c378c63c7b030fdc1ca3d69a5/160a1/experience.jpg 512w,\n/static/44d2679c378c63c7b030fdc1ca3d69a5/426ce/experience.jpg 1024w,\n/static/44d2679c378c63c7b030fdc1ca3d69a5/5bc26/experience.jpg 1536w,\n/static/44d2679c378c63c7b030fdc1ca3d69a5/3d25e/experience.jpg 2048w,\n/static/44d2679c378c63c7b030fdc1ca3d69a5/ea5d4/experience.jpg 6016w',
+                sizes: '(max-width: 1024px) 100vw, 1024px',
+                originalName: 'experience.jpg',
+            },
+        },
+    },
+];
+
 export const mockScheduleDataNodes: MarkdownDataNode[] = [
     {
         node: {
@@ -370,6 +641,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris pharetra purus non nulla pharetra, sit amet faucibus quam pellentesque. Vivamus auctor, tellus in finibus placerat, elit eros gravida nisl, sit amet laoreet nulla magna non augue. Morbi volutpat, nibh ac pellentesque congue, felis velit commodo quam, at scelerisque justo arcu et ex. Morbi eget sem placerat, luctus est quis, vulputate tortor. Curabitur ut iaculis lacus, eu pellentesque lacus. Fusce bibendum est id lorem finibus, quis aliquam lacus ultrices. Praesent condimentum pharetra purus et sagittis. Vivamus fermentum molestie congue. Cras dictum in orci eu auctor. Mauris tristique quam quis sem dictum, in rhoncus metus venenatis. Phasellus maximus ex vitae elit sodales tempus. Sed suscipit ex non ex viverra eleifend.</p>\n<p>Mauris in mauris urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu viverra arcu, eget condimentum eros. Duis eget tortor lorem. Sed rhoncus dictum nisl a elementum. Vestibulum enim turpis, posuere vitae quam nec, hendrerit mollis lorem. Quisque bibendum sed dolor in rhoncus. Etiam id nunc porta, mollis nisi sed, consequat nisl. Vestibulum nec sapien lectus. Vestibulum nec justo et erat fringilla venenatis.</p>\n<p>Aliquam eu dolor felis. Curabitur fringilla mollis sem, quis accumsan tortor pulvinar sit amet. Pellentesque porttitor varius velit vitae maximus. Aenean condimentum sed turpis eget auctor. Ut elementum vehicula molestie. In id feugiat ligula. Sed at aliquet nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse euismod dictum nunc, non auctor ipsum lobortis sed.</p>\n<p>Etiam et mauris velit. Cras at vestibulum odio. Sed accumsan turpis in felis vehicula, at feugiat erat bibendum. Vivamus sed venenatis mi. Vestibulum pulvinar elit vitae sem tempor, a tincidunt mauris euismod. Nam in laoreet quam. Nullam congue vitae velit sit amet feugiat. Etiam mattis finibus ante, ut aliquet nisl. In consectetur blandit ipsum. In nec vestibulum nibh. Maecenas malesuada, purus sit amet convallis pharetra, felis ante fermentum est, imperdiet consequat nunc nulla non ante. Aenean sollicitudin non neque non rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor est, viverra vitae eleifend ac, tincidunt ac arcu. Fusce ultrices nunc vel nunc fermentum convallis. Sed condimentum tortor libero, nec vestibulum leo convallis rhoncus.</p>\n<p>Integer eu nisi eu nunc ornare pretium rutrum ut tortor. Ut tincidunt, quam sit amet accumsan auctor, dui velit faucibus massa, eget viverra dolor mi id erat. Phasellus sed facilisis neque. Maecenas nunc sapien, faucibus eu purus sit amet, mattis venenatis turpis. Aenean tristique tortor vitae nisl dictum, eu malesuada urna tincidunt. Quisque dapibus ante vel ex tincidunt commodo. Aliquam gravida massa ac tellus rutrum, eget euismod lorem sodales. Vivamus volutpat rhoncus ex, a luctus nisl ultricies ut. Duis id magna ac metus laoreet bibendum eu sit amet nulla. Curabitur et leo id nisi vestibulum tincidunt. Maecenas et magna sagittis ipsum congue luctus. Etiam lacus arcu, blandit non consectetur sit amet, semper et neque. Ut luctus diam nec accumsan dignissim. Aliquam eget ultrices lectus.</p>\n<p>Nulla viverra magna odio, lobortis posuere augue viverra sed. Aliquam ante nulla, hendrerit quis suscipit et, rutrum quis diam. Donec ut tristique tellus. Aliquam lorem risus, porttitor sit amet lorem vel, scelerisque congue ipsum. Morbi tincidunt molestie sagittis. Ut quis est ac urna hendrerit vulputate at et ipsum. Aliquam erat volutpat. Curabitur scelerisque ligula eget risus semper ornare. Etiam venenatis dolor vel suscipit dapibus. Nullam molestie ut est a pharetra. Proin congue nulla non laoreet vehicula. Sed gravida iaculis tellus, eu congue est luctus non. In sem diam, facilisis a pellentesque eu, vehicula quis erat. Suspendisse vitae vestibulum dolor. Donec ut eros vel odio varius fringilla eget vel lectus.</p>',
+            excerpt:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris…',
         },
     },
     {
@@ -386,6 +659,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris pharetra purus non nulla pharetra, sit amet faucibus quam pellentesque. Vivamus auctor, tellus in finibus placerat, elit eros gravida nisl, sit amet laoreet nulla magna non augue. Morbi volutpat, nibh ac pellentesque congue, felis velit commodo quam, at scelerisque justo arcu et ex. Morbi eget sem placerat, luctus est quis, vulputate tortor. Curabitur ut iaculis lacus, eu pellentesque lacus. Fusce bibendum est id lorem finibus, quis aliquam lacus ultrices. Praesent condimentum pharetra purus et sagittis. Vivamus fermentum molestie congue. Cras dictum in orci eu auctor. Mauris tristique quam quis sem dictum, in rhoncus metus venenatis. Phasellus maximus ex vitae elit sodales tempus. Sed suscipit ex non ex viverra eleifend.</p>\n<p>Mauris in mauris urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu viverra arcu, eget condimentum eros. Duis eget tortor lorem. Sed rhoncus dictum nisl a elementum. Vestibulum enim turpis, posuere vitae quam nec, hendrerit mollis lorem. Quisque bibendum sed dolor in rhoncus. Etiam id nunc porta, mollis nisi sed, consequat nisl. Vestibulum nec sapien lectus. Vestibulum nec justo et erat fringilla venenatis.</p>\n<p>Aliquam eu dolor felis. Curabitur fringilla mollis sem, quis accumsan tortor pulvinar sit amet. Pellentesque porttitor varius velit vitae maximus. Aenean condimentum sed turpis eget auctor. Ut elementum vehicula molestie. In id feugiat ligula. Sed at aliquet nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse euismod dictum nunc, non auctor ipsum lobortis sed.</p>\n<p>Etiam et mauris velit. Cras at vestibulum odio. Sed accumsan turpis in felis vehicula, at feugiat erat bibendum. Vivamus sed venenatis mi. Vestibulum pulvinar elit vitae sem tempor, a tincidunt mauris euismod. Nam in laoreet quam. Nullam congue vitae velit sit amet feugiat. Etiam mattis finibus ante, ut aliquet nisl. In consectetur blandit ipsum. In nec vestibulum nibh. Maecenas malesuada, purus sit amet convallis pharetra, felis ante fermentum est, imperdiet consequat nunc nulla non ante. Aenean sollicitudin non neque non rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor est, viverra vitae eleifend ac, tincidunt ac arcu. Fusce ultrices nunc vel nunc fermentum convallis. Sed condimentum tortor libero, nec vestibulum leo convallis rhoncus.</p>\n<p>Integer eu nisi eu nunc ornare pretium rutrum ut tortor. Ut tincidunt, quam sit amet accumsan auctor, dui velit faucibus massa, eget viverra dolor mi id erat. Phasellus sed facilisis neque. Maecenas nunc sapien, faucibus eu purus sit amet, mattis venenatis turpis. Aenean tristique tortor vitae nisl dictum, eu malesuada urna tincidunt. Quisque dapibus ante vel ex tincidunt commodo. Aliquam gravida massa ac tellus rutrum, eget euismod lorem sodales. Vivamus volutpat rhoncus ex, a luctus nisl ultricies ut. Duis id magna ac metus laoreet bibendum eu sit amet nulla. Curabitur et leo id nisi vestibulum tincidunt. Maecenas et magna sagittis ipsum congue luctus. Etiam lacus arcu, blandit non consectetur sit amet, semper et neque. Ut luctus diam nec accumsan dignissim. Aliquam eget ultrices lectus.</p>\n<p>Nulla viverra magna odio, lobortis posuere augue viverra sed. Aliquam ante nulla, hendrerit quis suscipit et, rutrum quis diam. Donec ut tristique tellus. Aliquam lorem risus, porttitor sit amet lorem vel, scelerisque congue ipsum. Morbi tincidunt molestie sagittis. Ut quis est ac urna hendrerit vulputate at et ipsum. Aliquam erat volutpat. Curabitur scelerisque ligula eget risus semper ornare. Etiam venenatis dolor vel suscipit dapibus. Nullam molestie ut est a pharetra. Proin congue nulla non laoreet vehicula. Sed gravida iaculis tellus, eu congue est luctus non. In sem diam, facilisis a pellentesque eu, vehicula quis erat. Suspendisse vitae vestibulum dolor. Donec ut eros vel odio varius fringilla eget vel lectus.</p>',
+            excerpt:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris…',
         },
     },
     {
@@ -402,6 +677,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p><code>Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis consequat nunc sed dignissim. Ut feugiat quam in fringilla suscipit. Quisque sed sodales odio. In id purus enim. Pellentesque blandit, nisi ac condimentum placerat, dui magna molestie est, in sodales arcu velit non nibh. Nam tempus felis quis diam accumsan, non accumsan velit tempor. Aenean lacus magna, iaculis quis massa at, pellentesque tristique purus. Sed eu neque at nisi ultrices mollis. Sed nulla massa, dapibus at convallis non, finibus et lacus. Nunc facilisis nibh eu dolor dignissim, congue sodales dui commodo. Mauris dolor nibh, consequat quis nisl ut, facilisis imperdiet tellus. Fusce tincidunt dictum nisi, ut fermentum leo eleifend ut. Phasellus ut gravida purus. Maecenas nec fermentum nulla. Aenean rhoncus vestibulum libero nec bibendum. Phasellus ut quam vel dolor pulvinar facilisis eget ut enim. Sed id laoreet velit. Nam tempor massa a magna elementum, at volutpat leo egestas. Nunc suscipit dolor non mauris dapibus, dignissim fringilla turpis consectetur. Etiam sagittis nec ipsum eget blandit. Donec gravida, lacus sit amet maximus pharetra, ex felis venenatis metus, sit amet egestas erat velit vel ligula.</code></p>\n<p><em>Ut</em> <p style="color: red">orci orci</p>, <strong><em>lobortis ac porta ultricies, volutpat commodo enim.</em></strong> <strong>Fusce ex lacus, tincidunt eget</strong></p>\n<blockquote>\n<p>diam quis, tincidunt elementum neque. Duis finibus diam dolor, ac ultrices neque tempor in. Maecenas sed velit nec urna auctor eleifend sit amet a dolor. Suspendisse blandit eros non facilisis semper. </p>\n</blockquote>\n<h2>Sed ut massa eu leo consectetur commodo nec id magna.</h2>\n<p>Integer lectus mi, gravida id tortor vitae, laoreet aliquam massa. Nullam purus nisi, sodales et finibus et, rhoncus ac justo. Praesent condimentum ante eu risus fermentum, ac pulvinar mi condimentum. </p>\n<ul>\n<li>Morbi at luctus libero. </li>\n<li>Integer porttitor turpis mattis ante blandit consequat. </li>\n<li>Integer laoreet turpis vitae ipsum mollis, at ullamcorper sem pretium. </li>\n</ul>\n<p>Vestibulum at nunc pulvinar eros aliquam tincidunt eget at nisl. In quis orci nisl.</p>',
+            excerpt:
+                'Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis…',
         },
     },
     {
@@ -411,13 +688,15 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                 language: 'it',
                 date: '2019-12-02T19:25:28.605Z',
                 layout: 'post',
-                banner_image: '../../src/images/cms-icon.png',
+                banner_image: '../../src/images/foosball.jpg',
             },
             fields: {
                 slug: '/2019-12-02-notizie-prova-markdown/',
             },
             html:
                 '<p><code>Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis consequat nunc sed dignissim. Ut feugiat quam in fringilla suscipit. Quisque sed sodales odio. In id purus enim. Pellentesque blandit, nisi ac condimentum placerat, dui magna molestie est, in sodales arcu velit non nibh. Nam tempus felis quis diam accumsan, non accumsan velit tempor. Aenean lacus magna, iaculis quis massa at, pellentesque tristique purus. Sed eu neque at nisi ultrices mollis. Sed nulla massa, dapibus at convallis non, finibus et lacus. Nunc facilisis nibh eu dolor dignissim, congue sodales dui commodo. Mauris dolor nibh, consequat quis nisl ut, facilisis imperdiet tellus. Fusce tincidunt dictum nisi, ut fermentum leo eleifend ut. Phasellus ut gravida purus. Maecenas nec fermentum nulla. Aenean rhoncus vestibulum libero nec bibendum. Phasellus ut quam vel dolor pulvinar facilisis eget ut enim. Sed id laoreet velit. Nam tempor massa a magna elementum, at volutpat leo egestas. Nunc suscipit dolor non mauris dapibus, dignissim fringilla turpis consectetur. Etiam sagittis nec ipsum eget blandit. Donec gravida, lacus sit amet maximus pharetra, ex felis venenatis metus, sit amet egestas erat velit vel ligula.</code></p>\n<p><em>Ut</em> <p style="color: red">orci orci</p>, <strong><em>lobortis ac porta ultricies, volutpat commodo enim.</em></strong> <strong>Fusce ex lacus, tincidunt eget</strong></p>\n<blockquote>\n<p>diam quis, tincidunt elementum neque. Duis finibus diam dolor, ac ultrices neque tempor in. Maecenas sed velit nec urna auctor eleifend sit amet a dolor. Suspendisse blandit eros non facilisis semper. </p>\n</blockquote>\n<h2>Sed ut massa eu leo consectetur commodo nec id magna.</h2>\n<p>Integer lectus mi, gravida id tortor vitae, laoreet aliquam massa. Nullam purus nisi, sodales et finibus et, rhoncus ac justo. Praesent condimentum ante eu risus fermentum, ac pulvinar mi condimentum. </p>\n<ul>\n<li>Morbi at luctus libero. </li>\n<li>Integer porttitor turpis mattis ante blandit consequat. </li>\n<li>Integer laoreet turpis vitae ipsum mollis, at ullamcorper sem pretium. </li>\n</ul>\n<p>Vestibulum at nunc pulvinar eros aliquam tincidunt eget at nisl. In quis orci nisl.</p>',
+            excerpt:
+                'Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis…',
         },
     },
     {
@@ -427,13 +706,15 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                 language: 'en',
                 date: '2019-12-02T19:25:49.168Z',
                 layout: 'post',
-                banner_image: '../../src/images/cms-icon.png',
+                banner_image: '../../src/images/aerial-view.jpg',
             },
             fields: {
                 slug: '/2019-12-02-test-news-symbols/',
             },
             html:
                 '<p>!#@!@#!##$%^%<em>^&#x26;</em>^<em>^&#x26;^#%#$(</em>)(**({}}{][];\'./.,&#x3C;>?&#x3C;":{~<code></code>!@#!3-0913-98576||\\][/$</p>',
+            excerpt:
+                '!#@!@#!##$%^%^&^^&^#%#$()(**({}}{][];\'./.,<>?<":{~!@#!3-0913-98576||\\][/$',
         },
     },
     {
@@ -450,6 +731,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p>!#@!@#!##$%^%<em>^&#x26;</em>^<em>^&#x26;^#%#$(</em>)(**({}}{][];\'./.,&#x3C;>?&#x3C;":{~<code></code>!@#!3-0913-98576||\\][/$</p>',
+            excerpt:
+                '!#@!@#!##$%^%^&^^&^#%#$()(**({}}{][];\'./.,<>?<":{~!@#!3-0913-98576||\\][/$',
         },
     },
     {
@@ -465,6 +748,7 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                 slug: '/2019-12-02-test-news-short/',
             },
             html: '<p>Nulla consectetur.</p>',
+            excerpt: 'Nulla consectetur.',
         },
     },
     {
@@ -480,6 +764,7 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                 slug: '/2019-12-02-notizie-prova-corta/',
             },
             html: '<p>Nulla consectetur.</p>',
+            excerpt: 'Nulla consectetur.',
         },
     },
     {
@@ -496,6 +781,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p>Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum vulputate arcu auctor. Aliquam erat volutpat. Nunc tristique sit amet nisl sit amet elementum. Nunc sit amet purus fringilla, lacinia tellus id, egestas magna. Maecenas id lorem sed sem pharetra hendrerit ac vel nibh. Maecenas est lacus, sagittis ut justo eu, feugiat suscipit ligula. Phasellus vehicula ultrices massa. Donec facilisis venenatis mauris, eget venenatis lectus vehicula vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam est nibh, malesuada vel ipsum id, mattis rutrum risus. In cursus imperdiet nisl ac dapibus. Nunc efficitur leo sed justo interdum, ac rhoncus lacus suscipit. Cras cursus tortor sit amet felis rhoncus volutpat. In accumsan sapien eget dui ornare dapibus.</p>',
+            excerpt:
+                'Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum…',
         },
     },
     {
@@ -512,6 +799,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p>Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum vulputate arcu auctor. Aliquam erat volutpat. Nunc tristique sit amet nisl sit amet elementum. Nunc sit amet purus fringilla, lacinia tellus id, egestas magna. Maecenas id lorem sed sem pharetra hendrerit ac vel nibh. Maecenas est lacus, sagittis ut justo eu, feugiat suscipit ligula. Phasellus vehicula ultrices massa. Donec facilisis venenatis mauris, eget venenatis lectus vehicula vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam est nibh, malesuada vel ipsum id, mattis rutrum risus. In cursus imperdiet nisl ac dapibus. Nunc efficitur leo sed justo interdum, ac rhoncus lacus suscipit. Cras cursus tortor sit amet felis rhoncus volutpat. In accumsan sapien eget dui ornare dapibus.</p>',
+            excerpt:
+                'Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum…',
         },
     },
     {
@@ -528,6 +817,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 177.79775280898878%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/2gAMAwEAAhADEAAAAaPex2liodSrnn5HOomF3FgYDP/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDEwQQEiL/2gAIAQEAAQUCAueDCKiImpVE5FbVB8LMwp9nyMlF3Jbv/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwFf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxAR/9oACAECAQE/AXLyEtRYb//EABoQAAICAwAAAAAAAAAAAAAAAAABEDERIEH/2gAIAQEABj8CKhPrhinBev8A/8QAGxAAAwADAQEAAAAAAAAAAAAAAAERITFBYRD/2gAIAQEAAT8hboV6GNGoypaC/VGwFcIcb4LcdMf4hI0pKIfRKXV4LP3/2gAMAwEAAgADAAAAEJfawPwf/8QAFxEBAAMAAAAAAAAAAAAAAAAAARAgIf/aAAgBAwEBPxBYTaf/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAQ/9oACAECAQE/ECSTKlyTMEC9/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFBEGGh4fH/2gAIAQEAAT8QuqXUHUMxC4ORhmAsJfEq9rqW4Q6X6gnQE1sIObd7Gtc3fEvNatfqB06K38lWsoGephsfH//Z\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="Aerial View of a Soccer Field"\n        title="Aerial View of a Soccer Field"\n        src="/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg"\n        srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/3a2a3/aerial-view.jpg 350w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/67d4f/aerial-view.jpg 700w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg 1400w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/36a65/aerial-view.jpg 2100w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg 2225w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>\n<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>',
+            excerpt:
+                'Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus…',
         },
     },
     {
@@ -544,6 +835,8 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
             },
             html:
                 '<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 177.79775280898878%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/2gAMAwEAAhADEAAAAaPex2liodSrnn5HOomF3FgYDP/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDEwQQEiL/2gAIAQEAAQUCAueDCKiImpVE5FbVB8LMwp9nyMlF3Jbv/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwFf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxAR/9oACAECAQE/AXLyEtRYb//EABoQAAICAwAAAAAAAAAAAAAAAAABEDERIEH/2gAIAQEABj8CKhPrhinBev8A/8QAGxAAAwADAQEAAAAAAAAAAAAAAAERITFBYRD/2gAIAQEAAT8hboV6GNGoypaC/VGwFcIcb4LcdMf4hI0pKIfRKXV4LP3/2gAMAwEAAgADAAAAEJfawPwf/8QAFxEBAAMAAAAAAAAAAAAAAAAAARAgIf/aAAgBAwEBPxBYTaf/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAQ/9oACAECAQE/ECSTKlyTMEC9/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFBEGGh4fH/2gAIAQEAAT8QuqXUHUMxC4ORhmAsJfEq9rqW4Q6X6gnQE1sIObd7Gtc3fEvNatfqB06K38lWsoGephsfH//Z\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="Aerial View of a Soccer Field"\n        title="Aerial View of a Soccer Field"\n        src="/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg"\n        srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/3a2a3/aerial-view.jpg 350w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/67d4f/aerial-view.jpg 700w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg 1400w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/36a65/aerial-view.jpg 2100w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg 2225w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>\n<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>',
+            excerpt:
+                'Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus…',
         },
     },
 ];
