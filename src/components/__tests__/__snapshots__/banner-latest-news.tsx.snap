@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Latest News has not changed 1`] = `
+<DocumentFragment>
+  <section
+    class="banner-latest-news section has-background-beige-main is-bold"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="title is-family-secondary has-text-black-main is-2"
+      >
+        LATEST NEWS
+      </h2>
+      <div
+        class="banner-news-list"
+      >
+        <p>
+          NewsList Here
+        </p>
+      </div>
+      <div
+        class="columns"
+      >
+        <div
+          class="column is-half is-offset-one-quarter"
+        >
+          <a
+            href="https://www.calciomontesacro.com/news"
+          >
+            <button
+              class="button is-fullwidth has-background-roma-red has-text-white-main is-size-5"
+              type="button"
+            >
+              <strong>
+                SEE MORE NEWS
+              </strong>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

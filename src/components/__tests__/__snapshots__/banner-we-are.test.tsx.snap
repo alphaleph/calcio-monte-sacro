@@ -15,13 +15,6 @@ exports[`We Are Banner has not changed 1`] = `
           class="title"
         >
           <span
-            class="we-are-text"
-          >
-            We are...
-          </span>
-          <br />
-          <br />
-          <span
             class="we-are-name is-family-secondary"
           >
             Calcio Monte Sacro

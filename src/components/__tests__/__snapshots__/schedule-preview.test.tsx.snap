@@ -68,7 +68,7 @@ exports[`Schedule Preview has not changed 1`] = `
     >
       <article
         class="event-card-container container"
-        data-testid="empty"
+        data-testid="event-card-empty"
       />
     </div>
     <div
@@ -76,7 +76,7 @@ exports[`Schedule Preview has not changed 1`] = `
     >
       <article
         class="event-card-container container"
-        data-testid="empty"
+        data-testid="event-card-empty"
       />
     </div>
   </section>

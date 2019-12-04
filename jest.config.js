@@ -16,6 +16,11 @@ module.exports = {
     ],
     globals: {
         __PATH_PREFIX__: ``,
+        'ts-jest': {
+            diagnostics: {
+                warnOnly: true,
+            },
+        },
     },
     testURL: `http://localhost`,
     setupFiles: [`<rootDir>/loadershim.js`],
