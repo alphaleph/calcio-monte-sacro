@@ -1,4 +1,5 @@
 import React from 'react';
+import { Loading } from '../loading/loading';
 import { MarkdownDataNode } from '../../types/index';
 import { MATCH_EN, MATCH_IT, HOME_VENUE, TEAM_ABRV } from '../../constants';
 import { getMonthAbrvEN } from '../../util';
@@ -9,7 +10,7 @@ interface EventCardProps {
 }
 
 export const EventCard = ({ event }: EventCardProps) => {
-    let el = <div className="button is-loading is-static" />;
+    let el = <Loading />;
     if (event) {
         const frontMatter = (event as MarkdownDataNode).node.frontmatter;
         const date = new Date(frontMatter.date);
@@ -103,7 +104,7 @@ export const EventCard = ({ event }: EventCardProps) => {
         el = (
             <article
                 className="event-card-container container"
-                data-testid="empty"
+                data-testid="event-card-empty"
             />
         );
     }
