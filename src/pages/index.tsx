@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Layout } from '../components/layout/layout';
 import { SEO } from '../components/seo/seo';
 import { BannerWeAre } from '../components/banner-we-are/banner-we-are';
