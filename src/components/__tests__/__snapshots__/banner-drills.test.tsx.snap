@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Drills has not changed 1`] = `
+<DocumentFragment>
+  <section
+    class="banner-drills section"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="banner-drills-title"
+      >
+        The Techniques of the Trade...
+      </h2>
+      <div
+        class="banner-drills-note columns is-mobile has-text-centered"
+      >
+        <p
+          class="column is-one-third"
+        >
+          👉🦵
+        </p>
+        <p
+          class="column is-one-third"
+        >
+          👉⚽
+        </p>
+        <p
+          class="column is-one-third"
+        >
+          👉🥅
+        </p>
+      </div>
+      <div
+        class="columns"
+      >
+        <div
+          class="column is-half is-offset-one-quarter"
+        >
+          <a
+            href="https://www.calciomontesacro.com/drills"
+          >
+            <button
+              class="banner-drills-button button is-fullwidth has-background-team-granite has-text-team-holy"
+              type="button"
+            >
+              SEE DRILLS
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

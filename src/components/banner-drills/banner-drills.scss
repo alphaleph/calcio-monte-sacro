@@ -1,0 +1,40 @@
+@import '../../pages/globals.scss';
+
+.banner-drills {
+    background: linear-gradient(to top right, #48CA73 70%, #69D38C);
+    border-top: 1px solid $holy-yellow-team;
+    border-bottom: 1px solid $holy-yellow-team;
+
+}
+// 69D38C
+// 58CE7F
+// 42B869
+
+.banner-drills-title {
+    text-align: center;
+    color: $black-main;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.banner-drills-note {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+}
+
+.banner-drills-button {
+    border-color: $granite-grey-team !important;
+    font-weight: bold;
+    font-size: 1.25rem !important;
+    transform: scale(1);
+    transition: transform .05s ease-out;
+}
+
+.banner-drills-button:hover,
+.banner-drills-button:focus {
+    border-color: $granite-grey-team !important;
+    text-decoration: underline $holy-yellow-team;
+    // font-size: 1.5rem;
+    transform: scale(1.02);
+}
