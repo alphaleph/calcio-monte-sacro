@@ -21,7 +21,7 @@ export const BannerSchedule = () => {
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
                         <Link
-                            to={`${SITE_URL}/schedule`}
+                            to={`/schedule`}
                             className="banner-schedule-button"
                         >
                             <button

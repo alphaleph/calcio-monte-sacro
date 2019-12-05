@@ -56,7 +56,7 @@ export const TestBannerLatestBlogs = () => {
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
                         <Link
-                            to={`${SITE_URL}/blog`}
+                            to={`/blog`}
                             className="banner-latest-blogs-button"
                         >
                             <button

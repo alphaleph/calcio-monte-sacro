@@ -22,7 +22,7 @@ export const BannerLatestNews = () => {
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
                         <Link
-                            to={`${SITE_URL}/news`}
+                            to={`/news`}
                             className="banner-latest-news-button"
                         >
                             <button

@@ -17,7 +17,7 @@ export const BannerDrills = () => {
                 </div>
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
-                        <Link to={`${SITE_URL}/drills`}>
+                        <Link to={`/drills`}>
                             <button
                                 className="banner-drills-button button is-fullwidth has-background-team-granite has-text-team-holy"
                                 type="button"
