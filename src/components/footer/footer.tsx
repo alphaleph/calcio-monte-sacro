@@ -30,16 +30,13 @@ export const Footer = (props: FooterProps) => {
         <footer className="footer-container columns is-centered has-background-team-granite">
             <div className="column is-two-thirds">
                 <section className="footer-main-links container">
-                    <Link
-                        className="footer-main-link"
-                        to={`${SITE_URL}/schedule`}
-                    >
+                    <Link className="footer-main-link" to="/schedule">
                         Schedule
                     </Link>
-                    <Link className="footer-main-link" to={`${SITE_URL}/news`}>
+                    <Link className="footer-main-link" to="/news">
                         News
                     </Link>
-                    <Link className="footer-main-link" to={`${SITE_URL}/blog`}>
+                    <Link className="footer-main-link" to="/blog">
                         Blog
                     </Link>
                     <Link
@@ -48,7 +45,7 @@ export const Footer = (props: FooterProps) => {
                     >
                         Drills
                     </Link>
-                    <Link className="footer-main-link" to={`${SITE_URL}/about`}>
+                    <Link className="footer-main-link" to="/about">
                         About
                     </Link>
                 </section>
