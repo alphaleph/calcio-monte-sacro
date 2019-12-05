@@ -75,16 +75,6 @@ export const PostsList = ({
                 <PostCard post={posts[0] ? posts[0] : null} image={image} />
             </div>
         );
-    } else if (posts.length === 2 || size === 2) {
-        // Case: Dual Cards
-        // Retrieve banner images
-        const imagesList = makePostImageArray(posts, images);
-        // Generate dual Post Cards with proper banner images
-        postsList = posts.map((post, index) => (
-            <div className="column is-half" key={index}>
-                <PostCard post={post ? post : null} image={imagesList[index]} />
-            </div>
-        ));
     } else {
         // General Cose: n-Cards
         const pastIndex = findMostRecentlyPastIndex(posts, date);
@@ -107,7 +97,14 @@ export const PostsList = ({
 
         // Generate n-Cards
         postsList = currPosts.map((post, index) => (
-            <div className="column is-one-third" key={index}>
+            <div
+                className={
+                    posts.length === 2 || size === 2
+                        ? 'column is-half'
+                        : 'column is-one-third'
+                }
+                key={index}
+            >
                 <PostCard post={post ? post : null} image={imagesList[index]} />
             </div>
         ));

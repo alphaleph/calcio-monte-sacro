@@ -1,0 +1,16 @@
+@import '../../pages/globals.scss';
+
+.banner-latest-blogs {
+    border-top: 1px solid $holy-yellow-team;
+    border-bottom: 1px solid $holy-yellow-team;
+}
+
+.banner-latest-blogs-list {
+    margin: 2rem 0rem;
+}
+
+.banner-latest-blogs-button:hover,
+.banner-latest-blogs-button:focus {
+    color: $holy-yellow-team;
+    text-decoration: underline 2px;
+}

@@ -148,7 +148,9 @@ export const getNetlifyCMSFilename = (path: string): string | null => {
         // [0] = whole path, [1] = path before filename, [2] = filename
         return matches[2];
     } else {
-        console.error('Error: Invalid path structure. Must contain / .');
+        console.error(
+            `Error: Invalid path structure. Path <${path}> Must contain / .`
+        );
         return null;
     }
 };
