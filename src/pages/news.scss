@@ -1,0 +1,14 @@
+@import './globals.scss';
+
+.news-title {
+    font-size: 4rem;
+    padding: 3rem 0;
+    font-family: serif;
+    font-weight: bold;
+    color: $roma-red;
+}
+
+.news-container {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
