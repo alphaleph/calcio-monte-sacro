@@ -1061,7 +1061,7 @@ export const mockBlogDataNodes = [
                 language: 'en',
                 date: '2019-12-03T17:17:22.099Z',
                 layout: 'post',
-                banner_image: './cms-icon.png',
+                banner_image: '/cms-icon.png',
             },
             fields: {
                 slug: '/2019-12-03-test-blog-image-new/',
@@ -1078,7 +1078,7 @@ export const mockBlogDataNodes = [
                 language: 'en',
                 date: '2019-12-03T19:21:07.494Z',
                 layout: 'post',
-                banner_image: 'cms-icon.png',
+                banner_image: '/cms-icon.png',
             },
             fields: {
                 slug: '/2019-12-03-test-blog-image-ii/',

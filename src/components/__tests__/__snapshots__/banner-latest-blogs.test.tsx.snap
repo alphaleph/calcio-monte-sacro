@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Blog has not changed 1`] = `
+<DocumentFragment>
+  <section
+    class="banner-latest-blogs section has-background-white-main is-bold"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="title is-family-secondary has-text-black-main is-2"
+      >
+        LATEST BLOGS
+      </h2>
+      <div
+        class="banner-latest-blogs-list"
+      >
+        <section
+          class="columns is-multiline"
+          data-testid="posts-list"
+        >
+          <div
+            class="column is-half"
+          >
+            <a
+              data-testid="post-card-link"
+              href="https://www.calciomontesacro.com/news/2019-12-03-test-blog-image-new/"
+            >
+              <article
+                class="post-card-container container"
+              >
+                <header
+                  class="post-card-header"
+                >
+                  <div
+                    class=" gatsby-image-wrapper"
+                    style="position: relative; overflow: hidden;"
+                  >
+                    <div
+                      style="width: 100%; padding-bottom: 100%;"
+                    />
+                    <img
+                      alt=""
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC"
+                      style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; transition-delay: 500ms;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                      />
+                      <img
+                        alt=""
+                        loading="lazy"
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+                      />
+                    </picture>
+                    <noscript>
+                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                    </noscript>
+                  </div>
+                </header>
+                <section
+                  class="post-card-info"
+                >
+                  <p
+                    class="post-card-title"
+                  >
+                    Test Blog Image New
+                  </p>
+                  <p
+                    class="post-card-excerpt"
+                  >
+                    Testing...
+                  </p>
+                </section>
+                <footer
+                  class="post-card-footer"
+                >
+                  <p
+                    class="post-card-date"
+                  >
+                    3 DEC 2019
+                  </p>
+                </footer>
+              </article>
+            </a>
+          </div>
+          <div
+            class="column is-half"
+          >
+            <a
+              data-testid="post-card-link"
+              href="https://www.calciomontesacro.com/news/2019-12-03-test-blog-image-ii/"
+            >
+              <article
+                class="post-card-container container"
+              >
+                <header
+                  class="post-card-header"
+                >
+                  <div
+                    class=" gatsby-image-wrapper"
+                    style="position: relative; overflow: hidden;"
+                  >
+                    <div
+                      style="width: 100%; padding-bottom: 100%;"
+                    />
+                    <img
+                      alt=""
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC"
+                      style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; transition-delay: 500ms;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                      />
+                      <img
+                        alt=""
+                        loading="lazy"
+                        sizes="(max-width: 512px) 100vw, 512px"
+                        src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
+                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+                      />
+                    </picture>
+                    <noscript>
+                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                    </noscript>
+                  </div>
+                </header>
+                <section
+                  class="post-card-info"
+                >
+                  <p
+                    class="post-card-title"
+                  >
+                    Test Blog Image II
+                  </p>
+                  <p
+                    class="post-card-excerpt"
+                  >
+                    TestTestTest  TestTestTestTestTest
+                  </p>
+                </section>
+                <footer
+                  class="post-card-footer"
+                >
+                  <p
+                    class="post-card-date"
+                  >
+                    3 DEC 2019
+                  </p>
+                </footer>
+              </article>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div
+        class="columns"
+      >
+        <div
+          class="column is-half is-offset-one-quarter"
+        >
+          <a
+            class="banner-latest-blogs-button"
+            href="https://www.calciomontesacro.com/blog"
+          >
+            <button
+              class="button is-fullwidth has-background-roma-gold has-text-black-main is-size-5"
+              type="button"
+            >
+              <strong>
+                SEE BLOG
+              </strong>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
