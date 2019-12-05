@@ -29,7 +29,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                     <div className="navbar-brand">
                         <Link
                             className="navbar-logo-container navbar-item has-link-team-holy"
-                            to={SITE_URL}
+                            to="/"
                         >
                             <Img
                                 className="navbar-logo"
@@ -84,7 +84,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                         <div className="navbar-end">
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to={`${SITE_URL}/schedule`}
+                                to={`/schedule`}
                             >
                                 <span className="link-text">Schedule </span>
                                 <span role="img" aria-label="Calendar">
@@ -93,7 +93,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                             </Link>
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to={`${SITE_URL}/news`}
+                                to={`/news`}
                             >
                                 <span className="link-text">News </span>
                                 <span role="img" aria-label="Megaphone">
@@ -102,7 +102,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                             </Link>
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to={`${SITE_URL}/blog`}
+                                to={`/blog`}
                             >
                                 <span className="link-text">Blog </span>
                                 <span role="img" aria-label="Writing hand">
@@ -111,7 +111,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                             </Link>
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to={`${SITE_URL}/drills`}
+                                to={`/drills`}
                             >
                                 <span className="link-text">Drills </span>
                                 <span role="img" aria-label="100 points">
@@ -121,7 +121,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
 
                             <Link
                                 className="navbar-item has-link-team-holy"
-                                to={`${SITE_URL}/about`}
+                                to={`/about`}
                             >
                                 <span className="link-text">About </span>
                                 <span role="img" aria-label="Soccer ball">
