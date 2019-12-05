@@ -840,3 +840,252 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
         },
     },
 ];
+
+export const mockBlogDataNodes = [
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Post Markdown',
+                language: 'en',
+                date: '2019-12-02T18:28:05.053Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-test-blog-post-markdown/',
+            },
+            html:
+                '<p><code>Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis consequat nunc sed dignissim. Ut feugiat quam in fringilla suscipit. Quisque sed sodales odio. In id purus enim. Pellentesque blandit, nisi ac condimentum placerat, dui magna molestie est, in sodales arcu velit non nibh. Nam tempus felis quis diam accumsan, non accumsan velit tempor. Aenean lacus magna, iaculis quis massa at, pellentesque tristique purus. Sed eu neque at nisi ultrices mollis. Sed nulla massa, dapibus at convallis non, finibus et lacus. Nunc facilisis nibh eu dolor dignissim, congue sodales dui commodo. Mauris dolor nibh, consequat quis nisl ut, facilisis imperdiet tellus. Fusce tincidunt dictum nisi, ut fermentum leo eleifend ut. Phasellus ut gravida purus. Maecenas nec fermentum nulla. Aenean rhoncus vestibulum libero nec bibendum. Phasellus ut quam vel dolor pulvinar facilisis eget ut enim. Sed id laoreet velit. Nam tempor massa a magna elementum, at volutpat leo egestas. Nunc suscipit dolor non mauris dapibus, dignissim fringilla turpis consectetur. Etiam sagittis nec ipsum eget blandit. Donec gravida, lacus sit amet maximus pharetra, ex felis venenatis metus, sit amet egestas erat velit vel ligula.</code></p>\n<p><em>Ut</em> <p style="color: red">orci orci</p>, <strong><em>lobortis ac porta ultricies, volutpat commodo enim.</em></strong> <strong>Fusce ex lacus, tincidunt eget</strong></p>\n<blockquote>\n<p>diam quis, tincidunt elementum neque. Duis finibus diam dolor, ac ultrices neque tempor in. Maecenas sed velit nec urna auctor eleifend sit amet a dolor. Suspendisse blandit eros non facilisis semper. </p>\n</blockquote>\n<h2>Sed ut massa eu leo consectetur commodo nec id magna.</h2>\n<p>Integer lectus mi, gravida id tortor vitae, laoreet aliquam massa. Nullam purus nisi, sodales et finibus et, rhoncus ac justo. Praesent condimentum ante eu risus fermentum, ac pulvinar mi condimentum. </p>\n<ul>\n<li>Morbi at luctus libero. </li>\n<li>Integer porttitor turpis mattis ante blandit consequat. </li>\n<li>Integer laoreet turpis vitae ipsum mollis, at ullamcorper sem pretium. </li>\n</ul>\n<p>Vestibulum at nunc pulvinar eros aliquam tincidunt eget at nisl. In quis orci nisl.</p>',
+            excerpt:
+                'Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Post Symbols',
+                language: 'en',
+                date: '2019-12-02T18:34:49.020Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-test-blog-post-symbols/',
+            },
+            html:
+                '<p>!#@!@#!##$%^%<em>^&#x26;</em>^<em>^&#x26;^#%#$(</em>)(**({}}{][];\'./.,&#x3C;>?&#x3C;":{~<code></code>!@#!3-0913-98576||\\][/$</p>',
+            excerpt:
+                '!#@!@#!##$%^%^&^^&^#%#$()(**({}}{][];\'./.,<>?<":{~!@#!3-0913-98576||\\][/$',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Plain Short',
+                language: 'en',
+                date: '2019-12-02T18:35:16.669Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-test-blog-plain-short/',
+            },
+            html: '<p>Nulla consectetur.</p>',
+            excerpt: 'Nulla consectetur.',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Post Banner',
+                language: 'en',
+                date: '2019-12-02T18:35:50.927Z',
+                layout: 'post',
+                banner_image: '../../src/images/net.jpg',
+            },
+            fields: {
+                slug: '/2019-12-02-test-blog-post-banner/',
+            },
+            html:
+                '<p>Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum vulputate arcu auctor. Aliquam erat volutpat. Nunc tristique sit amet nisl sit amet elementum. Nunc sit amet purus fringilla, lacinia tellus id, egestas magna. Maecenas id lorem sed sem pharetra hendrerit ac vel nibh. Maecenas est lacus, sagittis ut justo eu, feugiat suscipit ligula. Phasellus vehicula ultrices massa. Donec facilisis venenatis mauris, eget venenatis lectus vehicula vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam est nibh, malesuada vel ipsum id, mattis rutrum risus. In cursus imperdiet nisl ac dapibus. Nunc efficitur leo sed justo interdum, ac rhoncus lacus suscipit. Cras cursus tortor sit amet felis rhoncus volutpat. In accumsan sapien eget dui ornare dapibus.</p>',
+            excerpt:
+                'Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Image',
+                language: 'en',
+                date: '2019-12-02T19:11:20.267Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-test-blog-image/',
+            },
+            html:
+                '<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 177.79775280898878%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/2gAMAwEAAhADEAAAAaPex2liodSrnn5HOomF3FgYDP/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDEwQQEiL/2gAIAQEAAQUCAueDCKiImpVE5FbVB8LMwp9nyMlF3Jbv/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwFf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxAR/9oACAECAQE/AXLyEtRYb//EABoQAAICAwAAAAAAAAAAAAAAAAABEDERIEH/2gAIAQEABj8CKhPrhinBev8A/8QAGxAAAwADAQEAAAAAAAAAAAAAAAERITFBYRD/2gAIAQEAAT8hboV6GNGoypaC/VGwFcIcb4LcdMf4hI0pKIfRKXV4LP3/2gAMAwEAAgADAAAAEJfawPwf/8QAFxEBAAMAAAAAAAAAAAAAAAAAARAgIf/aAAgBAwEBPxBYTaf/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAQ/9oACAECAQE/ECSTKlyTMEC9/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFBEGGh4fH/2gAIAQEAAT8QuqXUHUMxC4ORhmAsJfEq9rqW4Q6X6gnQE1sIObd7Gtc3fEvNatfqB06K38lWsoGephsfH//Z\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="Aerial View of a Soccer Field"\n        title="Aerial View of a Soccer Field"\n        src="/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg"\n        srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/3a2a3/aerial-view.jpg 350w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/67d4f/aerial-view.jpg 700w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg 1400w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/36a65/aerial-view.jpg 2100w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg 2225w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>\n<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>',
+            excerpt:
+                'Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Blog Post Prova Semplice',
+                language: 'it',
+                date: '2019-12-02T19:16:06.549Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-blog-post-prova-semplice/',
+            },
+            html:
+                '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris pharetra purus non nulla pharetra, sit amet faucibus quam pellentesque. Vivamus auctor, tellus in finibus placerat, elit eros gravida nisl, sit amet laoreet nulla magna non augue. Morbi volutpat, nibh ac pellentesque congue, felis velit commodo quam, at scelerisque justo arcu et ex. Morbi eget sem placerat, luctus est quis, vulputate tortor. Curabitur ut iaculis lacus, eu pellentesque lacus. Fusce bibendum est id lorem finibus, quis aliquam lacus ultrices. Praesent condimentum pharetra purus et sagittis. Vivamus fermentum molestie congue. Cras dictum in orci eu auctor. Mauris tristique quam quis sem dictum, in rhoncus metus venenatis. Phasellus maximus ex vitae elit sodales tempus. Sed suscipit ex non ex viverra eleifend.</p>\n<p>Mauris in mauris urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu viverra arcu, eget condimentum eros. Duis eget tortor lorem. Sed rhoncus dictum nisl a elementum. Vestibulum enim turpis, posuere vitae quam nec, hendrerit mollis lorem. Quisque bibendum sed dolor in rhoncus. Etiam id nunc porta, mollis nisi sed, consequat nisl. Vestibulum nec sapien lectus. Vestibulum nec justo et erat fringilla venenatis.</p>\n<p>Aliquam eu dolor felis. Curabitur fringilla mollis sem, quis accumsan tortor pulvinar sit amet. Pellentesque porttitor varius velit vitae maximus. Aenean condimentum sed turpis eget auctor. Ut elementum vehicula molestie. In id feugiat ligula. Sed at aliquet nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse euismod dictum nunc, non auctor ipsum lobortis sed.</p>\n<p>Etiam et mauris velit. Cras at vestibulum odio. Sed accumsan turpis in felis vehicula, at feugiat erat bibendum. Vivamus sed venenatis mi. Vestibulum pulvinar elit vitae sem tempor, a tincidunt mauris euismod. Nam in laoreet quam. Nullam congue vitae velit sit amet feugiat. Etiam mattis finibus ante, ut aliquet nisl. In consectetur blandit ipsum. In nec vestibulum nibh. Maecenas malesuada, purus sit amet convallis pharetra, felis ante fermentum est, imperdiet consequat nunc nulla non ante. Aenean sollicitudin non neque non rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor est, viverra vitae eleifend ac, tincidunt ac arcu. Fusce ultrices nunc vel nunc fermentum convallis. Sed condimentum tortor libero, nec vestibulum leo convallis rhoncus.</p>\n<p>Integer eu nisi eu nunc ornare pretium rutrum ut tortor. Ut tincidunt, quam sit amet accumsan auctor, dui velit faucibus massa, eget viverra dolor mi id erat. Phasellus sed facilisis neque. Maecenas nunc sapien, faucibus eu purus sit amet, mattis venenatis turpis. Aenean tristique tortor vitae nisl dictum, eu malesuada urna tincidunt. Quisque dapibus ante vel ex tincidunt commodo. Aliquam gravida massa ac tellus rutrum, eget euismod lorem sodales. Vivamus volutpat rhoncus ex, a luctus nisl ultricies ut. Duis id magna ac metus laoreet bibendum eu sit amet nulla. Curabitur et leo id nisi vestibulum tincidunt. Maecenas et magna sagittis ipsum congue luctus. Etiam lacus arcu, blandit non consectetur sit amet, semper et neque. Ut luctus diam nec accumsan dignissim. Aliquam eget ultrices lectus.</p>\n<p>Nulla viverra magna odio, lobortis posuere augue viverra sed. Aliquam ante nulla, hendrerit quis suscipit et, rutrum quis diam. Donec ut tristique tellus. Aliquam lorem risus, porttitor sit amet lorem vel, scelerisque congue ipsum. Morbi tincidunt molestie sagittis. Ut quis est ac urna hendrerit vulputate at et ipsum. Aliquam erat volutpat. Curabitur scelerisque ligula eget risus semper ornare. Etiam venenatis dolor vel suscipit dapibus. Nullam molestie ut est a pharetra. Proin congue nulla non laoreet vehicula. Sed gravida iaculis tellus, eu congue est luctus non. In sem diam, facilisis a pellentesque eu, vehicula quis erat. Suspendisse vitae vestibulum dolor. Donec ut eros vel odio varius fringilla eget vel lectus.</p>',
+            excerpt:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Blog Post Prova Markdown',
+                language: 'it',
+                date: '2019-12-02T19:17:31.679Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-blog-test-prova-markdown/',
+            },
+            html:
+                '<p><code>Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis consequat nunc sed dignissim. Ut feugiat quam in fringilla suscipit. Quisque sed sodales odio. In id purus enim. Pellentesque blandit, nisi ac condimentum placerat, dui magna molestie est, in sodales arcu velit non nibh. Nam tempus felis quis diam accumsan, non accumsan velit tempor. Aenean lacus magna, iaculis quis massa at, pellentesque tristique purus. Sed eu neque at nisi ultrices mollis. Sed nulla massa, dapibus at convallis non, finibus et lacus. Nunc facilisis nibh eu dolor dignissim, congue sodales dui commodo. Mauris dolor nibh, consequat quis nisl ut, facilisis imperdiet tellus. Fusce tincidunt dictum nisi, ut fermentum leo eleifend ut. Phasellus ut gravida purus. Maecenas nec fermentum nulla. Aenean rhoncus vestibulum libero nec bibendum. Phasellus ut quam vel dolor pulvinar facilisis eget ut enim. Sed id laoreet velit. Nam tempor massa a magna elementum, at volutpat leo egestas. Nunc suscipit dolor non mauris dapibus, dignissim fringilla turpis consectetur. Etiam sagittis nec ipsum eget blandit. Donec gravida, lacus sit amet maximus pharetra, ex felis venenatis metus, sit amet egestas erat velit vel ligula.</code></p>\n<p><em>Ut</em> <p style="color: red">orci orci</p>, <em><strong>lobortis ac porta ultricies, volutpat commodo enim.</strong></em> <strong>Fusce ex lacus, tincidunt eget</strong></p>\n<blockquote>\n<p>diam quis, tincidunt elementum neque. Duis finibus diam dolor, ac ultrices neque tempor in. Maecenas sed velit nec urna auctor eleifend sit amet a dolor. Suspendisse blandit eros non facilisis semper. </p>\n</blockquote>\n<h2>Sed ut massa eu leo consectetur commodo nec id magna.</h2>\n<p>Integer lectus mi, gravida id tortor vitae, laoreet aliquam massa. Nullam purus nisi, sodales et finibus et, rhoncus ac justo. Praesent condimentum ante eu risus fermentum, ac pulvinar mi condimentum. </p>\n<ul>\n<li>Morbi at luctus libero. </li>\n<li>Integer porttitor turpis mattis ante blandit consequat. </li>\n<li>Integer laoreet turpis vitae ipsum mollis, at ullamcorper sem pretium. </li>\n</ul>\n<p>Vestibulum at nunc pulvinar eros aliquam tincidunt eget at nisl. In quis orci nisl.</p>',
+            excerpt:
+                'Donec tristique lobortis tortor, quis commodo sapien eleifend sit amet. Donec ut elit et nibh placerat egestas nec eget mi. Nulla mollis…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Blog Post Prova Simboli',
+                language: 'it',
+                date: '2019-12-02T19:18:12.782Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-blog-post-prova-simboli/',
+            },
+            html:
+                '<p>!#@!@#!##$%^%^&#x26;^^&#x26;^#%#$()(**({}}{][];\'./.,&#x3C;>?&#x3C;":{~!@#!3-0913-98576||][/$</p>',
+            excerpt:
+                '!#@!@#!##$%^%^&^^&^#%#$()(**({}}{][];\'./.,<>?<":{~!@#!3-0913-98576||][/$',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Blog Post Prova Corta',
+                language: 'it',
+                date: '2019-12-02T19:18:47.378Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-blog-post-prova-corta/',
+            },
+            html: '<p>Nulla consectetur.</p>',
+            excerpt: 'Nulla consectetur.',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Blog Post Prova Banner',
+                language: 'it',
+                date: '2019-12-02T19:19:34.406Z',
+                layout: 'post',
+                banner_image: '../../src/images/ball.jpg',
+            },
+            fields: {
+                slug: '/2019-12-02-blog-post-prova-banner/',
+            },
+            html:
+                '<p>Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum vulputate arcu auctor. Aliquam erat volutpat. Nunc tristique sit amet nisl sit amet elementum. Nunc sit amet purus fringilla, lacinia tellus id, egestas magna. Maecenas id lorem sed sem pharetra hendrerit ac vel nibh. Maecenas est lacus, sagittis ut justo eu, feugiat suscipit ligula. Phasellus vehicula ultrices massa. Donec facilisis venenatis mauris, eget venenatis lectus vehicula vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam est nibh, malesuada vel ipsum id, mattis rutrum risus. In cursus imperdiet nisl ac dapibus. Nunc efficitur leo sed justo interdum, ac rhoncus lacus suscipit. Cras cursus tortor sit amet felis rhoncus volutpat. In accumsan sapien eget dui ornare dapibus.</p>',
+            excerpt:
+                'Curabitur vitae sem quam. Duis nec orci sed est sollicitudin rhoncus sed eget orci. Nam condimentum magna eu odio malesuada, elementum…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Blog Post Prova Immagine',
+                language: 'it',
+                date: '2019-12-02T19:20:35.626Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-blog-post-prova-immagine/',
+            },
+            html:
+                '<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 177.79775280898878%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/2gAMAwEAAhADEAAAAaPex2liodSrnn5HOomF3FgYDP/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDEwQQEiL/2gAIAQEAAQUCAueDCKiImpVE5FbVB8LMwp9nyMlF3Jbv/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwFf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxAR/9oACAECAQE/AXLyEtRYb//EABoQAAICAwAAAAAAAAAAAAAAAAABEDERIEH/2gAIAQEABj8CKhPrhinBev8A/8QAGxAAAwADAQEAAAAAAAAAAAAAAAERITFBYRD/2gAIAQEAAT8hboV6GNGoypaC/VGwFcIcb4LcdMf4hI0pKIfRKXV4LP3/2gAMAwEAAgADAAAAEJfawPwf/8QAFxEBAAMAAAAAAAAAAAAAAAAAARAgIf/aAAgBAwEBPxBYTaf/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAQ/9oACAECAQE/ECSTKlyTMEC9/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFBEGGh4fH/2gAIAQEAAT8QuqXUHUMxC4ORhmAsJfEq9rqW4Q6X6gnQE1sIObd7Gtc3fEvNatfqB06K38lWsoGephsfH//Z\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="Aerial View of a Soccer Field"\n        title="Aerial View of a Soccer Field"\n        src="/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg"\n        srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/3a2a3/aerial-view.jpg 350w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/67d4f/aerial-view.jpg 700w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/8dcf2/aerial-view.jpg 1400w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/36a65/aerial-view.jpg 2100w,\n/static/2e7396dc6a2652a0267c8daa3a97b55e/c0087/aerial-view.jpg 2225w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>\n<p>Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus lobortis, auctor mauris ac, malesuada diam. Aliquam turpis sapien, semper non est sit amet, fringilla interdum nisi. In tincidunt velit a lorem molestie, a maximus diam consequat. Sed in est eu arcu cursus lobortis id sed metus. Maecenas justo nisi, rhoncus at nisl quis, commodo rutrum tortor. Sed ornare nibh in euismod mattis.</p>',
+            excerpt:
+                'Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Plain',
+                language: 'en',
+                date: '2019-12-02T19:28:45.087Z',
+                layout: 'post',
+                banner_image: '../../src/images/cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-02-test-blog-plain/',
+            },
+            html:
+                '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris pharetra purus non nulla pharetra, sit amet faucibus quam pellentesque. Vivamus auctor, tellus in finibus placerat, elit eros gravida nisl, sit amet laoreet nulla magna non augue. Morbi volutpat, nibh ac pellentesque congue, felis velit commodo quam, at scelerisque justo arcu et ex. Morbi eget sem placerat, luctus est quis, vulputate tortor. Curabitur ut iaculis lacus, eu pellentesque lacus. Fusce bibendum est id lorem finibus, quis aliquam lacus ultrices. Praesent condimentum pharetra purus et sagittis. Vivamus fermentum molestie congue. Cras dictum in orci eu auctor. Mauris tristique quam quis sem dictum, in rhoncus metus venenatis. Phasellus maximus ex vitae elit sodales tempus. Sed suscipit ex non ex viverra eleifend.</p>\n<p>Mauris in mauris urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu viverra arcu, eget condimentum eros. Duis eget tortor lorem. Sed rhoncus dictum nisl a elementum. Vestibulum enim turpis, posuere vitae quam nec, hendrerit mollis lorem. Quisque bibendum sed dolor in rhoncus. Etiam id nunc porta, mollis nisi sed, consequat nisl. Vestibulum nec sapien lectus. Vestibulum nec justo et erat fringilla venenatis.</p>\n<p>Aliquam eu dolor felis. Curabitur fringilla mollis sem, quis accumsan tortor pulvinar sit amet. Pellentesque porttitor varius velit vitae maximus. Aenean condimentum sed turpis eget auctor. Ut elementum vehicula molestie. In id feugiat ligula. Sed at aliquet nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse euismod dictum nunc, non auctor ipsum lobortis sed.</p>\n<p>Etiam et mauris velit. Cras at vestibulum odio. Sed accumsan turpis in felis vehicula, at feugiat erat bibendum. Vivamus sed venenatis mi. Vestibulum pulvinar elit vitae sem tempor, a tincidunt mauris euismod. Nam in laoreet quam. Nullam congue vitae velit sit amet feugiat. Etiam mattis finibus ante, ut aliquet nisl. In consectetur blandit ipsum. In nec vestibulum nibh. Maecenas malesuada, purus sit amet convallis pharetra, felis ante fermentum est, imperdiet consequat nunc nulla non ante. Aenean sollicitudin non neque non rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor est, viverra vitae eleifend ac, tincidunt ac arcu. Fusce ultrices nunc vel nunc fermentum convallis. Sed condimentum tortor libero, nec vestibulum leo convallis rhoncus.</p>\n<p>Integer eu nisi eu nunc ornare pretium rutrum ut tortor. Ut tincidunt, quam sit amet accumsan auctor, dui velit faucibus massa, eget viverra dolor mi id erat. Phasellus sed facilisis neque. Maecenas nunc sapien, faucibus eu purus sit amet, mattis venenatis turpis. Aenean tristique tortor vitae nisl dictum, eu malesuada urna tincidunt. Quisque dapibus ante vel ex tincidunt commodo. Aliquam gravida massa ac tellus rutrum, eget euismod lorem sodales. Vivamus volutpat rhoncus ex, a luctus nisl ultricies ut. Duis id magna ac metus laoreet bibendum eu sit amet nulla. Curabitur et leo id nisi vestibulum tincidunt. Maecenas et magna sagittis ipsum congue luctus. Etiam lacus arcu, blandit non consectetur sit amet, semper et neque. Ut luctus diam nec accumsan dignissim. Aliquam eget ultrices lectus.</p>\n<p>Nulla viverra magna odio, lobortis posuere augue viverra sed. Aliquam ante nulla, hendrerit quis suscipit et, rutrum quis diam. Donec ut tristique tellus. Aliquam lorem risus, porttitor sit amet lorem vel, scelerisque congue ipsum. Morbi tincidunt molestie sagittis. Ut quis est ac urna hendrerit vulputate at et ipsum. Aliquam erat volutpat. Curabitur scelerisque ligula eget risus semper ornare. Etiam venenatis dolor vel suscipit dapibus. Nullam molestie ut est a pharetra. Proin congue nulla non laoreet vehicula. Sed gravida iaculis tellus, eu congue est luctus non. In sem diam, facilisis a pellentesque eu, vehicula quis erat. Suspendisse vitae vestibulum dolor. Donec ut eros vel odio varius fringilla eget vel lectus.</p>',
+            excerpt:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris…',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Image New',
+                language: 'en',
+                date: '2019-12-03T17:17:22.099Z',
+                layout: 'post',
+                banner_image: './cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-03-test-blog-image-new/',
+            },
+            html:
+                '<p>Testing...</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAHCguANmL//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRFBITIf/aAAgBAQABBQKvJXbGgR3FcZH/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAXEQADAQAAAAAAAAAAAAAAAAAAARMC/9oACAECAQE/AaMpo//EABoQAAICAwAAAAAAAAAAAAAAAAABESAxQZH/2gAIAQEABj8Cls1wzT//xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMVGB8P/aAAgBAQABPyGOo3bobsKGs692MDeCZ//aAAwDAQACAAMAAAAQaB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8QuK//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCIf//EABsQAQEBAAMBAQAAAAAAAAAAAAERACExQWGR/9oACAEBAAE/EGq1wmPPxzQE05Ff25iqIzkcMSHWALHZ7qKz193/2Q==\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="A Goal Net"\n        title="A Goal Net"\n        src="/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg"\n        srcset="/static/5de83d4780d151558333d53839ea81ea/3a2a3/net.jpg 350w,\n/static/5de83d4780d151558333d53839ea81ea/67d4f/net.jpg 700w,\n/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg 1400w,\n/static/5de83d4780d151558333d53839ea81ea/36a65/net.jpg 2100w,\n/static/5de83d4780d151558333d53839ea81ea/c6584/net.jpg 2800w,\n/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg 2976w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>',
+            excerpt: 'Testing...',
+        },
+    },
+    {
+        node: {
+            frontmatter: {
+                title: 'Test Blog Image II',
+                language: 'en',
+                date: '2019-12-03T19:21:07.494Z',
+                layout: 'post',
+                banner_image: 'cms-icon.png',
+            },
+            fields: {
+                slug: '/2019-12-03-test-blog-image-ii/',
+            },
+            html:
+                '<p>TestTestTest</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAHCguANmL//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRFBITIf/aAAgBAQABBQKvJXbGgR3FcZH/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAXEQADAQAAAAAAAAAAAAAAAAAAARMC/9oACAECAQE/AaMpo//EABoQAAICAwAAAAAAAAAAAAAAAAABESAxQZH/2gAIAQEABj8Cls1wzT//xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMVGB8P/aAAgBAQABPyGOo3bobsKGs692MDeCZ//aAAwDAQACAAMAAAAQaB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8QuK//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCIf//EABsQAQEBAAMBAQAAAAAAAAAAAAERACExQWGR/9oACAEBAAE/EGq1wmPPxzQE05Ff25iqIzkcMSHWALHZ7qKz193/2Q==\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="net"\n        title="net"\n        src="/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg"\n        srcset="/static/5de83d4780d151558333d53839ea81ea/3a2a3/net.jpg 350w,\n/static/5de83d4780d151558333d53839ea81ea/67d4f/net.jpg 700w,\n/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg 1400w,\n/static/5de83d4780d151558333d53839ea81ea/36a65/net.jpg 2100w,\n/static/5de83d4780d151558333d53839ea81ea/c6584/net.jpg 2800w,\n/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg 2976w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>\n<p>TestTestTestTestTest</p>',
+            excerpt: 'TestTestTest  TestTestTestTestTest',
+        },
+    },
+];
