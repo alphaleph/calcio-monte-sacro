@@ -154,3 +154,15 @@ export const getNetlifyCMSFilename = (path: string): string | null => {
         return null;
     }
 };
+
+/**@func utcStringToDateString
+ * Provides the DD MM YYYY string representation of the UTC date string.
+ * @param {string} utc UTC date string to convert.
+ * @return {string} DD MM YYYY string representation of the input date string.
+ */
+export const utcStringToDateString = (utc: string) => {
+    const date = new Date(utc);
+    return `${date.getDate()} ${getMonthAbrvEN(
+        date.getMonth()
+    )} ${date.getFullYear()}`;
+};

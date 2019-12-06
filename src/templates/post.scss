@@ -1,0 +1,25 @@
+@import '../pages/globals.scss';
+
+.post-container {
+    padding: 3rem 0;
+}
+
+.post-title {
+    color: $black-main;
+    font-size: 2.75rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.post-date {
+    color: $granite-grey-team;
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+}
+
+.post-markdown {
+    font-size: 1.25rem;
+    font-family:  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    line-height: 2;
+    padding: 2rem;
+}

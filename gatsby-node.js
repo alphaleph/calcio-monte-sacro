@@ -20,39 +20,90 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
             name: `slug`,
             value: slug,
         });
+        if (node.frontmatter.layout === 'post') {
+            let pathString = '';
+            if (node.frontmatter.post_type === 'news') {
+                pathString += '/news';
+            } else if (node.frontmatter.post_type === 'blog') {
+                pathString += '/blog';
+            }
+            pathString += node.fields.slug;
+            createNodeField({
+                node,
+                name: `pathString`,
+                value: pathString,
+            });
+
+            // FIXME: Hotfix - Netlify CMS banner image URL normalization
+            let bannerImg = '';
+            let regex = /(.*\/)(.*\.(?:jpe?g|png))$/;
+            let matches = node['frontmatter']['banner-image'].match(regex);
+            if (matches) {
+                // [0] = whole path, [1] = path before filename, [2] = filename
+                bannerImg = matches[2];
+            } else {
+                console.error(
+                    `Error: Invalid path structure. Path <${
+                        node['frontmatter']['banner-image']
+                    }> Must contain / .`
+                );
+            }
+            bannerImg = '../../src/images/' + bannerImg;
+            createNodeField({
+                node,
+                name: `bannerImg`,
+                value: bannerImg,
+            });
+        }
     }
 };
 
+exports.createPages = async ({ graphql, actions }) => {
+    const { createPage } = actions;
+    const result = await graphql(`
+        query {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        frontmatter {
+                            layout
+                            post_type
+                        }
+                        fields {
+                            slug
+                            pathString
+                            bannerImg {
+                                childImageSharp {
+                                    fluid(maxWidth: 1024) {
+                                        base64
+                                        aspectRatio
+                                        sizes
+                                        originalName
+                                        src
+                                        srcSet
+                                        presentationWidth
+                                        presentationHeight
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `);
 
-
-// exports.createPages = async ({ graphql, actions }) => {
-//     const { createPage } = actions;
-//     const result = await graphql(`
-//         query {
-//             allMarkdownRemark {
-//                 edges {
-//                     node {
-//                         frontmatter {
-//                             layout
-//                         }
-//                         fields {
-//                             slug
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     `);
-
-//     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-//         if (node.layout === 'post') {
-//             createPage({
-//                 path: node.fields.slug,
-//                 component: path.resolve(`./src/pages/post.tsx`),
-//                 context: {
-//                     slug: node.fields.slug,
-//                 },
-//             });
-//         }
-//     });
-// };
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        if (node.frontmatter.layout === 'post') {
+            createPage({
+                path: node.fields.pathString,
+                component: path.resolve(`./src/templates/post.tsx`),
+                context: {
+                    slug: node.fields.slug,
+                    pathString: node.fields.pathString,
+                    bannerImg: node.fields.bannerImg,
+                },
+            });
+        }
+    });
+};
