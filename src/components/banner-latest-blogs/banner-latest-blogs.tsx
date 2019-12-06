@@ -6,7 +6,6 @@ import {
     mockBlogDataNodes,
     mockFluidImageDataNodes,
 } from '../__tests__/test-util';
-import { SITE_URL } from '../../constants';
 import './banner-latest-blogs.scss';
 
 export const BannerLatestBlogs = () => {
@@ -22,7 +21,7 @@ export const BannerLatestBlogs = () => {
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
                         <Link
-                            to={`${SITE_URL}/blog`}
+                            to={`/blog`}
                             className="banner-latest-blogs-button"
                         >
                             <button

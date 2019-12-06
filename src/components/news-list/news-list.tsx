@@ -31,6 +31,7 @@ export const NewsList = ({ size = 3 }: NewsListProps) => {
                             }
                             fields {
                                 slug
+                                pathString
                             }
                             html
                             excerpt(format: PLAIN)

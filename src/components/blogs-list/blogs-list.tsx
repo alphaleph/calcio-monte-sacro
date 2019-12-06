@@ -31,6 +31,7 @@ export const BlogsList = ({ size = 2 }: BlogsListProps) => {
                             }
                             fields {
                                 slug
+                                pathString
                             }
                             html
                             excerpt(format: PLAIN)

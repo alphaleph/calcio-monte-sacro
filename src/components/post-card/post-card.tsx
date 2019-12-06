@@ -16,7 +16,7 @@ export const PostCard = ({ post, image }: PostCardProps) => {
         const date = new Date(post.node.frontmatter.date);
         const excerpt = post.node.excerpt;
         const title = post.node.frontmatter.title;
-        const postUrl = NEWS_URL + post.node.fields.slug;
+        const postUrl = post.node.fields.pathString;
 
         return (
             <Link to={postUrl} data-testid="post-card-link">
