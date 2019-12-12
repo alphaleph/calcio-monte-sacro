@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { EventCard } from '../event-card/event-card';
-import { MarkdownData, MarkdownDataNode } from '../../types/index';
+import { MarkdownData, MarkdownEventDataNode } from '../../types/index';
 import { findMostRecentlyPastIndex } from '../../util';
 
 interface SchedulePreviewOwnProps {
@@ -9,7 +9,7 @@ interface SchedulePreviewOwnProps {
 }
 
 interface SchedulePreviewProps extends SchedulePreviewOwnProps {
-    events: MarkdownDataNode[];
+    events: MarkdownEventDataNode[];
 }
 
 export const PureSchedulePreview = ({

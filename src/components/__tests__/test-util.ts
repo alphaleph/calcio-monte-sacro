@@ -2,6 +2,7 @@ import {
     PageTitleToURLMap,
     MarkdownDataNode,
     MarkdownData,
+    MarkdownEventDataNode,
 } from '../../types/index';
 import { SITE_URL } from '../../constants';
 
@@ -625,6 +626,15 @@ export const mockEventFutureMatchIT = {
         html: '',
     },
 };
+
+export const mockEventsDataNodes: MarkdownEventDataNode[] = [
+    mockEventPracticeEN,
+    mockEventPracticeIT,
+    mockEventFutureMatchEN,
+    mockEventFutureMatchIT,
+    mockEventFinishedMatchEN,
+    mockEventFinishedMatchIT,
+];
 
 export const mockNewsDataNodes: MarkdownDataNode[] = [
     {

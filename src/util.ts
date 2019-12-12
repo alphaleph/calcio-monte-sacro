@@ -1,14 +1,14 @@
-import { MarkdownDataNode } from './types/index';
+import { MarkdownDataNode, MarkdownEventDataNode } from './types/index';
 
 /**@func findMostRecentlyPastIndex
  * Finds index of most recently past Markdown post. Implemented via a modified binary search.
- * @param {MarkdownDataNode[]} edges Array of Markdown nodes. Assumes dates are sorted in ASC order!
+ * @param {MarkdownDataNode[] | MarkdownEventDataNode[]} edges Array of Markdown nodes. Assumes dates are sorted in ASC order!
  * @param {number} date Optional. Date from which to search.
  * @return {number} The index of the most recently past Markdown post. Returns -1 if current date is the earliest date.
  * @throws Error if edges size is 0.
  */
 export const findMostRecentlyPastIndex = (
-    edges: MarkdownDataNode[],
+    edges: MarkdownDataNode[] | MarkdownEventDataNode[],
     date: number = Date.now()
 ): number => {
     if (edges.length === 0) {
@@ -26,7 +26,7 @@ export const findMostRecentlyPastIndex = (
     }
 
     // Case: Return index of most recently past post
-    const dates = edges.map((edge: MarkdownDataNode) =>
+    const dates = edges.map((edge: MarkdownDataNode | MarkdownEventDataNode) =>
         Date.parse(edge.node.frontmatter.date)
     );
 

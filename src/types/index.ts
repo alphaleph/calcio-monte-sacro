@@ -10,7 +10,7 @@ export interface TypeToElementMap {
 
 export interface MarkdownData {
     allMarkdownRemark: {
-        edges: MarkdownDataNode[];
+        edges: MarkdownDataNode[] | MarkdownEventDataNode[];
     };
     allImageSharp?: {
         edges: FluidImageDataNode[];
@@ -45,6 +45,28 @@ export interface MarkdownPostData {
     };
     html: string;
     excerpt?: string | null;
+}
+
+export interface MarkdownEventData {
+    frontmatter: {
+        title: string;
+        layout: string;
+        language: string;
+        date: string;
+        type: string;
+        venue: string;
+        opposing_team?: string | null;
+        score_ms?: number | null;
+        score_other?: number | null;
+    };
+    fields: {
+        slug: string;
+    };
+    html: string;
+}
+
+export interface MarkdownEventDataNode {
+    node: MarkdownEventData;
 }
 
 export interface FluidImageDataNode {
