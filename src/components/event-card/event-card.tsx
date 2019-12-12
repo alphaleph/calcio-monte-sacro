@@ -1,18 +1,18 @@
 import React from 'react';
 import { Loading } from '../loading/loading';
-import { MarkdownDataNode } from '../../types/index';
+import { MarkdownEventDataNode } from '../../types/index';
 import { MATCH_EN, MATCH_IT, HOME_VENUE, TEAM_ABRV } from '../../constants';
-import { getMonthAbrvEN } from '../../util';
+import { utcStringToDateString } from '../../util';
 import './event-card.scss';
 
 interface EventCardProps {
-    event: MarkdownDataNode | null;
+    event: MarkdownEventDataNode | null;
 }
 
 export const EventCard = ({ event }: EventCardProps) => {
     let el = <Loading />;
     if (event) {
-        const frontMatter = (event as MarkdownDataNode).node.frontmatter;
+        const frontMatter = (event as MarkdownEventDataNode).node.frontmatter;
         const date = new Date(frontMatter.date);
         const venue = frontMatter.venue;
         const type = frontMatter.type;
@@ -36,11 +36,7 @@ export const EventCard = ({ event }: EventCardProps) => {
             el = (
                 <article className="event-card-container container">
                     <header className="event-card-header">
-                        <p>
-                            {`${date.getDate()} ${getMonthAbrvEN(
-                                date.getMonth()
-                            )} ${date.getFullYear()}`}
-                        </p>
+                        <p>{`${utcStringToDateString(frontMatter.date)}`}</p>
                         <p className="has-text-weight-light">{venue}</p>
                     </header>
                     <section className="event-card-info columns is-mobile is-vcentered has-text-centered">
@@ -83,11 +79,7 @@ export const EventCard = ({ event }: EventCardProps) => {
             el = (
                 <article className="event-card-container container">
                     <header className="event-card-header">
-                        <p>
-                            {`${date.getDate()} ${getMonthAbrvEN(
-                                date.getMonth()
-                            )} ${date.getFullYear()}`}
-                        </p>
+                        <p>{`${utcStringToDateString(frontMatter.date)}`}</p>
                         <p className="has-text-weight-light">{venue}</p>
                     </header>
                     <section className="event-card-info has-text-centered columns is-mobile is-vcentered">
