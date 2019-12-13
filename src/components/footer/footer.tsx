@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import './footer.scss';
 import {
-    SITE_URL,
     EMAIL_ADDR,
     TERMS_AND_CONDITIONS,
     PRIVACY,
@@ -39,10 +38,7 @@ export const Footer = (props: FooterProps) => {
                     <Link className="footer-main-link" to="/blog">
                         Blog
                     </Link>
-                    <Link
-                        className="footer-main-link"
-                        to={`${SITE_URL}/drills`}
-                    >
+                    <Link className="footer-main-link" to={`/drills`}>
                         Drills
                     </Link>
                     <Link className="footer-main-link" to="/about">

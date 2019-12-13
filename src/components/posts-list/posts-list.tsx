@@ -79,21 +79,15 @@ export const PostsList = ({
         // General Cose: n-Cards
         const pastIndex = findMostRecentlyPastIndex(posts, date);
 
-        console.log('PastIndex: ' + pastIndex);
-
         const currPosts = posts.filter(
             (postDatum, index) => index <= pastIndex && index > pastIndex - size
         );
-
-        console.log('Posts: ' + currPosts);
 
         // Retrieve corresponding banner images
         let imagesList: FluidImageDataNode[] = makePostImageArray(
             currPosts,
             images
         );
-
-        console.log('Images: ' + imagesList);
 
         // Generate n-Cards
         postsList = currPosts.map((post, index) => (

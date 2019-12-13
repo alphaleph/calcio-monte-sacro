@@ -30,7 +30,7 @@ exports[`Posts List has not changed--news 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-banner/"
+        href="/news/2019-12-02-notizie-prova-banner/"
       >
         <article
           class="post-card-container container"
@@ -120,7 +120,7 @@ exports[`Posts List has not changed--news 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-test-news-image/"
+        href="/news/2019-12-02-test-news-image/"
       >
         <article
           class="post-card-container container"
@@ -194,7 +194,7 @@ exports[`Posts List has not changed--news 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-immagine/"
+        href="/news/2019-12-02-notizie-prova-immagine/"
       >
         <article
           class="post-card-container container"
@@ -278,7 +278,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-markdown/"
+        href="/news/2019-12-02-notizie-prova-markdown/"
       >
         <article
           class="post-card-container container"
@@ -295,45 +295,29 @@ exports[`Posts List has not changed--nine-posts 1`] = `
               />
               <img
                 alt=""
-                src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAScc8Hgm/8QAGRAAAgMBAAAAAAAAAAAAAAAAAQIAAxES/9oACAEBAAEFAqwoDNobOjUBC86n/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQMBAT8Bqv/EABYRAAMAAAAAAAAAAAAAAAAAABARIf/aAAgBAgEBPwGMf//EABoQAAICAwAAAAAAAAAAAAAAAAABQZEQIjH/2gAIAQEABj8CiyLHqjrz/8QAGxABAAEFAQAAAAAAAAAAAAAAAQARITFRcUH/2gAIAQEAAT8hVUXTc2Rt5jy2+oOJkiPk5J//2gAMAwEAAgADAAAAEN8//8QAFhEBAQEAAAAAAAAAAAAAAAAAABEx/9oACAEDAQE/EMVT/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERQf/aAAgBAgEBPxDBUP/EABwQAQADAQADAQAAAAAAAAAAAAEAESExQYGRof/aAAgBAQABPxDHuqhvfUt2aACrnnkHdr7r4ypAQI1v5HkpVyz1p//Z"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC"
                 style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; transition-delay: 500ms;"
               />
               <picture>
                 <source
-                  sizes="(max-width: 1024px) 100vw, 1024px"
-                  srcset="/static/bb6bf146d74b5445837161faebc4db04/e5b28/foosball.jpg 256w,
-/static/bb6bf146d74b5445837161faebc4db04/160a1/foosball.jpg 512w,
-/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg 1024w,
-/static/bb6bf146d74b5445837161faebc4db04/5bc26/foosball.jpg 1536w,
-/static/bb6bf146d74b5445837161faebc4db04/3d25e/foosball.jpg 2048w,
-/static/bb6bf146d74b5445837161faebc4db04/0f7e5/foosball.jpg 4751w"
+                  sizes="(max-width: 512px) 100vw, 512px"
+                  srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                 />
                 <img
                   alt=""
                   loading="lazy"
-                  sizes="(max-width: 1024px) 100vw, 1024px"
-                  src="/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg"
-                  srcset="/static/bb6bf146d74b5445837161faebc4db04/e5b28/foosball.jpg 256w,
-/static/bb6bf146d74b5445837161faebc4db04/160a1/foosball.jpg 512w,
-/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg 1024w,
-/static/bb6bf146d74b5445837161faebc4db04/5bc26/foosball.jpg 1536w,
-/static/bb6bf146d74b5445837161faebc4db04/3d25e/foosball.jpg 2048w,
-/static/bb6bf146d74b5445837161faebc4db04/0f7e5/foosball.jpg 4751w"
+                  sizes="(max-width: 512px) 100vw, 512px"
+                  src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
+                  srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
                 />
               </picture>
               <noscript>
-                &lt;picture&gt;&lt;source srcset="/static/bb6bf146d74b5445837161faebc4db04/e5b28/foosball.jpg 256w,
-/static/bb6bf146d74b5445837161faebc4db04/160a1/foosball.jpg 512w,
-/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg 1024w,
-/static/bb6bf146d74b5445837161faebc4db04/5bc26/foosball.jpg 1536w,
-/static/bb6bf146d74b5445837161faebc4db04/3d25e/foosball.jpg 2048w,
-/static/bb6bf146d74b5445837161faebc4db04/0f7e5/foosball.jpg 4751w" sizes="(max-width: 1024px) 100vw, 1024px" /&gt;&lt;img loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" srcset="/static/bb6bf146d74b5445837161faebc4db04/e5b28/foosball.jpg 256w,
-/static/bb6bf146d74b5445837161faebc4db04/160a1/foosball.jpg 512w,
-/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg 1024w,
-/static/bb6bf146d74b5445837161faebc4db04/5bc26/foosball.jpg 1536w,
-/static/bb6bf146d74b5445837161faebc4db04/3d25e/foosball.jpg 2048w,
-/static/bb6bf146d74b5445837161faebc4db04/0f7e5/foosball.jpg 4751w" src="/static/bb6bf146d74b5445837161faebc4db04/426ce/foosball.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
               </noscript>
             </div>
           </header>
@@ -368,7 +352,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-test-news-symbols/"
+        href="/news/2019-12-02-test-news-symbols/"
       >
         <article
           class="post-card-container container"
@@ -385,45 +369,29 @@ exports[`Posts List has not changed--nine-posts 1`] = `
               />
               <img
                 alt=""
-                src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/2gAMAwEAAhADEAAAAaPex2liodSrnn5HOomF3FgYDP/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDEwQQEiL/2gAIAQEAAQUCAueDCKiImpVE5FbVB8LMwp9nyMlF3Jbv/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwFf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxAR/9oACAECAQE/AXLyEtRYb//EABoQAAICAwAAAAAAAAAAAAAAAAABEDERIEH/2gAIAQEABj8CKhPrhinBev8A/8QAGxAAAwADAQEAAAAAAAAAAAAAAAERITFBYRD/2gAIAQEAAT8hboV6GNGoypaC/VGwFcIcb4LcdMf4hI0pKIfRKXV4LP3/2gAMAwEAAgADAAAAEJfawPwf/8QAFxEBAAMAAAAAAAAAAAAAAAAAARAgIf/aAAgBAwEBPxBYTaf/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAQ/9oACAECAQE/ECSTKlyTMEC9/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFBEGGh4fH/2gAIAQEAAT8QuqXUHUMxC4ORhmAsJfEq9rqW4Q6X6gnQE1sIObd7Gtc3fEvNatfqB06K38lWsoGephsfH//Z"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC"
                 style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; transition-delay: 500ms;"
               />
               <picture>
                 <source
-                  sizes="(max-width: 1024px) 100vw, 1024px"
-                  srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/e5b28/aerial-view.jpg 256w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/160a1/aerial-view.jpg 512w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg 1024w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/5bc26/aerial-view.jpg 1536w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/3d25e/aerial-view.jpg 2048w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/7f7b1/aerial-view.jpg 2225w"
+                  sizes="(max-width: 512px) 100vw, 512px"
+                  srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                 />
                 <img
                   alt=""
                   loading="lazy"
-                  sizes="(max-width: 1024px) 100vw, 1024px"
-                  src="/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg"
-                  srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/e5b28/aerial-view.jpg 256w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/160a1/aerial-view.jpg 512w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg 1024w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/5bc26/aerial-view.jpg 1536w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/3d25e/aerial-view.jpg 2048w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/7f7b1/aerial-view.jpg 2225w"
+                  sizes="(max-width: 512px) 100vw, 512px"
+                  src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
+                  srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
                 />
               </picture>
               <noscript>
-                &lt;picture&gt;&lt;source srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/e5b28/aerial-view.jpg 256w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/160a1/aerial-view.jpg 512w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg 1024w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/5bc26/aerial-view.jpg 1536w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/3d25e/aerial-view.jpg 2048w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/7f7b1/aerial-view.jpg 2225w" sizes="(max-width: 1024px) 100vw, 1024px" /&gt;&lt;img loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" srcset="/static/2e7396dc6a2652a0267c8daa3a97b55e/e5b28/aerial-view.jpg 256w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/160a1/aerial-view.jpg 512w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg 1024w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/5bc26/aerial-view.jpg 1536w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/3d25e/aerial-view.jpg 2048w,
-/static/2e7396dc6a2652a0267c8daa3a97b55e/7f7b1/aerial-view.jpg 2225w" src="/static/2e7396dc6a2652a0267c8daa3a97b55e/426ce/aerial-view.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
               </noscript>
             </div>
           </header>
@@ -458,7 +426,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-simboli/"
+        href="/news/2019-12-02-notizie-prova-simboli/"
       >
         <article
           class="post-card-container container"
@@ -532,7 +500,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-test-news-short/"
+        href="/news/2019-12-02-test-news-short/"
       >
         <article
           class="post-card-container container"
@@ -606,7 +574,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-corta/"
+        href="/news/2019-12-02-notizie-prova-corta/"
       >
         <article
           class="post-card-container container"
@@ -680,7 +648,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-test-news-banner/"
+        href="/news/2019-12-02-test-news-banner/"
       >
         <article
           class="post-card-container container"
@@ -770,7 +738,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-banner/"
+        href="/news/2019-12-02-notizie-prova-banner/"
       >
         <article
           class="post-card-container container"
@@ -860,7 +828,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-test-news-image/"
+        href="/news/2019-12-02-test-news-image/"
       >
         <article
           class="post-card-container container"
@@ -934,7 +902,7 @@ exports[`Posts List has not changed--nine-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-immagine/"
+        href="/news/2019-12-02-notizie-prova-immagine/"
       >
         <article
           class="post-card-container container"
@@ -1018,7 +986,7 @@ exports[`Posts List has not changed--one-post 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-test-news-plain/"
+        href="/news/2019-12-02-test-news-plain/"
       >
         <article
           class="post-card-container container"
@@ -1102,7 +1070,7 @@ exports[`Posts List has not changed--two-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-test-news-image/"
+        href="/news/2019-12-02-test-news-image/"
       >
         <article
           class="post-card-container container"
@@ -1176,7 +1144,7 @@ exports[`Posts List has not changed--two-posts 1`] = `
     >
       <a
         data-testid="post-card-link"
-        href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-immagine/"
+        href="/news/2019-12-02-notizie-prova-immagine/"
       >
         <article
           class="post-card-container container"

@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { MarkdownDataNode, FluidImageDataNode } from '../../types';
 import { getMonthAbrvEN } from '../../util';
-import { NEWS_URL } from '../../constants';
 import './post-card.scss';
 
 interface PostCardProps {

@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Event Card has not changed--match-finished 1`] = `
+<DocumentFragment>
+  <article
+    class="event-row-container container"
+  >
+    <header
+      class="event-row-header"
+    >
+      <p>
+        20 NOV 2019
+      </p>
+      <p
+        class="has-text-weight-light"
+      >
+        Parco Sannazzaro
+      </p>
+    </header>
+    <section
+      class="event-row-info columns is-mobile is-vcentered"
+    >
+      <div
+        class="column is-two-fifths has-text-right team-info"
+      >
+        <span
+          class="team-info-abrv"
+        >
+          CMS
+        </span>
+        <span
+          aria-label="Soccer ball"
+          class="team-info-icon"
+          role="img"
+        >
+          ⚽
+        </span>
+      </div>
+      <div
+        class="column is-one-fifth match-info has-text-roma-red has-text-centered"
+      >
+        <p>
+          <span
+            class="match-info-score"
+          >
+            1
+          </span>
+          <span
+            class="has-text-team-granite"
+          >
+            -
+          </span>
+          <span
+            class="match-info-score"
+          >
+            2
+          </span>
+        </p>
+      </div>
+      <div
+        class="column is-two-fifths team-info"
+      >
+        <span
+          aria-label="Soccer ball"
+          class="team-info-icon"
+          role="img"
+        >
+          ⚽
+        </span>
+        <span
+          class="team-info-abrv"
+        >
+          CMS2
+        </span>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`Event Card has not changed--match-future 1`] = `
+<DocumentFragment>
+  <article
+    class="event-row-container container"
+  >
+    <header
+      class="event-row-header"
+    >
+      <p>
+        20 NOV 2200
+      </p>
+      <p
+        class="has-text-weight-light"
+      >
+        Parco Sannazzaro
+      </p>
+    </header>
+    <section
+      class="event-row-info columns is-mobile is-vcentered"
+    >
+      <div
+        class="column is-two-fifths has-text-right team-info"
+      >
+        <span
+          class="team-info-abrv"
+        >
+          CMS
+        </span>
+        <span
+          aria-label="Soccer ball"
+          class="team-info-icon"
+          role="img"
+        >
+          ⚽
+        </span>
+      </div>
+      <div
+        class="column is-one-fifth match-info has-text-roma-red has-text-centered"
+      >
+        <p>
+          12:40
+        </p>
+      </div>
+      <div
+        class="column is-two-fifths team-info"
+      >
+        <span
+          aria-label="Soccer ball"
+          class="team-info-icon"
+          role="img"
+        >
+          ⚽
+        </span>
+        <span
+          class="team-info-abrv"
+        >
+          CMS2
+        </span>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`Event Card has not changed--null 1`] = `
+<DocumentFragment>
+  <article
+    class="event-row-container container"
+    data-testid="event-row-empty"
+  />
+</DocumentFragment>
+`;
+
+exports[`Event Card has not changed--practice 1`] = `
+<DocumentFragment>
+  <article
+    class="event-row-container container"
+  >
+    <header
+      class="event-row-header"
+    >
+      <p>
+        20 NOV 2019
+      </p>
+      <p
+        class="has-text-weight-light"
+      >
+        Parco Sannazzaro
+      </p>
+    </header>
+    <section
+      class="event-row-info has-text-centered columns is-mobile is-vcentered"
+    >
+      <div
+        class="column practice-info"
+      >
+        <p>
+          PRACTICE
+        </p>
+        <p
+          class="has-text-roma-red"
+        >
+          12:40
+        </p>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;

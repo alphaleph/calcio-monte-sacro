@@ -18,7 +18,7 @@ exports[`Header has not changed 1`] = `
         >
           <a
             class="navbar-logo-container navbar-item has-link-team-holy"
-            href="https://www.calciomontesacro.com"
+            href="/"
           >
             <div
               class="navbar-logo gatsby-image-wrapper"
@@ -83,7 +83,7 @@ exports[`Header has not changed 1`] = `
           >
             <a
               class="navbar-item has-link-team-holy"
-              href="https://www.calciomontesacro.com/schedule"
+              href="/schedule"
             >
               <span
                 class="link-text"
@@ -99,7 +99,7 @@ exports[`Header has not changed 1`] = `
             </a>
             <a
               class="navbar-item has-link-team-holy"
-              href="https://www.calciomontesacro.com/news"
+              href="/news"
             >
               <span
                 class="link-text"
@@ -115,7 +115,7 @@ exports[`Header has not changed 1`] = `
             </a>
             <a
               class="navbar-item has-link-team-holy"
-              href="https://www.calciomontesacro.com/blog"
+              href="/blog"
             >
               <span
                 class="link-text"
@@ -131,7 +131,7 @@ exports[`Header has not changed 1`] = `
             </a>
             <a
               class="navbar-item has-link-team-holy"
-              href="https://www.calciomontesacro.com/drills"
+              href="/drills"
             >
               <span
                 class="link-text"
@@ -147,7 +147,7 @@ exports[`Header has not changed 1`] = `
             </a>
             <a
               class="navbar-item has-link-team-holy"
-              href="https://www.calciomontesacro.com/about"
+              href="/about"
             >
               <span
                 class="link-text"

@@ -4,7 +4,7 @@ exports[`Post Card has not changed 1`] = `
 <DocumentFragment>
   <a
     data-testid="post-card-link"
-    href="https://www.calciomontesacro.com/news/2019-12-02-test-news-plain/"
+    href="/news/2019-12-02-test-news-plain/"
   >
     <article
       class="post-card-container container"

@@ -2,7 +2,6 @@ import React from 'react';
 import { PostCard } from '../post-card/post-card';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { NEWS_URL } from '../../constants';
 import {
     mockNewsDataNodes,
     mockFluidImageDataNodes,
@@ -17,7 +16,7 @@ const DATE = `${rawDate.getDate()} ${getMonthAbrvEN(
 const TITLE = 'Test News Plain';
 const EXCERPT =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris…';
-const POSTCARD_URL = NEWS_URL + '/2019-12-02-test-news-plain/';
+const POSTCARD_URL = '/news/2019-12-02-test-news-plain/';
 const EMPTY_TEST_ID = 'post-card-empty';
 const LINK_TEST_ID = 'post-card-link';
 const mockImage: FluidImageDataNode = mockFluidImageDataNodes[0];

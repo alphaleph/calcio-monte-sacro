@@ -39,7 +39,7 @@ exports[`Banner Drills has not changed 1`] = `
           class="column is-half is-offset-one-quarter"
         >
           <a
-            href="https://www.calciomontesacro.com/drills"
+            href="/drills"
           >
             <button
               class="banner-drills-button button is-fullwidth has-background-team-granite has-text-team-holy"

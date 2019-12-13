@@ -13,31 +13,31 @@ exports[`Footer has not changed 1`] = `
       >
         <a
           class="footer-main-link"
-          href="https://www.calciomontesacro.com/schedule"
+          href="/schedule"
         >
           Schedule
         </a>
         <a
           class="footer-main-link"
-          href="https://www.calciomontesacro.com/news"
+          href="/news"
         >
           News
         </a>
         <a
           class="footer-main-link"
-          href="https://www.calciomontesacro.com/blog"
+          href="/blog"
         >
           Blog
         </a>
         <a
           class="footer-main-link"
-          href="https://www.calciomontesacro.com/drills"
+          href="/drills"
         >
           Drills
         </a>
         <a
           class="footer-main-link"
-          href="https://www.calciomontesacro.com/about"
+          href="/about"
         >
           About
         </a>

@@ -25,7 +25,7 @@ exports[`Banner Latest News has not changed 1`] = `
           >
             <a
               data-testid="post-card-link"
-              href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-banner/"
+              href="/news/2019-12-02-notizie-prova-banner/"
             >
               <article
                 class="post-card-container container"
@@ -115,7 +115,7 @@ exports[`Banner Latest News has not changed 1`] = `
           >
             <a
               data-testid="post-card-link"
-              href="https://www.calciomontesacro.com/news/2019-12-02-test-news-image/"
+              href="/news/2019-12-02-test-news-image/"
             >
               <article
                 class="post-card-container container"
@@ -189,7 +189,7 @@ exports[`Banner Latest News has not changed 1`] = `
           >
             <a
               data-testid="post-card-link"
-              href="https://www.calciomontesacro.com/news/2019-12-02-notizie-prova-immagine/"
+              href="/news/2019-12-02-notizie-prova-immagine/"
             >
               <article
                 class="post-card-container container"
