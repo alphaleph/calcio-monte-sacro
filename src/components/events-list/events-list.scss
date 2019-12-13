@@ -1,0 +1,13 @@
+@import '../../pages/globals.scss';
+
+.is-most-recent {
+    border: 4px solid $roma-tyrian;
+}
+
+.most-recent-note {
+    background: $beige-main;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1rem;
+}

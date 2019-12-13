@@ -13,7 +13,6 @@ const VENUE = 'Parco Sannazzaro';
 const OPP_TEAM = 'CMS2';
 const SCORE_MS = 1;
 const SCORE_OTHER = 2;
-const HOME_SCORE_STRING = `${SCORE_MS}-${SCORE_OTHER}`;
 const DATE_FINISHED = utcStringToDateString('2019-11-20T17:40:15.578Z');
 const rawDateFuture = new Date('2200-11-20T17:40:15.578Z');
 const DATE_FUTURE = utcStringToDateString('2200-11-20T17:40:15.578Z');
@@ -63,7 +62,8 @@ describe('Event Card', () => {
         expect(getByText(VENUE)).toBeVisible();
         expect(getByText(DATE_FINISHED)).toBeVisible();
         expect(getByText(OPP_TEAM)).toBeVisible();
-        expect(getByText(HOME_SCORE_STRING)).toBeVisible();
+        expect(getByText(`${SCORE_MS}`)).toBeVisible();
+        expect(getByText(`${SCORE_OTHER}`)).toBeVisible();
     });
 
     it('renders correctly--match-future', () => {

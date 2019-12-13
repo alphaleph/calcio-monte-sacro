@@ -9,6 +9,8 @@ const EMPTY_TEST_ID = 'events-list-empty';
 const LIST_TEST_ID = 'events-list';
 const EMPTY_LIST: MarkdownEventDataNode[] = [];
 
+//TODO: Props Tests: Date, isDesc
+
 describe('Events List', () => {
     it('renders without crashing', () => {
         const { getByTestId } = render(
