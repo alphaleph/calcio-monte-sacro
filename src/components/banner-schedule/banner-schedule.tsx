@@ -12,7 +12,7 @@ export const BannerSchedule = () => {
     return (
         <section className="banner-schedule section has-background-white-main is-bold">
             <div className="container">
-                <h2 className="title is-family-secondary has-text-black-main is-2">
+                <h2 className="title is-family-secondary has-text-roma-red is-2">
                     SCHEDULE
                 </h2>
                 <div className="banner-schedule-preview">
@@ -42,7 +42,7 @@ export const TestBannerSchedule = () => {
     return (
         <section className="banner-schedule section has-background-white-main is-bold">
             <div className="container">
-                <h2 className="title is-family-secondary has-text-black-main is-2">
+                <h2 className="title is-family-secondary has-text-roma-red is-2">
                     SCHEDULE
                 </h2>
                 <div className="banner-schedule-preview">

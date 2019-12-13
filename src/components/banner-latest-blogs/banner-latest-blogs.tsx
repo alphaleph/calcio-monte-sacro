@@ -12,7 +12,7 @@ export const BannerLatestBlogs = () => {
     return (
         <section className="banner-latest-blogs section has-background-white-main is-bold">
             <div className="container">
-                <h2 className="title is-family-secondary has-text-black-main is-2">
+                <h2 className="title is-family-secondary has-text-roma-red is-2">
                     LATEST BLOGS
                 </h2>
                 <div className="banner-latest-blogs-list">
@@ -42,7 +42,7 @@ export const TestBannerLatestBlogs = () => {
     return (
         <section className="banner-latest-blogs section has-background-white-main is-bold">
             <div className="container">
-                <h2 className="title is-family-secondary has-text-black-main is-2">
+                <h2 className="title is-family-secondary has-text-roma-red is-2">
                     LATEST BLOGS
                 </h2>
                 <div className="banner-latest-blogs-list">

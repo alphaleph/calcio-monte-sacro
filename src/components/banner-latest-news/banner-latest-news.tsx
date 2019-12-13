@@ -13,7 +13,7 @@ export const BannerLatestNews = () => {
     return (
         <section className="banner-latest-news section has-background-beige-main is-bold">
             <div className="container">
-                <h2 className="title is-family-secondary has-text-black-main is-2">
+                <h2 className="title is-family-secondary has-text-roma-red is-2">
                     LATEST NEWS
                 </h2>
                 <div className="banner-latest-news-list">
@@ -43,7 +43,7 @@ export const TestBannerLatestNews = () => {
     return (
         <section className="banner-latest-news section has-background-beige-main is-bold">
             <div className="container">
-                <h2 className="title is-family-secondary has-text-black-main is-2">
+                <h2 className="title is-family-secondary has-text-roma-red is-2">
                     LATEST NEWS
                 </h2>
                 <div className="banner-latest-news-list">
