@@ -4,7 +4,7 @@
     min-width: 280px;
     min-height: 280px;
     width: 30vw;
-    height: 30vw;
+    height: 25vw;
     background-color: $black-main;
     color: $white-main;
     font-weight: bold;
@@ -20,27 +20,34 @@
     margin: 0;
 }
 
-.team-info {
+.event-card-team-info {
     font-size: 1.5rem;
 }
 
-.match-info {
+.event-card-match-info {
     font-size: 2.3rem;
     padding: 0rem;
 }
 
-.practice-info {
+.event-card-match-info-future {
+    font-size: 2rem;
+}
+
+.event-card-practice-info {
     font-size: 2.3rem;
 }
 
 @media screen and (min-width: 1023px) {
-    .team-info {
+    .event-card-team-info {
         font-size: 2rem;
     }
-    .match-info {
+    .event-card-match-info {
         font-size: 2.5rem;
     }
-    .practice-info {
+    .event-card-match-info-future {
+        font-size: 2.5rem;
+    }
+    .event-card-practice-info {
         font-size: 2.5rem;
     }
 }

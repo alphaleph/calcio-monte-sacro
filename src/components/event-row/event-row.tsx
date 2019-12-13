@@ -36,7 +36,13 @@ export const EventRow = ({ event }: EventRowProps) => {
                     </p>
                 );
             } else {
-                matchInfo = <p>{`${date.getHours()}:${date.getMinutes()}`}</p>;
+                const options = {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                };
+                matchInfo = (
+                    <p>{`${date.toLocaleTimeString(undefined, options)}`}</p>
+                );
             }
             el = (
                 <article className="event-row-container container">
@@ -81,6 +87,14 @@ export const EventRow = ({ event }: EventRowProps) => {
             );
         } else {
             // Event: Practice
+            const options = {
+                hour: '2-digit',
+                minute: '2-digit',
+            };
+            const pracInfoString = `${date.toLocaleTimeString(
+                undefined,
+                options
+            )}`;
             el = (
                 <article className="event-row-container container">
                     <header className="event-row-header">
@@ -90,7 +104,9 @@ export const EventRow = ({ event }: EventRowProps) => {
                     <section className="event-row-info has-text-centered columns is-mobile is-vcentered">
                         <div className="column practice-info">
                             <p>PRACTICE</p>
-                            <p className="has-text-roma-red">{`${date.getHours()}:${date.getMinutes()}`}</p>
+                            <p className="has-text-roma-red">
+                                {pracInfoString}
+                            </p>
                         </div>
                     </section>
                 </article>

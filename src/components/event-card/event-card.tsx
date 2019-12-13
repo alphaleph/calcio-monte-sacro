@@ -31,7 +31,13 @@ export const EventCard = ({ event }: EventCardProps) => {
                 );
             } else {
                 // Event: Future Match
-                matchInfo = <p>{`${date.getHours()}:${date.getMinutes()}`}</p>;
+                const options = {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                };
+                matchInfo = (
+                    <p className="event-card-match-info-future">{`${date.toLocaleTimeString(undefined, options)}`}</p>
+                );
             }
             el = (
                 <article className="event-card-container container">
@@ -54,10 +60,10 @@ export const EventCard = ({ event }: EventCardProps) => {
                                     : opposingTeam}
                             </p>
                         </div>
-                        <div className="column is-one-third match-info has-text-team-holy">
+                        <div className="column is-one-third event-card-match-info has-text-team-holy">
                             {matchInfo}
                         </div>
-                        <div className="column is-one-third team-info">
+                        <div className="column is-one-third event-card-team-info">
                             <p
                                 className="is-size-1"
                                 role="img"
@@ -76,6 +82,15 @@ export const EventCard = ({ event }: EventCardProps) => {
             );
         } else {
             // Event: Practice
+            const options = {
+                hour: '2-digit',
+                minute: '2-digit',
+            };
+            const pracInfoString = `${date.toLocaleTimeString(
+                undefined,
+                options
+            )}`;
+
             el = (
                 <article className="event-card-container container">
                     <header className="event-card-header">
@@ -83,9 +98,11 @@ export const EventCard = ({ event }: EventCardProps) => {
                         <p className="has-text-weight-light">{venue}</p>
                     </header>
                     <section className="event-card-info has-text-centered columns is-mobile is-vcentered">
-                        <div className="column practice-info">
+                        <div className="column event-card-practice-info">
                             <p>PRACTICE</p>
-                            <p className="has-text-team-holy">{`${date.getHours()}:${date.getMinutes()}`}</p>
+                            <p className="has-text-team-holy">
+                                {pracInfoString}
+                            </p>
                         </div>
                     </section>
                 </article>
