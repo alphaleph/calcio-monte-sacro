@@ -1,6 +1,9 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@function parallax-scale-factor($perspective, $z-distance) {
+    @return ($perspective - $z-distance) / $perspective;
+}
 
-// Initial Variables
+// Bulma: Initial Variables
 $family-sans-serif:"Oswald", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $family-serif: "Cinzel", "Times", "Times New Roman", serif;
 $granite-grey-team: #454544;
@@ -22,7 +25,7 @@ $black-main-invert: #D8D8DA;
 $night-sky: #072B42;
 $starlight: #DFEEFF;
 
-// Derived Variables
+// Bulma: Derived Variables
 $family-primary: $family-sans-serif;
 $family-secondary: $family-serif;
 $text: $black-main;

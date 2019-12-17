@@ -8,3 +8,4 @@
 
 import('typeface-oswald');
 import('typeface-cinzel');
+import('typeface-press-start-2p');

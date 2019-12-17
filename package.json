@@ -28,7 +28,8 @@
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "typeface-cinzel": "0.0.72",
-    "typeface-oswald": "0.0.75"
+    "typeface-oswald": "0.0.75",
+    "typeface-press-start-2p": "0.0.72"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
