@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: '/calcio-monte-sacro', // TODO:  Remove for custom URL
+    pathPrefix: '/calcio-monte-sacro',
     siteMetadata: {
         title: `Calcio Monte Sacro`,
         description: `Sito Ufficiale Calcio Monte Sacro`,
