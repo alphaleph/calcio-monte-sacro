@@ -3,7 +3,7 @@
 .parallax-container {
     position: relative;
     width: 100%;
-    height: 20vh;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
     perspective: 8px;
@@ -24,81 +24,85 @@
 }
 
 .drills-middleground {
-    position: absolute;
+    position: absolute !important;
     transform-origin: 0 50%;
-    width: 150px;
-    height: 150px;
+    width: 20%;
+    height: auto;
 }
 
 .drills-middleground-bird {
     @extend .drills-middleground;
-    top: 15%;
-    left: 85%;
-    transform: translateZ(2px) scale (parallax-scale-factor(8, 2));
+    top: 20%;
+    left: 60%;
+    transform: translateZ(2px) scale(parallax-scale-factor(8, 2));
 }
 
 .drills-middleground-bomb-1 {
     @extend .drills-middleground;
     top: 120%;
-    left: 18%;
-    transform: translateZ(4px) scale (parallax-scale-factor(8, 4));
+    left: 10%;
+    transform: translateZ(4px) scale(parallax-scale-factor(8, 7.25));
 }
 .drills-middleground-bomb-2 {
     @extend .drills-middleground;
     top: 122%;
-    left: 23%;
-    transform: translateZ(5px) scale (parallax-scale-factor(8, 5));
+    left: 13%;
+    transform: translateZ(5px) scale(parallax-scale-factor(8, 6.5));
 }
 .drills-middleground-bomb-3 {
     @extend .drills-middleground;
     top: 125%;
-    left: 16%;
-    transform: translateZ(7px) scale (parallax-scale-factor(8, 7));
+    transform: translateZ(7px) scale(parallax-scale-factor(8, 7));
 }
 
-.drills-middleground-trap {
+.drills-middleground-flame-1 {
     @extend .drills-middleground;
-    top: 200%;
-    left: 70%;
-    transform: translateZ(8px) scale (parallax-scale-factor(8, 8));
+    top: 250%;
+    left: 68%;
+    transform: translateZ(1px) scale(parallax-scale-factor(8, 1));
+}
+.drills-middleground-flame-2 {
+    @extend .drills-middleground;
+    top: 250%;
+    left: 72%;
+    transform: translateZ(1px) scale(parallax-scale-factor(8, 1));
+}
+.drills-middleground-flame-3 {
+    @extend .drills-middleground;
+    top: 250%;
+    left: 75%;
+    transform: translateZ(1px) scale(parallax-scale-factor(8, 1));
 }
 
-.drills-middleground-spikes {
+.drills-middleground-tnt-1 {
     @extend .drills-middleground;
     top: 300%;
+    left: 3%;
+    transform: translateZ(1px) scale(parallax-scale-factor(8, 1));
+}
+.drills-middleground-tnt-2 {
+    @extend .drills-middleground;
+    top: 302%;
+    left: 1%;
+    transform: translateZ(1px) scale(parallax-scale-factor(8, 1));
+}
+.drills-middleground-tnt-3 {
+    @extend .drills-middleground;
+    top: 303%;
     left: 10%;
-    transform: translateZ(8px) scale (parallax-scale-factor(8, 8));
-}
-
-.drills-middleground-struck-bird {
-    @extend .drills-middleground;
-    top: 480%;
-    left: 70%;
-    transform: translateZ(2px) scale (parallax-scale-factor(8, 2));
-}
-
-.drills-middleground-pit {
-    @extend .drills-middleground;
-    top: 500%;
-    left: 80%;
-    transform: translateZ(8px) scale (parallax-scale-factor(8, 8));
-}
-
-.drills-middleground-nuke {
-    @extend .drills-middleground;
-    top: 550%;
-    left: 15%;
-    transform: translateZ(8px) scale (parallax-scale-factor(8, 8));
+    transform: translateZ(1px) scale(parallax-scale-factor(8, 1));
 }
 
 .drills-foreground {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    margin: auto;
-    transform-origin: 0;
-    transform: translateZ(3px) scale(parallax-scale-factor(8, 4.85));
+    position: relative;
+    margin-top: 4rem;
+    width: 100vw;
+    // height: 100vh;
+    // overflow-y: hidden;
+    // top: -535%;
+    // left: 19.5%;
+    // transform-origin: 0;
+    // transform: translateZ(3px) scale(parallax-scale-factor(8, 6));
 }
 
 .drills-container {
@@ -107,78 +111,160 @@
     font-family: "Press Start 2P";
 }
 
-@media screen and (min-width: 865px) {
-    .parallax-container {
-        height: 100vh;
+.drills-title {
+    font-weight: bold;
+    font-family: "Press Start 2P";
+    text-decoration: underline dashed black;
+    color: $roma-red;
+    overflow-y: hidden;
+    font-size: 2rem;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.drills-quote-container {
+    margin-left: 15%;
+    margin-right: 17%;
+    padding: 3%;
+    background: $roma-red;
+    border: 5px dashed black;
+}
+
+.drills-quote-header {
+    font-weight: bold;
+    font-family: "Press Start 2P";
+    color: $holy-yellow-team;
+    margin-bottom: 2.5%;
+}
+
+.drills-quote {
+    color: $white-main;
+    font-weight: bold;
+}
+
+.drills-list > li {
+    font-size: 1rem;
+    padding: 0 7%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media screen and (min-width: 600px) {
+    .drills-list > li {
+        margin-top: 13%;
+        margin-bottom: 13%;
     }
 
-    .drills-middleground-spikes {
-        top: 300%;
+    .drills-middleground-flame-1 {
+        top: 260%;
+    }
+    .drills-middleground-flame-2 {
+        top: 260%;
+    }
+    .drills-middleground-flame-3 {
+        top: 260%;
     }
     
-    .drills-middleground-struck-bird {
-        top: 480%;
+    .drills-middleground-tnt-1 {
+        top: 330%;
     }
-    
-    .drills-middleground-pit {
-        top: 500%;
+    .drills-middleground-tnt-2 {
+        top: 332%;
     }
-    
-    .drills-middleground-nuke {
-        top: 550%;
+    .drills-middleground-tnt-3 {
+        top: 333%;
     }
 }
 
-@media screen and (min-width: 480px) {
-    .parallax-container {
-        height: 100vh;
+@media screen and (min-width: 700px) {
+    .drills-list > li {
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
-    .drills-middleground-bomb-1 {
-
+    .drills-middleground-tnt-1 {
+        top: 430%;
     }
-    .drills-middleground-bomb-2 {
-
+    .drills-middleground-tnt-2 {
+        top: 432%;
     }
-    .drills-middleground-bomb-3 {
-
-    }
-    .drills-middleground-trap {
-        
-    }
-    .drills-middleground-spikes {
-        top: 210%;
-    }
-    
-    .drills-middleground-struck-bird {
-        top: 230%;
-    }
-    
-    .drills-middleground-pit {
-        top: 250%;
-    }
-    
-    .drills-middleground-nuke {
-        top: 300%;
+    .drills-middleground-tnt-3 {
+        top: 433%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .parallax-container {
-        height: 80vh;
+@media screen and (min-width: 900px) {
+    .drills-title {
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
     }
-    .drills-middleground-spikes {
-        top: 200%;
+    .drills-quote-header {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    .drills-quote {
+        font-size: 1.3rem;
+    }
+    .drills-list > li {
+        font-size: 1.3rem;
+    }
+
+    .drills-middleground-flame-1 {
+        top: 460%;
+    }
+    .drills-middleground-flame-2 {
+        top: 460%;
+    }
+    .drills-middleground-flame-3 {
+        top: 460%;
     }
     
-    .drills-middleground-struck-bird {
-        top: 280%;
+    .drills-middleground-tnt-1 {
+        top: 630%;
+    }
+    .drills-middleground-tnt-2 {
+        top: 632%;
+    }
+    .drills-middleground-tnt-3 {
+        top: 633%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .drills-title {
+        font-size: 3rem;
+    }
+    .drills-quote-header {
+        font-size: 1.6rem;
+    }
+    .drills-quote {
+        font-size: 1.6rem;
+    }
+    .drills-list > li {
+        font-size: 1.6rem;
+    }
+    .drills-middleground-flame-1 {
+        top: 660%;
+    }
+    .drills-middleground-flame-2 {
+        top: 660%;
+    }
+    .drills-middleground-flame-3 {
+        top: 660%;
     }
     
-    .drills-middleground-pit {
-        top: 300%;
+    .drills-middleground-tnt-1 {
+        top: 930%;
     }
-    
-    .drills-middleground-nuke {
-        top: 350%;
+    .drills-middleground-tnt-2 {
+        top: 932%;
+    }
+    .drills-middleground-tnt-3 {
+        top: 933%;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .drills-list > li {
+        margin-top: 17%;
+        margin-bottom: 17%;
     }
 }
