@@ -22,7 +22,7 @@ const rawDateFuture = new Date('2200-11-20T17:40:15.578Z');
 const DATE_FUTURE = `${rawDateFuture.getDate()} ${getMonthAbrvEN(
     rawDateFuture.getMonth()
 )} ${rawDateFuture.getFullYear()}`;
-const TIME = `${rawDateFuture.getHours()}:${rawDateFuture.getMinutes()}`;
+const TIME = `${rawDateFuture.getHours()}:${rawDateFuture.getMinutes()} PM`;
 const EMPTY_TEST_ID = 'event-card-empty';
 
 //TODO: Error checks for incorrectly formatted input

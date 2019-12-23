@@ -47,7 +47,7 @@ exports[`Events List has not changed 1`] = `
             class="column is-one-fifth match-info has-text-roma-red has-text-centered"
           >
             <p>
-              12:40
+              12:40 PM
             </p>
           </div>
           <div
@@ -110,7 +110,7 @@ exports[`Events List has not changed 1`] = `
             class="column is-one-fifth match-info has-text-roma-red has-text-centered"
           >
             <p>
-              12:40
+              12:40 PM
             </p>
           </div>
           <div
@@ -321,7 +321,7 @@ exports[`Events List has not changed 1`] = `
             <p
               class="has-text-roma-red"
             >
-              12:40
+              12:40 PM
             </p>
           </div>
         </section>
@@ -357,7 +357,7 @@ exports[`Events List has not changed 1`] = `
             <p
               class="has-text-roma-red"
             >
-              12:40
+              12:40 PM
             </p>
           </div>
         </section>

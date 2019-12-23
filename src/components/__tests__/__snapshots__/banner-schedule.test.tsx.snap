@@ -9,7 +9,7 @@ exports[`Banner Schedule has not changed 1`] = `
       class="container"
     >
       <h2
-        class="title is-family-secondary has-text-black-main is-2"
+        class="title is-family-secondary has-text-roma-red is-2"
       >
         SCHEDULE
       </h2>
@@ -77,14 +77,14 @@ exports[`Banner Schedule has not changed 1`] = `
                   </p>
                 </div>
                 <div
-                  class="column is-one-third match-info has-text-team-holy"
+                  class="column is-one-third event-card-match-info has-text-team-holy"
                 >
                   <p>
                     1-2
                   </p>
                 </div>
                 <div
-                  class="column is-one-third team-info"
+                  class="column is-one-third event-card-team-info"
                 >
                   <p
                     aria-label="Soccer ball"
@@ -136,14 +136,16 @@ exports[`Banner Schedule has not changed 1`] = `
                   </p>
                 </div>
                 <div
-                  class="column is-one-third match-info has-text-team-holy"
+                  class="column is-one-third event-card-match-info has-text-team-holy"
                 >
-                  <p>
-                    21:15
+                  <p
+                    class="event-card-match-info-future"
+                  >
+                    09:15 PM
                   </p>
                 </div>
                 <div
-                  class="column is-one-third team-info"
+                  class="column is-one-third event-card-team-info"
                 >
                   <p
                     aria-label="Soccer ball"
@@ -181,7 +183,7 @@ exports[`Banner Schedule has not changed 1`] = `
                 class="event-card-info has-text-centered columns is-mobile is-vcentered"
               >
                 <div
-                  class="column practice-info"
+                  class="column event-card-practice-info"
                 >
                   <p>
                     PRACTICE
@@ -189,7 +191,7 @@ exports[`Banner Schedule has not changed 1`] = `
                   <p
                     class="has-text-team-holy"
                   >
-                    12:40
+                    12:40 PM
                   </p>
                 </div>
               </section>

@@ -49,7 +49,7 @@ exports[`Schedule Preview has not changed 1`] = `
           class="event-card-info has-text-centered columns is-mobile is-vcentered"
         >
           <div
-            class="column practice-info"
+            class="column event-card-practice-info"
           >
             <p>
               PRACTICE
@@ -57,7 +57,7 @@ exports[`Schedule Preview has not changed 1`] = `
             <p
               class="has-text-team-holy"
             >
-              12:40
+              12:40 PM
             </p>
           </div>
         </section>
