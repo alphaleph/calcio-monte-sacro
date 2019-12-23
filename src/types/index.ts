@@ -31,7 +31,7 @@ export interface MarkdownPostData {
         layout: string;
         language: string;
         date: string;
-        banner_image?: string | null;
+        banner_image?: FluidImageChildImageSharpData | null;
         type?: string | null;
         venue?: string | null;
         opposing_team?: string | null;
@@ -41,7 +41,6 @@ export interface MarkdownPostData {
     fields: {
         slug: string;
         pathString: string;
-        bannerImg: FluidImageChildImageSharpData;
     };
     html: string;
     excerpt?: string | null;

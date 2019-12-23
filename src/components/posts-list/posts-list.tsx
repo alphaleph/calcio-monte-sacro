@@ -1,43 +1,20 @@
 import React from 'react';
 import { PostCard } from '../post-card/post-card';
-import { MarkdownDataNode, FluidImageDataNode } from '../../types';
-import { findMostRecentlyPastIndex, getNetlifyCMSFilename } from '../../util';
+import { MarkdownDataNode } from '../../types';
+import { findMostRecentlyPastIndex } from '../../util';
 import './posts-list.scss';
 
 interface PostsListProps {
     posts: MarkdownDataNode[] | null;
     size?: number;
     date?: number;
-    images: FluidImageDataNode[];
 }
 
 export const PostsList = ({
     posts,
     size = 3,
     date = Date.now(),
-    images,
 }: PostsListProps) => {
-    // Returns array of fluid images with indices corresponding to posts param.
-    const makePostImageArray = (
-        posts: MarkdownDataNode[],
-        images: FluidImageDataNode[]
-    ): FluidImageDataNode[] => {
-        let imagesList: FluidImageDataNode[] = [];
-        for (let i = 0; i < posts.length; i++) {
-            for (let j = 0; j < images.length; j++) {
-                if (
-                    getNetlifyCMSFilename(
-                        posts[i].node.frontmatter.banner_image
-                    ) === images[j].node.fluid.originalName
-                ) {
-                    imagesList = imagesList.concat(images[j]);
-                    continue;
-                }
-            }
-        }
-        return imagesList;
-    };
-
     if (size <= 0) {
         console.error(
             'PostsList: Invalid size parameter - Size must be greater than 0!'
@@ -63,16 +40,10 @@ export const PostsList = ({
 
     // Case: Single Card
     if (posts.length === 1 || size === 1) {
-        // Retrieve banner image
-        const image: FluidImageDataNode = images.filter(
-            (imageData) =>
-                imageData.node.fluid.originalName ===
-                getNetlifyCMSFilename(posts[0].node.frontmatter.banner_image)
-        )[0];
         // Generate single Post Card
         postsList = (
             <div className="column is-full">
-                <PostCard post={posts[0] ? posts[0] : null} image={image} />
+                <PostCard post={posts[0] ? posts[0] : null} />
             </div>
         );
     } else {
@@ -81,12 +52,6 @@ export const PostsList = ({
 
         const currPosts = posts.filter(
             (postDatum, index) => index <= pastIndex && index > pastIndex - size
-        );
-
-        // Retrieve corresponding banner images
-        let imagesList: FluidImageDataNode[] = makePostImageArray(
-            currPosts,
-            images
         );
 
         // Generate n-Cards
@@ -99,7 +64,7 @@ export const PostsList = ({
                 }
                 key={index}
             >
-                <PostCard post={post ? post : null} image={imagesList[index]} />
+                <PostCard post={post ? post : null} />
             </div>
         ));
     }

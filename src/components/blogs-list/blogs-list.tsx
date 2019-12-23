@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { PostsList } from '../posts-list/posts-list';
-import { MarkdownData } from '../../types/index';
+import { MarkdownData, MarkdownDataNode } from '../../types/index';
 
 interface BlogsListProps {
     size?: number;
@@ -27,7 +27,18 @@ export const BlogsList = ({ size = 2 }: BlogsListProps) => {
                                 language
                                 date
                                 layout
-                                banner_image
+                                banner_image {
+                                    childImageSharp {
+                                        fluid(maxWidth: 1024) {
+                                            base64
+                                            aspectRatio
+                                            src
+                                            srcSet
+                                            sizes
+                                            originalName
+                                        }
+                                    }
+                                }
                             }
                             fields {
                                 slug
@@ -38,29 +49,14 @@ export const BlogsList = ({ size = 2 }: BlogsListProps) => {
                         }
                     }
                 }
-                allImageSharp {
-                    edges {
-                        node {
-                            fluid(maxWidth: 1024) {
-                                base64
-                                aspectRatio
-                                src
-                                srcSet
-                                sizes
-                                originalName
-                            }
-                        }
-                    }
-                }
             }
         `
     );
 
     return (
         <PostsList
-            posts={data.allMarkdownRemark.edges}
+            posts={data.allMarkdownRemark.edges as MarkdownDataNode[]}
             size={size}
-            images={data.allImageSharp.edges}
         />
     );
 };

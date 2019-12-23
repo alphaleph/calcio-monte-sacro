@@ -1,17 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { MarkdownDataNode, FluidImageDataNode } from '../../types';
+import { MarkdownDataNode } from '../../types';
 import { getMonthAbrvEN } from '../../util';
 import './post-card.scss';
 
 interface PostCardProps {
     post: MarkdownDataNode | null;
-    image: FluidImageDataNode | null;
 }
 
-export const PostCard = ({ post, image }: PostCardProps) => {
-    if (post && image) {
+export const PostCard = ({ post }: PostCardProps) => {
+    if (post) {
         const date = new Date(post.node.frontmatter.date);
         const excerpt = post.node.excerpt;
         const title = post.node.frontmatter.title;
@@ -23,7 +22,8 @@ export const PostCard = ({ post, image }: PostCardProps) => {
                     <header className="post-card-header">
                         <Img
                             fluid={{
-                                ...(image as FluidImageDataNode).node.fluid,
+                                ...post.node.frontmatter.banner_image
+                                    .childImageSharp.fluid,
                                 aspectRatio: 1,
                             }}
                         />
