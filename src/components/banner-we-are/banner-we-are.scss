@@ -4,24 +4,46 @@
     opacity: 0 !important;
 }
 
-.we-are-container {
-    padding-top: 8rem;
-    padding-bottom: 3rem;
-    border-radius: 1px;
+.banner-we-are-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 480px;
 }
 
-.we-are-name {
+.banner-we-are-foreground {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.banner-we-are-name {
     color: rgba(252, 233, 95, .8);
     text-shadow:
         -1px -1px 0 $granite-grey-team,
         1px -1px 0 $granite-grey-team,
         -1px 1px 0 $granite-grey-team,
         1px 1px 0 $granite-grey-team;
-    font-size: 4.5rem;
+    font-size: 2rem;
+    font-weight: bold;
     opacity: 1 !important;
     transition: opacity 1s ease-in 1s;
 }
 
-.placeholder-pic {
-    font-size: 15rem;
+@media screen and (min-width:480px) {
+    .banner-we-are-foreground {
+        padding-top: 15%;
+    }
+    .banner-we-are-name {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width:980px) {
+    .banner-we-are-name {
+        font-size: 4.5rem;
+    }
 }
