@@ -1,0 +1,16 @@
+@import './globals.scss';
+
+.about-container {
+    min-height: 80vh;
+}
+
+.about-confetti-spray-left {
+    position: absolute;
+    bottom: 0;
+}
+
+.about-confetti-spray-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

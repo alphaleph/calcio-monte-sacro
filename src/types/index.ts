@@ -1,5 +1,9 @@
 import React from 'react';
 
+export interface WindowDimensions {
+    width: number;
+    height: number;
+}
 export interface PageTitleToURLMap {
     [pageTitle: string]: string;
 }
