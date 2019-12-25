@@ -6,6 +6,7 @@
   "author": "Alpha Chau <chaua0927@gmail.com>",
   "dependencies": {
     "bulma": "^0.8.0",
+    "fireworks": "^2.2.5",
     "gatsby": "^2.18.16",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-manifest": "^2.2.25",
