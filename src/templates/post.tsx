@@ -27,9 +27,19 @@ const PostPage = ({ data }: PostPageProps) => {
                     dangerouslySetInnerHTML={{ __html: post.html }}
                 />
                 <div className="container has-text-centered ">
-                    <Link to="/blog">
+                    <Link
+                        to={
+                            post.frontmatter.post_type === 'news'
+                                ? '/news'
+                                : '/blog'
+                        }
+                    >
                         <button type="button" className="button is-outline">
-                            Go back to Blog
+                            {`Go back to ${
+                                post.frontmatter.post_type === 'news'
+                                    ? 'News'
+                                    : 'Blog'
+                            }`}
                         </button>
                     </Link>
                 </div>
@@ -48,6 +58,7 @@ export const query = graphql`
                 title
                 language
                 date
+                post_type
             }
             fields {
                 bannerImg {

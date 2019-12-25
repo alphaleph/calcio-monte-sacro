@@ -35,6 +35,7 @@ export interface MarkdownPostData {
         layout: string;
         language: string;
         date: string;
+        post_type: string;
         banner_image?: FluidImageChildImageSharpData | null;
         type?: string | null;
         venue?: string | null;
