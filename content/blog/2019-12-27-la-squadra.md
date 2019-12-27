@@ -3,7 +3,7 @@ layout: post
 post_type: blog
 language: it
 date: 2019-11-27T12:02:24.254Z
-title: La Squadra
+title: La squadra
 banner-image: /src/images/foosball.jpg
 ---
 In America si dice "There is no I in team."
