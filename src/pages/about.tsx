@@ -8,17 +8,40 @@ import { Fireworks } from 'fireworks/lib/react';
 import './about.scss';
 
 const AboutPage = () => {
-    const [isDonated, setIsDonated] = useState(false);
+    const [clickCount, setClickCount] = useState(0);
+    const [donateButtonText, setDonateButtonText] = useState('Donate! 🎉');
     const [isFireConfetti, setIsFireConfetti] = useState(false);
     const [isDropConfetti, setIsDropConfetti] = useState(false);
     const [isFireFireworks, setIsFireFireworks] = useState(false);
     const { width, height } = useWindowDimensions();
 
-    const handleDonateClick = () => {
-        if (!isDonated) {
-            setIsDonated(true);
+    const donateButtonTextSelector = (): string => {
+        if (clickCount === 1) {
+            return 'Just kidding!';
+        } else if (clickCount === 2) {
+            return 'Click for more coriandoli!';
+        } else if (clickCount >= 3 && clickCount <= 5) {
+            return '🎉🎉🎉!!';
+        } else if (clickCount === 6) {
+            return 'Okay now...';
+        } else if (clickCount === 7) {
+            return "Aren't you getting tired?";
+        } else if (clickCount === 8) {
+            return 'Guess not...';
+        } else if (clickCount >= 9 && clickCount <= 14) {
+            return 'Looks like somebody is having a little too much fun...';
+        } else if (clickCount === 15) {
+            return `I am just going to pretend I wasn't here...`;
+        } else if (clickCount === 16) {
+            return 'Ciao';
+        } else {
+            return 'Donate! 🎉';
         }
+    };
 
+    const handleDonateClick = () => {
+        setClickCount(clickCount + 1);
+        setDonateButtonText(donateButtonTextSelector());
         if (!isFireConfetti) {
             setIsFireConfetti(true);
         }
@@ -101,7 +124,7 @@ const AboutPage = () => {
                         className="button has-background-roma-gold is-large is-rounded"
                         onClick={handleDonateClick}
                     >
-                        Donate! 🎉
+                        {donateButtonText}
                     </button>
                 </div>
                 <div className="about-confetti-spray-left">
