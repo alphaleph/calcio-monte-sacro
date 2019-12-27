@@ -2,7 +2,7 @@
 layout: post
 post_type: blog
 language: it
-date: 2019-12-28T14:06:48.735Z
+date: 2019-12-28T03:06:48.735Z
 title: La tecnica
 banner-image: /src/images/time-lapse-kick.jpg
 ---
