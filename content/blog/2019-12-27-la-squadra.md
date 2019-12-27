@@ -2,7 +2,7 @@
 layout: post
 post_type: blog
 language: it
-date: 2019-11-27T12:02:24.254Z
+date: 2019-12-07T12:02:24.254Z
 title: La squadra
 banner-image: /src/images/foosball.jpg
 ---
