@@ -5,6 +5,8 @@ import ConfettiSpray from 'react-dom-confetti';
 import { Fireworks } from 'fireworks/lib/react';
 import './banner-donate.scss';
 
+//TODO: Fix canvas positions to el position
+//TODO: Optimize animations
 export const BannerDonate = () => {
     const [clickCount, setClickCount] = useState(0);
     const [donateButtonText, setDonateButtonText] = useState('Donate! 🎉');
@@ -105,7 +107,7 @@ export const BannerDonate = () => {
     };
 
     return (
-        <section className="hero is-large has-background-roma-red is-bold">
+        <section className="banner-donate-container hero is-large has-background-roma-red is-bold">
             <Confetti
                 width={width}
                 height={height}

@@ -1,5 +1,10 @@
 @import '../../pages/globals.scss';
 
+.banner-donate-container {
+    border-top: 1px solid $holy-yellow-team;
+    border-bottom: 1px solid $holy-yellow-team;
+}
+
 .banner-donate-confetti-spray-left {
     position: absolute;
     bottom: 0;
