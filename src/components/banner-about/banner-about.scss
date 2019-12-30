@@ -1,0 +1,44 @@
+@import '../../pages/globals.scss';
+
+.banner-about-container {
+    position: relative;
+    border-top: 1px solid $holy-yellow-team;
+    border-bottom: 1px solid $holy-yellow-team;
+}
+
+.banner-about-textbox {
+    position: absolute;
+    left: 25%;
+    top: 37.5%;
+    width: 50%;
+    height: 25%;
+    background: rgba(252, 233, 95, .8);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-about-text {
+    color: $granite-grey-team;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+    .banner-about-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .banner-about-text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .banner-about-text {
+        font-size: 3rem;
+    }
+}
