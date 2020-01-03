@@ -1,0 +1,51 @@
+@import '../../pages/globals.scss';
+
+.banner-contact-container {
+    position: relative;
+    border-top: 1px solid $holy-yellow-team;
+    border-bottom: 1px solid $holy-yellow-team;
+    background: $black-main;
+}
+
+.banner-contact-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.banner-contact-header {
+    color: $white-main;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+.banner-contact-text {
+    color: $white-main;
+    // font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.banner-contact-link {
+    color: $holy-yellow-team;
+}
+
+.banner-contact-link:focus,
+.banner-contact-link:hover {
+    text-decoration: underline;
+    color: $holy-yellow-team;
+}
+
+@media screen and (min-width: 550px) {
+    .banner-contact-header {
+        font-size: 2rem;
+    }
+    .banner-contact-text {
+        font-size: 1.7rem;
+    }
+}
