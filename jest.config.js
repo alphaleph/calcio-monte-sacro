@@ -23,6 +23,6 @@ module.exports = {
         },
     },
     testURL: `http://localhost`,
-    setupFiles: [`<rootDir>/loadershim.js`],
+    setupFiles: [`<rootDir>/loadershim.js`, `jest-canvas-mock`],
     // setupFilesAfterEnv: [`<rootDir>/setup-test-env.js`],
 };

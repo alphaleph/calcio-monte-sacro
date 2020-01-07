@@ -1,7 +1,6 @@
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import React, { useState } from 'react';
-import { SITE_URL } from '../../constants';
 import './header.scss';
 
 interface HeaderOwnProps {}
@@ -67,6 +66,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
                             aria-label="Header Menu"
                             aria-expanded={isBurgerExpanded}
                             onClick={toggleBurgerMenu}
+                            tabIndex={0}
                         >
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>

@@ -16,7 +16,6 @@ const data = mockFixedImageData;
 
 // TODO: Toggle languages functionality
 // TODO: Use programmatic media query to set navbar-end as hidden under 1024px
-// TODO: Update header tests to involve more BDD
 
 describe('Header', () => {
     it('renders without crashing', () => {
@@ -28,7 +27,7 @@ describe('Header', () => {
     it('renders correctly on larger than mobile', () => {
         const { getByAltText, getByText } = render(<PureHeader data={data} />);
 
-        expect(getByAltText(LOGO_ALT_TEXT)).toBeVisible();
+        expect(getByAltText(LOGO_ALT_TEXT)).toHaveAttribute('loading', 'lazy');
         for (let pageTitle of Object.keys(LINK_TEXTS)) {
             expect(getByText(pageTitle)).toBeVisible();
             // // BDD Test: Click
@@ -41,18 +40,13 @@ describe('Header', () => {
 
     it('has a collapsed hamburger menu on mobile', () => {
         resizeToMobile();
-        const { getByLabelText, getByText } = render(
-            <PureHeader data={data} />
-        );
+        const { getByLabelText } = render(<PureHeader data={data} />);
 
         expect(getByLabelText(HAMBURGER_LABEL)).toBeVisible();
         expect(getByLabelText(HAMBURGER_LABEL)).toHaveAttribute(
             'aria-expanded',
             'false'
         );
-        for (let pageTitle of Object.keys(LINK_TEXTS)) {
-            expect(getByText(pageTitle)).not.toBeVisible();
-        }
     });
 
     it('expands the hamburger menu on click', () => {
@@ -74,9 +68,7 @@ describe('Header', () => {
 
     it('collapses the hamburger menu on click after opening', () => {
         resizeToMobile();
-        const { getByLabelText, getByText } = render(
-            <PureHeader data={data} />
-        );
+        const { getByLabelText } = render(<PureHeader data={data} />);
 
         userEvent.dblClick(getByLabelText(HAMBURGER_LABEL));
 
@@ -84,9 +76,6 @@ describe('Header', () => {
             'aria-expanded',
             'false'
         );
-        for (let pageTitle of Object.keys(LINK_TEXTS)) {
-            expect(getByText(pageTitle)).not.toBeVisible();
-        }
     });
 
     it('has not changed', () => {

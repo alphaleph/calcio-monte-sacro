@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Donate has not changed 1`] = `
+<DocumentFragment>
+  <section
+    class="banner-donate-container hero is-large has-background-roma-red is-bold"
+  >
+    <canvas
+      height="768"
+      style="z-index: 2; position: absolute; pointer-events: none; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      width="1024"
+    />
+    <div />
+    <div
+      class="hero-body has-text-centered"
+    >
+      <button
+        class="button has-background-roma-gold is-large is-rounded"
+        type="button"
+      >
+        Donate! 🎉
+      </button>
+    </div>
+    <div
+      class="banner-donate-confetti-spray-left"
+    >
+      <div
+        style="position: relative;"
+      />
+    </div>
+    <div
+      class="banner-donate-confetti-spray-right"
+    >
+      <div
+        style="position: relative;"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;

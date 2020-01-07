@@ -27,8 +27,7 @@ exports[`Post Card has not changed 1`] = `
           <picture>
             <source
               sizes="(max-width: 512px) 100vw, 512px"
-              srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+              srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
             />
             <img
@@ -36,17 +35,14 @@ exports[`Post Card has not changed 1`] = `
               loading="lazy"
               sizes="(max-width: 512px) 100vw, 512px"
               src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
-              srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+              srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
               style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
             />
           </picture>
           <noscript>
-            &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
-/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+            &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
           </noscript>
         </div>

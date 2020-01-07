@@ -25,7 +25,7 @@ exports[`Banner Blog has not changed 1`] = `
           >
             <a
               data-testid="post-card-link"
-              href="/blog/2019-12-03-test-blog-image-new/"
+              href="/blog/2019-12-02-blog-post-prova-immagine/"
             >
               <article
                 class="post-card-container container"
@@ -48,8 +48,7 @@ exports[`Banner Blog has not changed 1`] = `
                     <picture>
                       <source
                         sizes="(max-width: 512px) 100vw, 512px"
-                        srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                       />
                       <img
@@ -57,17 +56,14 @@ exports[`Banner Blog has not changed 1`] = `
                         loading="lazy"
                         sizes="(max-width: 512px) 100vw, 512px"
                         src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
-                        srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                         style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
                       />
                     </picture>
                     <noscript>
-                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
-/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
                     </noscript>
                   </div>
@@ -78,12 +74,12 @@ exports[`Banner Blog has not changed 1`] = `
                   <p
                     class="post-card-title"
                   >
-                    Test Blog Image New
+                    Blog Post Prova Immagine
                   </p>
                   <p
                     class="post-card-excerpt"
                   >
-                    Testing...
+                    Donec vitae nunc et ligula vehicula aliquet eu eu libero. Mauris in scelerisque magna, sit amet egestas tellus. Vestibulum eget purus…
                   </p>
                 </section>
                 <footer
@@ -92,7 +88,7 @@ exports[`Banner Blog has not changed 1`] = `
                   <p
                     class="post-card-date"
                   >
-                    3 DEC 2019
+                    2 DEC 2019
                   </p>
                 </footer>
               </article>
@@ -103,7 +99,7 @@ exports[`Banner Blog has not changed 1`] = `
           >
             <a
               data-testid="post-card-link"
-              href="/blog/2019-12-03-test-blog-image-ii/"
+              href="/blog/2019-12-02-test-blog-plain/"
             >
               <article
                 class="post-card-container container"
@@ -126,8 +122,7 @@ exports[`Banner Blog has not changed 1`] = `
                     <picture>
                       <source
                         sizes="(max-width: 512px) 100vw, 512px"
-                        srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                       />
                       <img
@@ -135,17 +130,14 @@ exports[`Banner Blog has not changed 1`] = `
                         loading="lazy"
                         sizes="(max-width: 512px) 100vw, 512px"
                         src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png"
-                        srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+                        srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w"
                         style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
                       />
                     </picture>
                     <noscript>
-                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
-/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,
-/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,
+                      &lt;picture&gt;&lt;source srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
+/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" sizes="(max-width: 512px) 100vw, 512px" /&gt;&lt;img loading="lazy" sizes="(max-width: 512px) 100vw, 512px" srcset="/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,
 /static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w" src="/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
                     </noscript>
                   </div>
@@ -156,12 +148,12 @@ exports[`Banner Blog has not changed 1`] = `
                   <p
                     class="post-card-title"
                   >
-                    Test Blog Image II
+                    Test Blog Plain
                   </p>
                   <p
                     class="post-card-excerpt"
                   >
-                    TestTestTest  TestTestTestTestTest
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris…
                   </p>
                 </section>
                 <footer
@@ -170,7 +162,7 @@ exports[`Banner Blog has not changed 1`] = `
                   <p
                     class="post-card-date"
                   >
-                    3 DEC 2019
+                    2 DEC 2019
                   </p>
                 </footer>
               </article>

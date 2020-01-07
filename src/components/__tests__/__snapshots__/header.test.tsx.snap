@@ -62,6 +62,7 @@ exports[`Header has not changed 1`] = `
             class="navbar-burger"
             id="headerBurger"
             role="button"
+            tabindex="0"
           >
             <span
               aria-hidden="true"

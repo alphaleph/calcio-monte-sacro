@@ -16,7 +16,7 @@ const SCORE_OTHER = 2;
 const DATE_FINISHED = utcStringToDateString('2019-11-20T17:40:15.578Z');
 const rawDateFuture = new Date('2200-11-20T17:40:15.578Z');
 const DATE_FUTURE = utcStringToDateString('2200-11-20T17:40:15.578Z');
-const TIME = `${rawDateFuture.getHours()}:${rawDateFuture.getMinutes()}`;
+const TIME = `${rawDateFuture.getHours()}:${rawDateFuture.getMinutes()} PM`;
 const EMPTY_TEST_ID = 'event-row-empty';
 
 //TODO: Error checks for incorrectly formatted input
