@@ -1,6 +1,6 @@
 import React from 'react';
 import './banner-contact.scss';
-import { EMAIL_ADDR, LOCATION_URL } from '../../constants';
+import { EMAIL_ADDR, HOME_LOCATION, LOCATION_URL } from '../../constants';
 
 export const BannerContact = () => {
     return (
@@ -11,7 +11,7 @@ export const BannerContact = () => {
                     Meet us at
                     <br />
                     <a className="banner-contact-link" href={LOCATION_URL}>
-                        Parco Sannazzaro, 00141 Roma RM, Italy
+                        {HOME_LOCATION}
                     </a>
                 </p>
                 <p className="banner-contact-text">

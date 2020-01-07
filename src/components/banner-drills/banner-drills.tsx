@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { SITE_URL } from '../../constants';
 import './banner-drills.scss';
 
 export const BannerDrills = () => {
