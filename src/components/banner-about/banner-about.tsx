@@ -2,6 +2,24 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import './banner-about.scss';
+import { FluidImageData } from '../../types';
+
+interface BannerAboutOwnProps {}
+interface BannerAboutProps extends BannerAboutOwnProps {
+    bgImage: FluidImageData;
+    logoImage: FluidImageData;
+}
+
+export const PureBannerAbout = ({ bgImage, logoImage }: BannerAboutProps) => {
+    return (
+        <section className="banner-about-container hero is-large has-background-granite-grey-team">
+            <Img fluid={bgImage.fluid} />
+            <div className="banner-about-textbox">
+                <Img fluid={logoImage.fluid} alt="Calcio Monte Sacro logo" />
+            </div>
+        </section>
+    );
+};
 
 export const BannerAbout = () => {
     const data = useStaticQuery(graphql`
@@ -24,11 +42,9 @@ export const BannerAbout = () => {
     `);
 
     return (
-        <section className="banner-about-container hero is-large has-background-granite-grey-team">
-            <Img fluid={data.bannerImage.childImageSharp.fluid} />
-            <div className="banner-about-textbox">
-                <Img fluid={data.cmsIcon.childImageSharp.fluid} />
-            </div>
-        </section>
+        <PureBannerAbout
+            bgImage={data.bannerImage.childImageSharp}
+            logoImage={data.cmsIcon.childImageSharp}
+        />
     );
 };

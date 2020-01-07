@@ -8,8 +8,6 @@ import {
 export const MOBILE_VIEWPORT_WIDTH = 700;
 export const MOBILE_VIEWPORT_HEIGHT = 700;
 
-//TODO: Update mock Markdown data nodes to include fields { pathString }
-
 export const mainLinkTexts: PageTitleToURLMap = {
     Schedule: `/schedule`,
     News: `/news`,
@@ -322,7 +320,7 @@ export const mockFluidImageDataNodes = [
     },
 ];
 
-export const mockScheduleDataNodes: MarkdownDataNode[] = [
+export const mockScheduleDataNodes: MarkdownEventDataNode[] = [
     {
         node: {
             frontmatter: {
@@ -388,7 +386,7 @@ export const mockMarkdownData: MarkdownData = {
     },
 };
 
-export const mockOneFutureScheduleDataNodes: MarkdownDataNode[] = [
+export const mockOneFutureScheduleDataNodes: MarkdownEventDataNode[] = [
     {
         node: {
             frontmatter: {
@@ -448,7 +446,7 @@ export const mockOneFutureScheduleDataNodes: MarkdownDataNode[] = [
     },
 ];
 
-export const mockTwoFutureScheduleDataNodes: MarkdownDataNode[] = [
+export const mockTwoFutureScheduleDataNodes: MarkdownEventDataNode[] = [
     {
         node: {
             frontmatter: {
@@ -654,12 +652,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-test-news-plain/',
@@ -687,12 +686,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-notizie-prova-semplice/',
@@ -720,12 +720,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-test-news-markdown/',
@@ -753,12 +754,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-notizie-prova-markdown/',
@@ -786,12 +788,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-test-news-symbols/',
@@ -819,12 +822,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-notizie-prova-simboli/',
@@ -852,12 +856,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-test-news-short/',
@@ -883,12 +888,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-notizie-prova-corta/',
@@ -912,14 +918,15 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                                 'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABnzaYEjRf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAIBAxESE//aAAgBAQABBQKq5kN8i3vEZ1OanJT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BrT//xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIS/9oACAECAQE/AXUm5P/EABoQAAICAwAAAAAAAAAAAAAAAAEQACEREjH/2gAIAQEABj8CriwJqBT/AP/EABwQAQACAQUAAAAAAAAAAAAAAAEAETEhQVGRof/aAAgBAQABPyEBMkWrZbzQhagFmWbey7nuf//aAAwDAQACAAMAAAAQnP8A/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/ELCf/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAExYf/aAAgBAgEBPxCyjR//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUGB/9oACAEBAAE/ELMkKcyMyefYaScCCbHgvdIjFZZ5HXnyP//Z',
                             aspectRatio: 1.5,
                             src:
-                                '/static/941bd7debbac3cdc94cf490524844934/bc3a8/ball.jpg',
+                                '/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg',
                             srcSet:
-                                '/static/941bd7debbac3cdc94cf490524844934/d278e/ball.jpg 200w,\n/static/941bd7debbac3cdc94cf490524844934/8539d/ball.jpg 400w,\n/static/941bd7debbac3cdc94cf490524844934/bc3a8/ball.jpg 800w,\n/static/941bd7debbac3cdc94cf490524844934/81ef8/ball.jpg 1200w,\n/static/941bd7debbac3cdc94cf490524844934/989b1/ball.jpg 1600w,\n/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w',
-                            sizes: '(max-width: 800px) 100vw, 800px',
+                                '/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,\n/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,\n/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,\n/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,\n/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,\n/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w',
+                            sizes: '(max-width: 1024px) 100vw, 1024px',
                             originalName: 'ball.jpg',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-test-news-banner/',
@@ -945,14 +952,15 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                                 'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABnzaYEjRf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAIBAxESE//aAAgBAQABBQKq5kN8i3vEZ1OanJT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BrT//xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIS/9oACAECAQE/AXUm5P/EABoQAAICAwAAAAAAAAAAAAAAAAEQACEREjH/2gAIAQEABj8CriwJqBT/AP/EABwQAQACAQUAAAAAAAAAAAAAAAEAETEhQVGRof/aAAgBAQABPyEBMkWrZbzQhagFmWbey7nuf//aAAwDAQACAAMAAAAQnP8A/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/ELCf/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAExYf/aAAgBAgEBPxCyjR//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUGB/9oACAEBAAE/ELMkKcyMyefYaScCCbHgvdIjFZZ5HXnyP//Z',
                             aspectRatio: 1.5,
                             src:
-                                '/static/941bd7debbac3cdc94cf490524844934/bc3a8/ball.jpg',
+                                '/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg',
                             srcSet:
-                                '/static/941bd7debbac3cdc94cf490524844934/d278e/ball.jpg 200w,\n/static/941bd7debbac3cdc94cf490524844934/8539d/ball.jpg 400w,\n/static/941bd7debbac3cdc94cf490524844934/bc3a8/ball.jpg 800w,\n/static/941bd7debbac3cdc94cf490524844934/81ef8/ball.jpg 1200w,\n/static/941bd7debbac3cdc94cf490524844934/989b1/ball.jpg 1600w,\n/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w',
-                            sizes: '(max-width: 800px) 100vw, 800px',
+                                '/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,\n/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,\n/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,\n/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,\n/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,\n/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w',
+                            sizes: '(max-width: 1024px) 100vw, 1024px',
                             originalName: 'ball.jpg',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-notizie-prova-banner/',
@@ -980,12 +988,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-test-news-image/',
@@ -1013,12 +1022,13 @@ export const mockNewsDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'news',
             },
             fields: {
                 slug: '/2019-12-02-notizie-prova-immagine/',
@@ -1049,12 +1059,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-test-blog-post-markdown/',
@@ -1082,12 +1093,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-test-blog-post-symbols/',
@@ -1115,12 +1127,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-test-blog-plain-short/',
@@ -1144,14 +1157,15 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                                 'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAHCguANmL//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRFBITIf/aAAgBAQABBQKvJXbGgR3FcZH/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAXEQADAQAAAAAAAAAAAAAAAAAAARMC/9oACAECAQE/AaMpo//EABoQAAICAwAAAAAAAAAAAAAAAAABESAxQZH/2gAIAQEABj8Cls1wzT//xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMVGB8P/aAAgBAQABPyGOo3bobsKGs692MDeCZ//aAAwDAQACAAMAAAAQaB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8QuK//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCIf//EABsQAQEBAAMBAQAAAAAAAAAAAAERACExQWGR/9oACAEBAAE/EGq1wmPPxzQE05Ff25iqIzkcMSHWALHZ7qKz193/2Q==',
                             aspectRatio: 1.5,
                             src:
-                                '/static/5de83d4780d151558333d53839ea81ea/bc3a8/net.jpg',
+                                '/static/5de83d4780d151558333d53839ea81ea/426ce/net.jpg',
                             srcSet:
-                                '/static/5de83d4780d151558333d53839ea81ea/d278e/net.jpg 200w,\n/static/5de83d4780d151558333d53839ea81ea/8539d/net.jpg 400w,\n/static/5de83d4780d151558333d53839ea81ea/bc3a8/net.jpg 800w,\n/static/5de83d4780d151558333d53839ea81ea/81ef8/net.jpg 1200w,\n/static/5de83d4780d151558333d53839ea81ea/989b1/net.jpg 1600w,\n/static/5de83d4780d151558333d53839ea81ea/d1eb0/net.jpg 2976w',
-                            sizes: '(max-width: 800px) 100vw, 800px',
+                                '/static/5de83d4780d151558333d53839ea81ea/e5b28/net.jpg 256w,\n/static/5de83d4780d151558333d53839ea81ea/160a1/net.jpg 512w,\n/static/5de83d4780d151558333d53839ea81ea/426ce/net.jpg 1024w,\n/static/5de83d4780d151558333d53839ea81ea/5bc26/net.jpg 1536w,\n/static/5de83d4780d151558333d53839ea81ea/3d25e/net.jpg 2048w,\n/static/5de83d4780d151558333d53839ea81ea/d1eb0/net.jpg 2976w',
+                            sizes: '(max-width: 1024px) 100vw, 1024px',
                             originalName: 'net.jpg',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-test-blog-post-banner/',
@@ -1179,12 +1193,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-test-blog-image/',
@@ -1212,12 +1227,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-blog-post-prova-semplice/',
@@ -1245,12 +1261,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-blog-test-prova-markdown/',
@@ -1278,12 +1295,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-blog-post-prova-simboli/',
@@ -1311,12 +1329,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-blog-post-prova-corta/',
@@ -1340,14 +1359,15 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                                 'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABnzaYEjRf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAIBAxESE//aAAgBAQABBQKq5kN8i3vEZ1OanJT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BrT//xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIS/9oACAECAQE/AXUm5P/EABoQAAICAwAAAAAAAAAAAAAAAAEQACEREjH/2gAIAQEABj8CriwJqBT/AP/EABwQAQACAQUAAAAAAAAAAAAAAAEAETEhQVGRof/aAAgBAQABPyEBMkWrZbzQhagFmWbey7nuf//aAAwDAQACAAMAAAAQnP8A/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/ELCf/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAExYf/aAAgBAgEBPxCyjR//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUGB/9oACAEBAAE/ELMkKcyMyefYaScCCbHgvdIjFZZ5HXnyP//Z',
                             aspectRatio: 1.5,
                             src:
-                                '/static/941bd7debbac3cdc94cf490524844934/bc3a8/ball.jpg',
+                                '/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg',
                             srcSet:
-                                '/static/941bd7debbac3cdc94cf490524844934/d278e/ball.jpg 200w,\n/static/941bd7debbac3cdc94cf490524844934/8539d/ball.jpg 400w,\n/static/941bd7debbac3cdc94cf490524844934/bc3a8/ball.jpg 800w,\n/static/941bd7debbac3cdc94cf490524844934/81ef8/ball.jpg 1200w,\n/static/941bd7debbac3cdc94cf490524844934/989b1/ball.jpg 1600w,\n/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w',
-                            sizes: '(max-width: 800px) 100vw, 800px',
+                                '/static/941bd7debbac3cdc94cf490524844934/e5b28/ball.jpg 256w,\n/static/941bd7debbac3cdc94cf490524844934/160a1/ball.jpg 512w,\n/static/941bd7debbac3cdc94cf490524844934/426ce/ball.jpg 1024w,\n/static/941bd7debbac3cdc94cf490524844934/5bc26/ball.jpg 1536w,\n/static/941bd7debbac3cdc94cf490524844934/3d25e/ball.jpg 2048w,\n/static/941bd7debbac3cdc94cf490524844934/fc68d/ball.jpg 5619w',
+                            sizes: '(max-width: 1024px) 100vw, 1024px',
                             originalName: 'ball.jpg',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-blog-post-prova-banner/',
@@ -1375,12 +1395,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-blog-post-prova-immagine/',
@@ -1408,12 +1429,13 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                             src:
                                 '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
                             srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
+                                '/static/be02315164569b61ba353b4219d3bb3e/0cc6a/cms-icon.png 256w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
                             sizes: '(max-width: 512px) 100vw, 512px',
                             originalName: 'cms-icon.png',
                         },
                     },
                 },
+                post_type: 'blog',
             },
             fields: {
                 slug: '/2019-12-02-test-blog-plain/',
@@ -1423,70 +1445,6 @@ export const mockBlogDataNodes: MarkdownDataNode[] = [
                 '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris pharetra purus non nulla pharetra, sit amet faucibus quam pellentesque. Vivamus auctor, tellus in finibus placerat, elit eros gravida nisl, sit amet laoreet nulla magna non augue. Morbi volutpat, nibh ac pellentesque congue, felis velit commodo quam, at scelerisque justo arcu et ex. Morbi eget sem placerat, luctus est quis, vulputate tortor. Curabitur ut iaculis lacus, eu pellentesque lacus. Fusce bibendum est id lorem finibus, quis aliquam lacus ultrices. Praesent condimentum pharetra purus et sagittis. Vivamus fermentum molestie congue. Cras dictum in orci eu auctor. Mauris tristique quam quis sem dictum, in rhoncus metus venenatis. Phasellus maximus ex vitae elit sodales tempus. Sed suscipit ex non ex viverra eleifend.</p>\n<p>Mauris in mauris urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu viverra arcu, eget condimentum eros. Duis eget tortor lorem. Sed rhoncus dictum nisl a elementum. Vestibulum enim turpis, posuere vitae quam nec, hendrerit mollis lorem. Quisque bibendum sed dolor in rhoncus. Etiam id nunc porta, mollis nisi sed, consequat nisl. Vestibulum nec sapien lectus. Vestibulum nec justo et erat fringilla venenatis.</p>\n<p>Aliquam eu dolor felis. Curabitur fringilla mollis sem, quis accumsan tortor pulvinar sit amet. Pellentesque porttitor varius velit vitae maximus. Aenean condimentum sed turpis eget auctor. Ut elementum vehicula molestie. In id feugiat ligula. Sed at aliquet nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse euismod dictum nunc, non auctor ipsum lobortis sed.</p>\n<p>Etiam et mauris velit. Cras at vestibulum odio. Sed accumsan turpis in felis vehicula, at feugiat erat bibendum. Vivamus sed venenatis mi. Vestibulum pulvinar elit vitae sem tempor, a tincidunt mauris euismod. Nam in laoreet quam. Nullam congue vitae velit sit amet feugiat. Etiam mattis finibus ante, ut aliquet nisl. In consectetur blandit ipsum. In nec vestibulum nibh. Maecenas malesuada, purus sit amet convallis pharetra, felis ante fermentum est, imperdiet consequat nunc nulla non ante. Aenean sollicitudin non neque non rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor est, viverra vitae eleifend ac, tincidunt ac arcu. Fusce ultrices nunc vel nunc fermentum convallis. Sed condimentum tortor libero, nec vestibulum leo convallis rhoncus.</p>\n<p>Integer eu nisi eu nunc ornare pretium rutrum ut tortor. Ut tincidunt, quam sit amet accumsan auctor, dui velit faucibus massa, eget viverra dolor mi id erat. Phasellus sed facilisis neque. Maecenas nunc sapien, faucibus eu purus sit amet, mattis venenatis turpis. Aenean tristique tortor vitae nisl dictum, eu malesuada urna tincidunt. Quisque dapibus ante vel ex tincidunt commodo. Aliquam gravida massa ac tellus rutrum, eget euismod lorem sodales. Vivamus volutpat rhoncus ex, a luctus nisl ultricies ut. Duis id magna ac metus laoreet bibendum eu sit amet nulla. Curabitur et leo id nisi vestibulum tincidunt. Maecenas et magna sagittis ipsum congue luctus. Etiam lacus arcu, blandit non consectetur sit amet, semper et neque. Ut luctus diam nec accumsan dignissim. Aliquam eget ultrices lectus.</p>\n<p>Nulla viverra magna odio, lobortis posuere augue viverra sed. Aliquam ante nulla, hendrerit quis suscipit et, rutrum quis diam. Donec ut tristique tellus. Aliquam lorem risus, porttitor sit amet lorem vel, scelerisque congue ipsum. Morbi tincidunt molestie sagittis. Ut quis est ac urna hendrerit vulputate at et ipsum. Aliquam erat volutpat. Curabitur scelerisque ligula eget risus semper ornare. Etiam venenatis dolor vel suscipit dapibus. Nullam molestie ut est a pharetra. Proin congue nulla non laoreet vehicula. Sed gravida iaculis tellus, eu congue est luctus non. In sem diam, facilisis a pellentesque eu, vehicula quis erat. Suspendisse vitae vestibulum dolor. Donec ut eros vel odio varius fringilla eget vel lectus.</p>',
             excerpt:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a volutpat nulla, scelerisque mollis est. Sed eget cursus ipsum. Mauris…',
-        },
-    },
-    {
-        node: {
-            frontmatter: {
-                title: 'Test Blog Image New',
-                language: 'en',
-                date: '2019-12-03T17:17:22.099Z',
-                layout: 'post',
-                banner_image: {
-                    childImageSharp: {
-                        fluid: {
-                            base64:
-                                'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC',
-                            aspectRatio: 1,
-                            src:
-                                '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
-                            srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
-                            sizes: '(max-width: 512px) 100vw, 512px',
-                            originalName: 'cms-icon.png',
-                        },
-                    },
-                },
-            },
-            fields: {
-                slug: '/2019-12-03-test-blog-image-new/',
-                pathString: '/blog/2019-12-03-test-blog-image-new/',
-            },
-            html:
-                '<p>Testing...</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAHCguANmL//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRFBITIf/aAAgBAQABBQKvJXbGgR3FcZH/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAXEQADAQAAAAAAAAAAAAAAAAAAARMC/9oACAECAQE/AaMpo//EABoQAAICAwAAAAAAAAAAAAAAAAABESAxQZH/2gAIAQEABj8Cls1wzT//xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMVGB8P/aAAgBAQABPyGOo3bobsKGs692MDeCZ//aAAwDAQACAAMAAAAQaB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8QuK//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCIf//EABsQAQEBAAMBAQAAAAAAAAAAAAERACExQWGR/9oACAEBAAE/EGq1wmPPxzQE05Ff25iqIzkcMSHWALHZ7qKz193/2Q==\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="A Goal Net"\n        title="A Goal Net"\n        src="/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg"\n        srcset="/static/5de83d4780d151558333d53839ea81ea/3a2a3/net.jpg 350w,\n/static/5de83d4780d151558333d53839ea81ea/67d4f/net.jpg 700w,\n/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg 1400w,\n/static/5de83d4780d151558333d53839ea81ea/36a65/net.jpg 2100w,\n/static/5de83d4780d151558333d53839ea81ea/c6584/net.jpg 2800w,\n/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg 2976w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>',
-            excerpt: 'Testing...',
-        },
-    },
-    {
-        node: {
-            frontmatter: {
-                title: 'Test Blog Image II',
-                language: 'en',
-                date: '2019-12-03T19:21:07.494Z',
-                layout: 'post',
-                banner_image: {
-                    childImageSharp: {
-                        fluid: {
-                            base64:
-                                'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA2zAAANswHQ3HiXAAAEYklEQVQ4y5VUe0yTVxQ/X1+WEsEWGCuPgYJ9AOUhrcoKpYJYJFJCQWTgyABlwkacVsQ/zAYxYSzRABvZfISJCQ6is4uu6ub2h5CBMYQlU+Zk/ywuLEbYwpDBBNp7dtqvPLZkZrvJ/e7vu4/fPefc3zkAq1pS0gpubRUIl7BKlZ6j02UWLv2fOSNcXktIgP/TEtapVBB9+LBtuLGx/AfCMTKZRvGfj2u1AIg8rq/nDh47Br0Wi2zk1KnXsK2tGnNzA+/b7dB75IigccX65xBu2rSCKyvFt6RSKO7s7O5HX+vq6vuWlqw1NaKvaJR59m3c+A+SnTsBduzgsckEHMVEsGq5df/+6mfNzW//1tBg//XQoYPzNNcJsCDwkQmysoDz4H37AGJiCGzZwp/MyOAXVppiHX2+oP4AgPuexvs8htvUQ1bvtFr5swcO+CYsFn7CZoOQkhKJ993kcmhWq8P/UKlenBKJYI6mZuVy4e9KpWI6PFzURbGW5OZyqvJyUHr2Fxb6DMrJ4UFVFQRptdxYWBjMm80hvRERghmrVYdVVVtRoQCMjBRjaqoUMzICMDlZjBTv7zZsgCly+1FZGUR4OCh0HOj1fMx0Om7b+vWwSBvH7fY81OvlqNUK3PHxwI4ff4uVlmazvDwNu3GjgxkMCpdGw6FaDRNEiJs3g1ejZjMIISWFJ0xNlZmCggAdjrNzFy685woOBpaYCBgSAqygQEuE0UynA5afr0QKPiMiN104S6RkOVh977BCSBpMJxewqEjLtm+XsI6OBrxz5yYbGrqKw8NOHBm5Rf1L5nR2Y3Pzq2g0BrDYWCAPOCSO/GVCg2HJQqE5KgowIADcp083MZIdW9JfdfXrWFLyCq5qrLe3k5EXrshIwMxModfl7GwiJDe8hGT6SyqVdLGnpx1nZubY2NhP7N69UUxMTPHkjrer1Vq8e3cYHz78EZ8+nWUOxzma83cnJ0My/w7A57heLypSKuF9kyl2oa/vQ7x27WPW09PCjh6twNBQQKVShH5+HEZH++H58204OHgTL178gF261Ilms3pu7Vq4bDSK85aFScF3Go0cxsWBy2iUeR/DZnuB1dWlYWWl3isbiQSwtjYNGxsLcPfuOLZ3bxLLzpaTGmAhPR3IExhYJqRsuUwp6Fmc37UrltFIB7R48uSbrKjoZSIpw+7uj9But5Eu9cxkEmNLSz07caIWqTj8mZIiQJLX10t8UfQzSTnpeX6WlRWKxcVRruJiDblsxYqKDNbe/gYbHHQwqpd02Rq0WIKZxSJ3WSxBmJYGjLSLJKMp4orzELZRmv1MMXwcGAjToaHSZ8HBYtyzJ8c9Pj66ODo65B4Y+AwnJ3/B/n4He/LkgauurtRFlQjDwmTzpN1p0uqEvz888hYOjoN4AhqPFKkI0A0SNeFPYmLUf5PJahkZDFs9r34VYE2czyqtpxOX5nn1tqKp6Z3b1687H1+58illkAOdzs8nWlvf/UYmk9b826G/AJBk3AYEo0RCAAAAAElFTkSuQmCC',
-                            aspectRatio: 1,
-                            src:
-                                '/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png',
-                            srcSet:
-                                '/static/be02315164569b61ba353b4219d3bb3e/7c0ed/cms-icon.png 200w,\n/static/be02315164569b61ba353b4219d3bb3e/647de/cms-icon.png 400w,\n/static/be02315164569b61ba353b4219d3bb3e/774d6/cms-icon.png 512w',
-                            sizes: '(max-width: 512px) 100vw, 512px',
-                            originalName: 'cms-icon.png',
-                        },
-                    },
-                },
-            },
-            fields: {
-                slug: '/2019-12-03-test-blog-image-ii/',
-                pathString: '/blog/2019-12-03-test-blog-image-ii/',
-            },
-            html:
-                '<p>TestTestTest</p>\n<p><span\n      class="gatsby-resp-image-wrapper"\n      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1400px;"\n    >\n      <a\n    class="gatsby-resp-image-link"\n    href="/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg"\n    style="display: block"\n    target="_blank"\n    rel="noopener"\n  >\n    <span\n    class="gatsby-resp-image-background-image"\n    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(\'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAHCguANmL//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRFBITIf/aAAgBAQABBQKvJXbGgR3FcZH/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAXEQADAQAAAAAAAAAAAAAAAAAAARMC/9oACAECAQE/AaMpo//EABoQAAICAwAAAAAAAAAAAAAAAAABESAxQZH/2gAIAQEABj8Cls1wzT//xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMVGB8P/aAAgBAQABPyGOo3bobsKGs692MDeCZ//aAAwDAQACAAMAAAAQaB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8QuK//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCIf//EABsQAQEBAAMBAQAAAAAAAAAAAAERACExQWGR/9oACAEBAAE/EGq1wmPPxzQE05Ff25iqIzkcMSHWALHZ7qKz193/2Q==\'); background-size: cover; display: block;"\n  ></span>\n  <img\n        class="gatsby-resp-image-image"\n        alt="net"\n        title="net"\n        src="/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg"\n        srcset="/static/5de83d4780d151558333d53839ea81ea/3a2a3/net.jpg 350w,\n/static/5de83d4780d151558333d53839ea81ea/67d4f/net.jpg 700w,\n/static/5de83d4780d151558333d53839ea81ea/8dcf2/net.jpg 1400w,\n/static/5de83d4780d151558333d53839ea81ea/36a65/net.jpg 2100w,\n/static/5de83d4780d151558333d53839ea81ea/c6584/net.jpg 2800w,\n/static/5de83d4780d151558333d53839ea81ea/9b902/net.jpg 2976w"\n        sizes="(max-width: 1400px) 100vw, 1400px"\n        loading="lazy"\n      />\n  </a>\n    </span></p>\n<p>TestTestTestTestTest</p>',
-            excerpt: 'TestTestTest  TestTestTestTestTest',
         },
     },
 ];
