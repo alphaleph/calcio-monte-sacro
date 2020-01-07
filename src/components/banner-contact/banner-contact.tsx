@@ -1,5 +1,6 @@
 import React from 'react';
 import './banner-contact.scss';
+import { EMAIL_ADDR, LOCATION_URL } from '../../constants';
 
 export const BannerContact = () => {
     return (
@@ -9,10 +10,7 @@ export const BannerContact = () => {
                 <p className="banner-contact-text">
                     Meet us at
                     <br />
-                    <a
-                        className="banner-contact-link"
-                        href="https://www.google.com/maps/place/Parco+Sannazzaro/@41.9422582,12.5402792,17z/data=!3m1!4b1!4m5!3m4!1s0x132f64080252da0b:0x28b23f52b87f2d63!8m2!3d41.9422582!4d12.5424679"
-                    >
+                    <a className="banner-contact-link" href={LOCATION_URL}>
                         Parco Sannazzaro, 00141 Roma RM, Italy
                     </a>
                 </p>
@@ -21,9 +19,9 @@ export const BannerContact = () => {
                     <br />
                     <a
                         className="banner-contact-link"
-                        href="mailto:calciomontesacro@gmail.com"
+                        href={`mailto:${EMAIL_ADDR}`}
                     >
-                        calciomontesacro@gmail.com
+                        {EMAIL_ADDR}
                     </a>
                 </p>
             </div>

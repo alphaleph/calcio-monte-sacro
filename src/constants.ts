@@ -1,7 +1,9 @@
 // Site Constants
 export const SITE_URL = 'https://www.calciomontesacro.com';
-export const EMAIL_ADDR = `&#099;&#097;&#108;&#099;&#105;&#111;&#109;&#111;&#110;&#116;&#101;&#115;&#097;&#099;&#114;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109`;
+export const EMAIL_ADDR = 'calciomontesacro\u0040gmail\u002ecom';
 export const NEWS_URL = SITE_URL + '/news';
+export const LOCATION_URL =
+    'https://www.google.com/maps/place/Parco+Sannazzaro/@41.9422582,12.5402792,17z/data=!3m1!4b1!4m5!3m4!1s0x132f64080252da0b:0x28b23f52b87f2d63!8m2!3d41.9422582!4d12.5424679';
 
 // CMS Constants
 export const HOME_VENUE = `Parco Sannazzaro`;
