@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useWindowDimensions } from '../../hooks';
 import Confetti from 'react-confetti';
 import ConfettiSpray from 'react-dom-confetti';
 import { Fireworks } from 'fireworks/lib/react';
 import './banner-donate.scss';
 
-//TODO: Fix canvas positions to el position
-//TODO: Optimize animations
 export const BannerDonate = () => {
     const [clickCount, setClickCount] = useState(0);
     const [donateButtonText, setDonateButtonText] = useState('Donate! 🎉');
@@ -14,6 +12,43 @@ export const BannerDonate = () => {
     const [isDropConfetti, setIsDropConfetti] = useState(false);
     const [isFireFireworks, setIsFireFireworks] = useState(false);
     const { width, height } = useWindowDimensions();
+
+    useEffect(() => {
+        let confettiTimer: number = 0;
+        if (isFireConfetti && !confettiTimer) {
+            confettiTimer = window.setTimeout(() => {
+                setIsFireConfetti(false);
+            }, 200);
+        }
+        return () => {
+            if (confettiTimer) {
+                clearTimeout(confettiTimer);
+            }
+        };
+    }, [isFireConfetti]);
+
+    useEffect(() => {
+        let fireworksTimer = 0;
+        if (isFireFireworks && !fireworksTimer) {
+            fireworksTimer = window.setTimeout(() => {
+                if (isFireFireworks) {
+                    setIsFireFireworks(false);
+                }
+                if (isDropConfetti) {
+                    setIsDropConfetti(false);
+                }
+            }, 3000);
+        }
+        return () => {
+            if (fireworksTimer) {
+                clearTimeout(fireworksTimer);
+            }
+        };
+    }, [isFireFireworks]);
+
+    useEffect(() => {
+        setDonateButtonText(donateButtonTextSelector());
+    }, [clickCount]);
 
     const donateButtonTextSelector = (): string => {
         if (clickCount === 1) {
@@ -41,33 +76,16 @@ export const BannerDonate = () => {
 
     const handleDonateClick = () => {
         setClickCount(clickCount + 1);
-        setDonateButtonText(donateButtonTextSelector());
         if (!isFireConfetti) {
             setIsFireConfetti(true);
         }
-        setTimeout(() => {
-            if (isFireConfetti) {
-                setIsFireConfetti(false);
-            }
-        }, 250);
-
         if (!isDropConfetti) {
             setIsDropConfetti(true);
         }
-        setTimeout(() => {
-            if (isDropConfetti) {
-                setIsDropConfetti(false);
-            }
-        }, 3000);
 
         if (!isFireFireworks) {
             setIsFireFireworks(true);
         }
-        setTimeout(() => {
-            if (isFireFireworks) {
-                setIsFireFireworks(false);
-            }
-        }, 3000);
     };
 
     const confettiSprayConfigLeft = {

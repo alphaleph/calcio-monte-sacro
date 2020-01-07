@@ -10,9 +10,9 @@ const AboutPage = () => {
     return (
         <Layout>
             <SEO title="About" />
-            <BannerDonate />
             <BannerAbout />
             <BannerContact />
+            <BannerDonate />
         </Layout>
     );
 };
