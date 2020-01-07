@@ -13,15 +13,21 @@ export const BannerAbout = () => {
                     }
                 }
             }
+            cmsIcon: file(relativePath: { eq: "cms-icon.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 400) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
         }
     `);
+
     return (
         <section className="banner-about-container hero is-large has-background-granite-grey-team">
             <Img fluid={data.bannerImage.childImageSharp.fluid} />
             <div className="banner-about-textbox">
-                <p className="banner-about-text">
-                    WELCOME TO <br /> CALCIO MONTE SACRO
-                </p>
+                <Img fluid={data.cmsIcon.childImageSharp.fluid} />
             </div>
         </section>
     );

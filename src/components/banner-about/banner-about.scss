@@ -8,15 +8,13 @@
 
 .banner-about-textbox {
     position: absolute;
-    left: 25%;
-    top: 37.5%;
-    width: 50%;
-    height: 25%;
-    background: rgba(252, 233, 95, .8);
+    left: 35%;
+    top: 25%;
+    width: 30%;
+    height: 53.5%;
+    background: rgba(252, 233, 95, .96);
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: $black-main solid 2px;
 }
 
 .banner-about-text {
