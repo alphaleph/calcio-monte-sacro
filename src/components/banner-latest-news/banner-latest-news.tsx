@@ -19,7 +19,7 @@ export const BannerLatestNews = () => {
                 <div className="banner-latest-news-list">
                     <NewsList size={3} />
                 </div>
-                <div className="columns">
+                <div className="banner-latest-news-footer columns">
                     <div className="column is-half is-offset-one-quarter">
                         <Link
                             to={`/news`}
@@ -53,7 +53,7 @@ export const TestBannerLatestNews = () => {
                         images={mockFluidImageDataNodes}
                     />
                 </div>
-                <div className="columns">
+                <div className="banner-latest-news-footer columns">
                     <div className="column is-half is-offset-one-quarter">
                         <Link
                             to={`${SITE_URL}/news`}
