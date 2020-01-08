@@ -1,12 +1,17 @@
 @import '../../pages/globals.scss';
 
 .banner-latest-blogs {
-    border-top: 1px solid $holy-yellow-team;
     border-bottom: 1px solid $holy-yellow-team;
+    padding: 4rem 0;
 }
 
 .banner-latest-blogs-list {
-    margin: 2rem 0rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.banner-latest-blogs-footer {
+    padding-bottom: 2rem;
 }
 
 .banner-latest-blogs-button:hover,
