@@ -50,7 +50,7 @@ export const TestBannerSchedule = () => {
                         events={mockTwoFutureScheduleDataNodes}
                     />
                 </div>
-                <div className="columns">
+                <div className="banner-schedule-footer columns">
                     <div className="column is-half is-offset-one-quarter">
                         <Link to={`${SITE_URL}/schedule`}>
                             <button
