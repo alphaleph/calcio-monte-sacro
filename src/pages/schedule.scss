@@ -1,14 +1,20 @@
 @import './globals.scss';
 
+.schedule-hero {
+    background-color: $beige-main;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+
 .schedule-title {
     font-size: 4rem;
-    padding: 3rem 0;
     font-family: serif;
     font-weight: bold;
     color: $roma-red;
+    padding-bottom: 4rem;
 }
 
-.schedule-container {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+.schedule-calendar {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
 }

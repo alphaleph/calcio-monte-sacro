@@ -16,7 +16,7 @@ export const PureBannerWeAre = ({ bgImage }: BannerWeAreProps) => {
 
     //TODO: Implement Canvas BG, animate with PixiJS
     return (
-        <section>
+        <section className="banner-we-are">
             <Img fluid={bgImage.fluid} className="banner-we-are-background" />
             <div className="banner-we-are-foreground">
                 <h1>

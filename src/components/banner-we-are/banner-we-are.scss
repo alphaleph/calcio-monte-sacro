@@ -1,5 +1,9 @@
 @import '../../pages/globals.scss';
 
+.banner-we-are {
+    border-bottom: 2px solid $granite-grey-team;
+}
+
 .is-transparent {
     opacity: 0 !important;
 }

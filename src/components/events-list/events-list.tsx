@@ -38,14 +38,14 @@ export const PureEventsList = ({
         const rowList = isDesc ? [...ascRowList].reverse() : ascRowList;
 
         return (
-            <ul className="container" data-testid="events-list">
+            <ul className="events-list container" data-testid="events-list">
                 {rowList}
             </ul>
         );
     } else {
         return (
             <section
-                className="section has-background-team-granite has-text-team-holy has-text-centered  has-text-weight-bold is-size-4"
+                className="section has-background-team-granite has-text-team-holy has-text-centered has-text-weight-bold is-size-4"
                 data-testid="events-list-empty"
             >
                 There are currently no events!

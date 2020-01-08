@@ -11,9 +11,13 @@ const SchedulePage = () => {
     return (
         <Layout>
             <SEO title="Schedule" />
-            <section className="schedule-container container">
-                <h1 className="schedule-title">SCHEDULE</h1>
-                <SchedulePreview />
+            <section className="schedule-hero">
+                <div className="container">
+                    <h1 className="schedule-title">SCHEDULE</h1>
+                    <SchedulePreview />
+                </div>
+            </section>
+            <section className="schedule-calendar container">
                 <h2 className="schedule-title">FULL CALENDAR</h2>
                 <EventsList />
             </section>

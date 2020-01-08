@@ -1,12 +1,17 @@
 @import '../../pages/globals.scss';
 
 .banner-schedule {
-    border-top: 1px solid $holy-yellow-team;
     border-bottom: 1px solid $holy-yellow-team;
+    padding: 4rem 0;
 }
 
 .banner-schedule-preview {
-    margin: 2rem 0rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.banner-schedule-footer {
+    padding-bottom: 2rem;
 }
 
 .banner-schedule-button:hover,
