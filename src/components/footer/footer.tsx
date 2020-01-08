@@ -26,7 +26,7 @@ export const Footer = (props: FooterProps) => {
     };
 
     return (
-        <footer className="footer-container columns is-centered has-background-team-granite">
+        <footer className="footer-container columns is-centered has-background-black-main">
             <div className="column is-two-thirds">
                 <section className="footer-main-links container">
                     <Link className="footer-main-link" to="/schedule">
