@@ -21,7 +21,7 @@ export const PureHeader = ({ data }: HeaderProps) => {
         <header className="nav-container">
             <div className="nav-outline">
                 <nav
-                    className="navbar has-background-team-granite is-spaced"
+                    className="navbar has-background-black-main is-spaced"
                     role="navigation"
                     aria-label="main navigation"
                 >
@@ -77,8 +77,8 @@ export const PureHeader = ({ data }: HeaderProps) => {
                         id="headerNavbarMenu"
                         className={
                             isBurgerExpanded
-                                ? 'navbar-menu has-background-team-granite is-active'
-                                : 'navbar-menu has-background-team-granite'
+                                ? 'navbar-menu has-background-black-main is-active'
+                                : 'navbar-menu has-background-black-main'
                         }
                     >
                         <div className="navbar-end">

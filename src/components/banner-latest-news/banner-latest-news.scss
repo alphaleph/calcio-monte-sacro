@@ -1,12 +1,17 @@
 @import '../../pages/globals.scss';
 
 .banner-latest-news {
-    border-top: 1px solid $holy-yellow-team;
     border-bottom: 1px solid $holy-yellow-team;
+    padding: 4rem 0;
 }
 
 .banner-latest-news-list {
-    margin: 2rem 0rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.banner-latest-news-footer {
+    padding-bottom: 2rem;
 }
 
 .banner-latest-news-button:hover,
