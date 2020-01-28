@@ -1,6 +1,7 @@
 @import '../../pages/globals.scss';
 
 .banner-we-are {
+    position: relative;
     border-bottom: 2px solid $granite-grey-team;
 }
 
@@ -13,13 +14,12 @@
     top: 0;
     left: 0;
     height: 100%;
-    min-width: 480px;
-    overflow-x: hidden;
+    min-height: 15rem;
 }
 
 .banner-we-are-foreground {
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     width: 100%;
     text-align: center;
