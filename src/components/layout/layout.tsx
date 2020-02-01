@@ -11,6 +11,7 @@ interface LayoutProps {
 
 export const Layout = (props: LayoutProps) => {
     const [modalType, setModalType] = useState(NONE);
+    const mainContent = React.createRef<HTMLElement>();
 
     const MODAL_MAP: TypeToElementMap = {
         NONE: null,
@@ -23,10 +24,21 @@ export const Layout = (props: LayoutProps) => {
         setModalType(modalType);
     };
 
+    const skipToMain = () => {
+        if (mainContent.current) {
+            mainContent.current.focus();
+        }
+    };
+
     return (
         <div className="layout-base">
+            <button className="button skip-nav" onClick={skipToMain}>
+                Skip to Main Content
+            </button>
             <Header />
-            <main>{props.children}</main>
+            <main ref={mainContent} tabIndex={-1}>
+                {props.children}
+            </main>
             <Footer openModal={openModal} />
             {MODAL_MAP[modalType]}
         </div>

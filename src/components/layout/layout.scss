@@ -621,6 +621,18 @@ pre tt:before,
 pre tt:after {
     content: '';
 }
+
+button.skip-nav {
+    position: absolute;
+    left: -10000px;
+}
+
+button.skip-nav:focus {
+    top: 1rem;
+    left: 1rem;
+    z-index: 31;
+}
+
 @media only screen and (max-width: 480px) {
     html {
         font-size: 100%;
