@@ -29,6 +29,7 @@ export const NodeGarden = () => {
             //     canvas.style.transformOrigin = '0 0';
             // }
             // set up event handlers
+            handleResize();
             window.addEventListener('resize', handleResize);
 
             // start animation
