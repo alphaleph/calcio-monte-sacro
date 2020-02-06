@@ -1,7 +1,13 @@
 @import '../../pages/globals.scss';
 
 .banner-we-are {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-we-are-container {
     position: relative;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -17,6 +23,11 @@
     width: 50vw;
 }
 
+.divider-beige {
+    position: relative;
+    height: 1rem;
+    background-color: $beige-main;
+}
 
 @media screen and (min-width: 400px) {
     .banner-we-are-foreground {

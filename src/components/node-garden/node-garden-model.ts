@@ -32,7 +32,7 @@ export default class NodeGardenModel {
         deltaTime: number
     ) {
         // clear canvas
-        ctx.fillStyle = '#072B42';
+        ctx.fillStyle = '#000918';
         ctx.fillRect(0, 0, this.xBoundary, this.yBoundary);
 
         if (isAnimate) {

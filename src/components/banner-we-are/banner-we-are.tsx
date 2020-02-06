@@ -1,27 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './banner-we-are.scss';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { NodeGarden } from '../node-garden/node-garden';
 import { FluidImageData } from '../../types';
 
-interface BannerWeAreOwnProps {}
+interface BannerWeAreOwnProps {
+    bottomDivider: boolean;
+}
 interface BannerWeAreProps extends BannerWeAreOwnProps {
     bgImage: FluidImageData;
 }
-export const PureBannerWeAre = ({ bgImage }: BannerWeAreProps) => {
+export const PureBannerWeAre = ({
+    bottomDivider,
+    bgImage,
+}: BannerWeAreProps) => {
     //TODO: Convert Canvas to PixiJS
     return (
         <section className="banner-we-are">
-            <NodeGarden />
-            <div className="banner-we-are-foreground">
-                <Img alt="Calcio Monte Sacro Logo" fluid={bgImage.fluid} />
+            <div className="banner-we-are-container">
+                <NodeGarden />
+                <div className="banner-we-are-foreground">
+                    <Img alt="Calcio Monte Sacro Logo" fluid={bgImage.fluid} />
+                </div>
             </div>
+            {bottomDivider && <div className="divider-beige" />}
         </section>
     );
 };
 
-export const BannerWeAre = () => {
+export const BannerWeAre = ({ bottomDivider }: BannerWeAreOwnProps) => {
     const data = useStaticQuery(graphql`
         query {
             placeholderImage: file(relativePath: { eq: "cms-icon.png" }) {
@@ -39,5 +47,10 @@ export const BannerWeAre = () => {
         }
     `);
 
-    return <PureBannerWeAre bgImage={data.placeholderImage.childImageSharp} />;
+    return (
+        <PureBannerWeAre
+            bottomDivider={bottomDivider}
+            bgImage={data.placeholderImage.childImageSharp}
+        />
+    );
 };
