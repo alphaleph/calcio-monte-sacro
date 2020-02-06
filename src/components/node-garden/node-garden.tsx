@@ -7,8 +7,8 @@ import NodeGardenModel from './node-garden-model';
 export const NodeGarden = () => {
     const [isAnimate, setIsAnimate] = useState(true); //for React HTML updates
     const isAnimateRef = React.useRef<boolean>(true); //for canvas control
-    const widthRef = React.useRef<number>(window.innerWidth);
-    const heightRef = React.useRef<number>(window.innerHeight);
+    const widthRef = React.useRef<number>(0);
+    const heightRef = React.useRef<number>(0);
     const canvasRef = React.useRef<HTMLCanvasElement>(null);
     const animReqRef = React.useRef<number>(-1);
     const prevTimeRef = React.useRef<number>(-1);
