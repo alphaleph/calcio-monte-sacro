@@ -12,7 +12,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO title="Home" />
-            <BannerWeAre />
+            <BannerWeAre bottomDivider={true} />
             <BannerSchedule />
             <BannerLatestNews />
             <BannerDrills />
