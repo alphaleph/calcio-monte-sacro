@@ -1,0 +1,25 @@
+@import '../../pages/globals.scss';
+
+.node-garden-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.node-garden-control-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.node-garden-control-button:hover,
+.node-garden-control-button:focus {
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+
+.node-garden-canvas {
+    position: absolute;
+}
