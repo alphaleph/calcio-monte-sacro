@@ -7,8 +7,10 @@ import NodeGardenModel from './node-garden-model';
 export const NodeGarden = () => {
     const [isAnimate, setIsAnimate] = useState(true); //for React HTML updates
     const isAnimateRef = React.useRef<boolean>(true); //for canvas control
-    const widthRef = React.useRef<number>(0);
-    const heightRef = React.useRef<number>(0);
+    const [width, setWidth] = useState(0);
+    const [height, setHeight] = useState(0);
+    const widthRef = React.useRef<number>(2000);
+    const heightRef = React.useRef<number>(2000);
     const canvasRef = React.useRef<HTMLCanvasElement>(null);
     const animReqRef = React.useRef<number>(-1);
     const prevTimeRef = React.useRef<number>(-1);
@@ -28,8 +30,11 @@ export const NodeGarden = () => {
             //     canvas.style.transform = 'scale(' + 1 / devicePixelRatio + ')';
             //     canvas.style.transformOrigin = '0 0';
             // }
+            console.log('Init: ' + window.innerWidth + ' x ' + window.innerHeight);
+            setWidth(window.innerWidth);
+            setHeight(window.innerHeight);
+
             // set up event handlers
-            handleResize();
             window.addEventListener('resize', handleResize);
 
             // start animation
@@ -43,6 +48,15 @@ export const NodeGarden = () => {
             };
         }
     }, []);
+
+    useEffect(() => {
+        if (width !== widthRef.current) {
+            setWidth(widthRef.current);
+        }
+        if (height !== heightRef.current) {
+            setHeight(heightRef.current);
+        }
+    }, [width, height]);
 
     const animate = () => {
         const canvas = canvasRef.current;
@@ -61,6 +75,7 @@ export const NodeGarden = () => {
     };
 
     const handleResize = () => {
+        console.log('Resize: ' + window.innerWidth + ' x ' + window.innerHeight);
         widthRef.current = window.innerWidth * devicePixelRatio;
         heightRef.current = window.innerHeight * devicePixelRatio;
         area = widthRef.current * heightRef.current;
@@ -84,8 +99,8 @@ export const NodeGarden = () => {
             <canvas
                 className="node-garden-canvas"
                 ref={canvasRef}
-                width={widthRef.current}
-                height={heightRef.current}
+                width={width}
+                height={height}
             ></canvas>
         </div>
     );
