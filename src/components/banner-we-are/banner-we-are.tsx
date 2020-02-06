@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './banner-we-are.scss';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { NodeGarden } from '../node-garden/node-garden';
 import { FluidImageData } from '../../types';
 
 interface BannerWeAreOwnProps {}
@@ -9,31 +10,12 @@ interface BannerWeAreProps extends BannerWeAreOwnProps {
     bgImage: FluidImageData;
 }
 export const PureBannerWeAre = ({ bgImage }: BannerWeAreProps) => {
-    const [isLoaded, setIsLoaded] = useState(false);
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
-
-    //TODO: Implement Canvas BG, animate with PixiJS
+    //TODO: Convert Canvas to PixiJS
     return (
         <section className="banner-we-are">
-            <Img
-                fluid={bgImage.fluid}
-                imgStyle={{ minWidth: '480px' }}
-                className="banner-we-are-background"
-            />
+            <NodeGarden />
             <div className="banner-we-are-foreground">
-                <h1>
-                    <span
-                        className={
-                            isLoaded
-                                ? 'banner-we-are-name is-family-secondary'
-                                : 'banner-we-are-name is-transparent is-family-secondary'
-                        }
-                    >
-                        Calcio Monte Sacro
-                    </span>
-                </h1>
+                <Img alt="Calcio Monte Sacro Logo" fluid={bgImage.fluid} />
             </div>
         </section>
     );
@@ -42,9 +24,7 @@ export const PureBannerWeAre = ({ bgImage }: BannerWeAreProps) => {
 export const BannerWeAre = () => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(
-                relativePath: { eq: "mountaintop-sky-temp.png" }
-            ) {
+            placeholderImage: file(relativePath: { eq: "cms-icon.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 1024) {
                         base64
