@@ -78,7 +78,7 @@ const DrillsPage = () => {
     return (
         <Layout>
             <SEO title="Drills" />
-            <section className="parallax-container">
+            <section className="parallax-container hidden-scrollbar">
                 <div className="wrapper">
                     <div className="drills-background">
                         <Img

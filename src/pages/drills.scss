@@ -12,6 +12,17 @@
     -webkit-overflow-scrolling: touch;
 }
 
+.hidden-scrollbar {
+    overflow-y: scroll;
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none; // IE 10+
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 .drills-background {
     flex: 0 0 auto;
     position: absolute;
