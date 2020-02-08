@@ -132,7 +132,7 @@ export const BannerDonate = () => {
                 numberOfPieces={isDropConfetti ? 50 : 0}
             />
             <div>{isFireFireworks && <Fireworks {...fireworksConfig} />}</div>
-            <div className="hero-body has-text-centered">
+            <div className="hero-body has-text-centered banner-donate-body">
                 <button
                     type="button"
                     className="button has-background-roma-gold is-large is-rounded"
