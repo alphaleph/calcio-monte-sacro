@@ -19,7 +19,7 @@
 - [x] Set up development environment / Impostare l'ambiente di sviluppo
 - [x] Icon design / Disegno dell'icona
 - [x] Base UI design / Progettazione dell'interfaccia utente fondamentale
-- [ ] Base UI implementation / Implementazione dell'interfaccia utente fondamentale
+- [x] Base UI implementation / Implementazione dell'interfaccia utente fondamentale
 - [ ] Animations and transitions / Animazioni e transizioni
 
 ### Developed With / Programmato Con :hammer:
@@ -33,6 +33,9 @@
 - [TypeScript][TypeScriptUrl]
 - [Bulma][BulmaUrl]
 
+### Acknowledgements
+- [Steve Schoger / HeroPatterns][HeroPatternsUrl]
+
 [GatsbyUrl]: https://www.gatsbyjs.org/
 [NetlifyCMSUrl]: https://www.netlifycms.org/
 [InkscapeUrl]: https://inkscape.org/
@@ -42,3 +45,4 @@
 [Testing-LibraryUrl]: https://testing-library.com/
 [TypeScriptUrl]: https://www.typescriptlang.org/
 [BulmaUrl]: https://bulma.io/
+[HeroPatternsUrl]: https://www.heropatterns.com/

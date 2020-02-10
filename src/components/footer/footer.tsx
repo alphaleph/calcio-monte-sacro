@@ -9,20 +9,24 @@ import {
 } from '../../constants';
 
 interface FooterProps {
-    openModal: (modalType: string) => void;
+    openModal: (ref: React.RefObject<HTMLElement>, modalType: string) => void;
 }
 
 export const Footer = (props: FooterProps) => {
+    const TermsAndCondModalRef = React.useRef<HTMLButtonElement>(null);
+    const PrivacyModalRef = React.useRef<HTMLButtonElement>(null);
+    const CookiesModalRef = React.useRef<HTMLButtonElement>(null);
+
     const openTermsAndCondModal = () => {
-        props.openModal(TERMS_AND_CONDITIONS);
+        props.openModal(TermsAndCondModalRef, TERMS_AND_CONDITIONS);
     };
 
     const openPrivacyModal = () => {
-        props.openModal(PRIVACY);
+        props.openModal(PrivacyModalRef, PRIVACY);
     };
 
     const openCookiesModal = () => {
-        props.openModal(COOKIES);
+        props.openModal(CookiesModalRef, COOKIES);
     };
 
     return (
@@ -48,6 +52,7 @@ export const Footer = (props: FooterProps) => {
                 <div className="footer-divider" />
                 <section className="footer-legal-buttons container">
                     <button
+                        ref={TermsAndCondModalRef}
                         type="button"
                         className="footer-legal-button"
                         onClick={openTermsAndCondModal}
@@ -55,6 +60,7 @@ export const Footer = (props: FooterProps) => {
                         Terms and Conditions
                     </button>
                     <button
+                        ref={PrivacyModalRef}
                         type="button"
                         className="footer-legal-button"
                         onClick={openPrivacyModal}
@@ -62,6 +68,7 @@ export const Footer = (props: FooterProps) => {
                         Privacy
                     </button>
                     <button
+                        ref={CookiesModalRef}
                         type="button"
                         className="footer-legal-button"
                         onClick={openCookiesModal}

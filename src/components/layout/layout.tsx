@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { Header } from '../header/header';
 import { Footer } from '../footer/footer';
-import { NONE } from '../../constants';
+import { Modal } from '../modal/modal';
+import {
+    NONE,
+    PRIVACY,
+    PRIVACY_STRING,
+    TERMS_AND_CONDITIONS,
+    TERMS_AND_CONDITIONS_STRING,
+    COOKIES,
+    COOKIES_STRING,
+} from '../../constants';
 import { TypeToElementMap } from '../../types';
 import './layout.scss';
 
@@ -11,17 +20,52 @@ interface LayoutProps {
 
 export const Layout = (props: LayoutProps) => {
     const [modalType, setModalType] = useState(NONE);
+    const [preModalFocusEl, setPreModalFocusEl] = useState(
+        {} as React.RefObject<HTMLElement>
+    );
     const mainContent = React.createRef<HTMLElement>();
+
+    const openModal = (
+        ref: React.RefObject<HTMLElement>,
+        modalType: string
+    ) => {
+        setModalType(modalType);
+        setPreModalFocusEl(ref);
+    };
+
+    const closeModal = () => {
+        setModalType(NONE);
+        if (preModalFocusEl.current) {
+            preModalFocusEl.current.focus();
+        }
+    };
 
     const MODAL_MAP: TypeToElementMap = {
         NONE: null,
-        TERMS_AND_CONDITIONS: null, //<TermsAndCondModal />,
-        PRIVACY: null, //<PrivacyModal />,
-        COOKIES: null, //<CookiesModal />,
-    };
-
-    const openModal = (modalType: string) => {
-        setModalType(modalType);
+        TERMS_AND_CONDITIONS: (
+            <Modal
+                isActive={true}
+                closeModal={closeModal}
+                modalTitle={TERMS_AND_CONDITIONS}
+                modalText={TERMS_AND_CONDITIONS_STRING}
+            />
+        ),
+        PRIVACY: (
+            <Modal
+                isActive={true}
+                closeModal={closeModal}
+                modalTitle={PRIVACY}
+                modalText={PRIVACY_STRING}
+            />
+        ),
+        COOKIES: (
+            <Modal
+                isActive={true}
+                closeModal={closeModal}
+                modalTitle={COOKIES}
+                modalText={COOKIES_STRING}
+            />
+        ),
     };
 
     const skipToMain = () => {
