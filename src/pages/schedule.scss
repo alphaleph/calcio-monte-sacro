@@ -7,7 +7,7 @@
 }
 
 .schedule-title {
-    font-size: 4rem;
+    font-size: 3.3rem;
     font-family: serif;
     font-weight: bold;
     color: $roma-red;
@@ -17,4 +17,10 @@
 .schedule-calendar {
     padding-top: 6rem;
     padding-bottom: 8rem;
+}
+
+@media screen and (min-width: 400px) {
+    .schedule-title {
+        font-size: 4rem;
+    }
 }

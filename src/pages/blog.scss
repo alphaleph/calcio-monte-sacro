@@ -1,7 +1,7 @@
 @import './globals.scss';
 
 .blog-title {
-    font-size: 4rem;
+    font-size: 3.3rem;
     font-family: serif;
     font-weight: bold;
     color: $roma-red;
@@ -11,4 +11,10 @@
 .blog-container {
     padding-top: 6rem;
     padding-bottom: 8rem;
+}
+
+@media screen and (min-width: 400px) {
+    .blog-title {
+        font-size: 4rem;
+    }
 }
