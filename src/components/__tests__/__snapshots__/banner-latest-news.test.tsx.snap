@@ -261,7 +261,7 @@ exports[`Banner Latest News has not changed 1`] = `
         </section>
       </div>
       <div
-        class="columns"
+        class="banner-latest-news-footer columns"
       >
         <div
           class="column is-half is-offset-one-quarter"

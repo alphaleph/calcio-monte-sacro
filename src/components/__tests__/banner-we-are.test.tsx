@@ -6,22 +6,21 @@ import '@testing-library/jest-dom/extend-expect';
 
 describe('We Are Banner', () => {
     it('renders without crashing', () => {
-        const { getByText } = render(
-            <PureBannerWeAre bgImage={mockFluidImageDataNodes[0].node} />
+        const { getByAltText } = render(
+            <PureBannerWeAre
+                bottomDivider={true}
+                bgImage={mockFluidImageDataNodes[0].node}
+            />
         );
-        expect(getByText('Calcio Monte Sacro')).toBeInTheDocument();
-    });
-
-    it('renders correctly', () => {
-        const { getByText } = render(
-            <PureBannerWeAre bgImage={mockFluidImageDataNodes[0].node} />
-        );
-        expect(getByText('Calcio Monte Sacro')).toBeVisible();
+        expect(getByAltText('Calcio Monte Sacro Logo')).toBeInTheDocument();
     });
 
     it('has not changed', () => {
         const { asFragment } = render(
-            <PureBannerWeAre bgImage={mockFluidImageDataNodes[0].node} />
+            <PureBannerWeAre
+                bottomDivider={true}
+                bgImage={mockFluidImageDataNodes[0].node}
+            />
         );
         expect(asFragment()).toMatchSnapshot();
     });

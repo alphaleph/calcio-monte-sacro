@@ -12,10 +12,10 @@ exports[`Banner Donate has not changed 1`] = `
     />
     <div />
     <div
-      class="hero-body has-text-centered"
+      class="hero-body has-text-centered banner-donate-body"
     >
       <button
-        class="button has-background-roma-gold is-large is-rounded"
+        class="banner-donate-button button has-background-roma-gold is-large is-rounded"
         type="button"
       >
         Donate! 🎉

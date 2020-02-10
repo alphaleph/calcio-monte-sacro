@@ -3,7 +3,7 @@
 exports[`Events List has not changed 1`] = `
 <DocumentFragment>
   <ul
-    class="container"
+    class="events-list container"
     data-testid="events-list"
   >
     <li
@@ -370,7 +370,7 @@ exports[`Events List has not changed 1`] = `
 exports[`Events List has not changed--empty 1`] = `
 <DocumentFragment>
   <section
-    class="section has-background-team-granite has-text-team-holy has-text-centered  has-text-weight-bold is-size-4"
+    class="section has-background-team-granite has-text-team-holy has-text-centered has-text-weight-bold is-size-4"
     data-testid="events-list-empty"
   >
     There are currently no events!

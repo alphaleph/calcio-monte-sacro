@@ -10,7 +10,7 @@ exports[`Header has not changed 1`] = `
     >
       <nav
         aria-label="main navigation"
-        class="navbar has-background-team-granite is-spaced"
+        class="navbar has-background-black-main is-spaced"
         role="navigation"
       >
         <div
@@ -76,7 +76,7 @@ exports[`Header has not changed 1`] = `
           </a>
         </div>
         <div
-          class="navbar-menu has-background-team-granite"
+          class="navbar-menu has-background-black-main"
           id="headerNavbarMenu"
         >
           <div
