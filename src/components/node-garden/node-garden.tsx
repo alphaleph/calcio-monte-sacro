@@ -30,7 +30,6 @@ export const NodeGarden = () => {
             //     canvas.style.transform = 'scale(' + 1 / devicePixelRatio + ')';
             //     canvas.style.transformOrigin = '0 0';
             // }
-            console.log('Init: ' + window.innerWidth + ' x ' + window.innerHeight);
             setWidth(window.innerWidth);
             setHeight(window.innerHeight);
 
@@ -75,7 +74,6 @@ export const NodeGarden = () => {
     };
 
     const handleResize = () => {
-        console.log('Resize: ' + window.innerWidth + ' x ' + window.innerHeight);
         widthRef.current = window.innerWidth * devicePixelRatio;
         heightRef.current = window.innerHeight * devicePixelRatio;
         area = widthRef.current * heightRef.current;
