@@ -135,7 +135,7 @@ export const BannerDonate = () => {
             <div className="hero-body has-text-centered banner-donate-body">
                 <button
                     type="button"
-                    className="button has-background-roma-gold is-large is-rounded"
+                    className="banner-donate-button button has-background-roma-gold is-large is-rounded"
                     onClick={handleDonateClick}
                 >
                     {donateButtonText}
