@@ -1,1 +1,24 @@
 @import '../../pages/globals.scss';
+
+.schedule-preview-previous-title {
+    margin-bottom: .5rem;
+}
+
+.schedule-preview-upcoming-title {
+    margin-bottom: .5rem;
+}
+
+.schedule-preview-upcoming-cards > * {
+    margin: .5rem 0 !important;
+}
+
+@media screen and (min-width: 769px) {
+    .schedule-preview-upcoming-cards {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    .schedule-preview-upcoming-cards > * {
+        margin: 0 .5rem !important;
+    }
+}

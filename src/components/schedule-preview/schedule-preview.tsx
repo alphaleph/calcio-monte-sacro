@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { EventCard } from '../event-card/event-card';
 import { MarkdownData, MarkdownEventDataNode } from '../../types/index';
 import { findMostRecentlyPastIndex } from '../../util';
+import './schedule-preview.scss';
 
 interface SchedulePreviewOwnProps {
     date?: number;
@@ -24,24 +25,26 @@ export const PureSchedulePreview = ({
     ];
 
     const cardList = previewScheduleData.map((event, index) => (
-        <div className="column is-one-third" key={index}>
-            <EventCard event={event ? event : null} />
-        </div>
+        <EventCard event={event ? event : null} key={index} />
     ));
 
     return (
         <section className="columns is-multiline">
             <div className="column is-one-third">
-                <h3 className="has-text-black-main is-size-5">
+                <h3 className="schedule-preview-previous-title has-text-black-main is-size-5">
                     <strong>PREVIOUS EVENT</strong>
                 </h3>
+                <div className="">{cardList[0]}</div>
             </div>
             <div className="column is-two-thirds">
-                <h3 className="has-text-black-main is-size-5">
+                <h3 className="schedule-preview-upcoming-title has-text-black-main is-size-5">
                     <strong>UPCOMING EVENTS</strong>
                 </h3>
+                <div className="schedule-preview-upcoming-cards">
+                    {cardList[1]}
+                    {cardList[2]}
+                </div>
             </div>
-            {cardList}
         </section>
     );
 };
