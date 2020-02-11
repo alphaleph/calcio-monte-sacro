@@ -622,6 +622,10 @@ pre tt:after {
     content: '';
 }
 
+.layout-base {
+    overflow-x: hidden;
+}
+
 button.skip-nav {
     position: absolute;
     left: -10000px;
