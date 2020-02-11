@@ -6,6 +6,13 @@ module.exports = {
         author: `@chaua0927`,
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: `UA-158219830-1`,
+                head: true,
+            },
+        },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-typescript`,
