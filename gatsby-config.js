@@ -4,6 +4,7 @@ module.exports = {
         title: `Calcio Monte Sacro`,
         description: `Sito Ufficiale Calcio Monte Sacro`,
         author: `@chaua0927`,
+        siteUrl: `https://www.calciomontesacro.com`,
     },
     plugins: [
         {
@@ -13,6 +14,7 @@ module.exports = {
                 head: true,
             },
         },
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-typescript`,
