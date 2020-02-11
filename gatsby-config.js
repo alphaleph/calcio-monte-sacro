@@ -7,13 +7,15 @@ module.exports = {
         siteUrl: `https://www.calciomontesacro.com`,
     },
     plugins: [
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: `UA-158219830-1`,
-                head: true,
-            },
-        },
+        // {
+        //     resolve: `gatsby-plugin-google-analytics`,
+        //     options: {
+        //         trackingId: `UA-158219830-1`,
+        //         head: true,
+        //         anonymize: true,
+        //         respectDNT: true,
+        //     },
+        // },
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
